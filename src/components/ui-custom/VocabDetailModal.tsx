@@ -42,8 +42,8 @@ export function VocabDetailModal({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-h-[95vh] w-full max-w-[calc(100%-1rem)] overflow-hidden rounded-[2rem] border border-border/40 bg-card p-0 shadow-[0_32px_64px_rgba(0,0,0,0.1)] sm:max-w-3xl">
-        <div className="max-h-[90vh] overflow-y-auto scrollbar-hide">
+      <DialogContent className="max-h-[95vh] w-full max-w-[calc(100%-1rem)] overflow-hidden rounded-[2rem] border border-border/40 bg-card p-0 shadow-[0_32px_64px_rgba(0,0,0,0.1)] sm:max-w-4xl gap-0">
+        <div className="max-h-[90vh] overflow-y-auto smooth-scrollbar">
           <div className="px-8 py-8 sm:px-12 sm:py-10">
             {/* Tag Group */}
             <div className="mb-8 flex flex-wrap items-center gap-2">
@@ -209,19 +209,19 @@ export function VocabDetailModal({
                   <Table className="w-full">
                     <TableHeader className="bg-primary">
                       <TableRow className="border-none hover:bg-transparent">
-                        <TableHead className="px-6 py-4 text-[10px] font-black uppercase tracking-widest text-primary-foreground">Form</TableHead>
-                        <TableHead className="px-6 py-4 text-[10px] font-black uppercase tracking-widest text-primary-foreground">Japanese</TableHead>
-                        <TableHead className="px-6 py-4 text-[10px] font-black uppercase tracking-widest text-primary-foreground">English</TableHead>
-                        <TableHead className="px-6 py-4 text-[10px] font-black uppercase tracking-widest text-primary-foreground">Burmese</TableHead>
+                        <TableHead className="px-4 py-3 text-[10px] font-black uppercase tracking-widest text-primary-foreground">Form</TableHead>
+                        <TableHead className="px-4 py-3 text-[10px] font-black uppercase tracking-widest text-primary-foreground">Japanese</TableHead>
+                        <TableHead className="px-4 py-3 text-[10px] font-black uppercase tracking-widest text-primary-foreground">English</TableHead>
+                        <TableHead className="px-4 py-3 text-[10px] font-black uppercase tracking-widest text-primary-foreground">Burmese</TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>
                       {conjugations.map(([form, value]) => (
                         <TableRow key={form} className="group border-border/20 transition-colors hover:bg-primary/[0.02]">
-                          <TableCell className="px-6 py-4 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{labelFromKey(form)}</TableCell>
-                          <TableCell className="px-6 py-4 font-heading text-lg font-black text-foreground group-hover:text-primary transition-colors">{value.jp || "-"}</TableCell>
-                          <TableCell className="px-6 py-4 text-xs font-medium text-muted-foreground">{value.en || "-"}</TableCell>
-                          <TableCell className="px-6 py-4 text-xs font-bold text-muted-foreground/70">{value.my || "-"}</TableCell>
+                          <TableCell className="px-4 py-3 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{labelFromKey(form)}</TableCell>
+                          <TableCell className="px-4 py-3 font-heading text-lg font-black text-primary">{value.jp || "-"}</TableCell>
+                          <TableCell className="px-4 py-3 text-xs font-medium text-muted-foreground">{value.en || "-"}</TableCell>
+                          <TableCell className="px-4 py-3 text-xs font-bold text-muted-foreground/70">{value.my || "-"}</TableCell>
                         </TableRow>
                       ))}
                     </TableBody>

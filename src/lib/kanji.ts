@@ -25,6 +25,7 @@ export type KanjiItem = {
   meaning: KanjiMeaning;
   emoji: string;
   examples: KanjiExample[];
+  confusing_kanji: string[];
 };
 
 export type KanjiLesson = {
@@ -53,6 +54,7 @@ type RawKanjiLesson = {
       reading: string;
       meaning: KanjiMeaning;
     }[];
+    confusing_kanji?: string[];
   }[];
 };
 
@@ -86,6 +88,7 @@ export const kanjiLessons: KanjiLesson[] = rawLessons.map((lesson) => {
         reading: example.reading,
         meaning: example.meaning,
       })),
+      confusing_kanji: kanji.confusing_kanji || [],
     })),
   };
 });

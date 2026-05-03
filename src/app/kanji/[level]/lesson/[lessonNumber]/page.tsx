@@ -3,6 +3,7 @@ import { ChevronRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import { KanjiGrid } from "@/components/ui-custom/KanjiGrid";
 import { BreadcrumbLink } from "@/components/ui-custom/BreadcrumbLink";
+import { KanjiQuizModal } from "@/components/ui-custom/KanjiQuizModal";
 import { KanjiContentGate } from "../../../KanjiContentGate";
 import {
   getKanjiLesson,
@@ -58,6 +59,8 @@ export default async function KanjiLessonPage({ params }: LessonPageProps) {
             {lesson.title}
           </p>
         </div>
+
+        <KanjiQuizModal lesson={lesson} />
 
         <KanjiContentGate
           cacheKey={`kanji-${typedLevel}-${lesson.lessonNumber}`}
