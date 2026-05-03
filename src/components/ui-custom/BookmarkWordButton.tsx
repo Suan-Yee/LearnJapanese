@@ -1,16 +1,52 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { Bookmark, BookmarkCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export interface BookmarkWordButtonProps {
-  isBookmarked: boolean;
-  onToggle: () => void;
+  wordId: string;
   className?: string;
 }
 
-export function BookmarkWordButton({ isBookmarked, onToggle, className }: BookmarkWordButtonProps) {
+export function BookmarkWordButton({ wordId, className }: BookmarkWordButtonProps) {
+  const [isBookmarked, setIsBookmarked] = useState(false);
+
+  useEffect(() => {
+    const saved = localStorage.getItem("vocab_bookmarks");
+    if (saved) {
+      try {
+        const bookmarks = new Set(JSON.parse(saved));
+        setIsBookmarked(bookmarks.has(wordId));
+      } catch (e) {
+        console.error("Failed to parse vocab bookmarks", e);
+      }
+    }
+  }, [wordId]);
+
+  const onToggle = () => {
+    try {
+      const saved = localStorage.getItem("vocab_bookmarks");
+      let bookmarks = new Set<string>();
+      if (saved) {
+        bookmarks = new Set(JSON.parse(saved));
+      }
+      
+      if (bookmarks.has(wordId)) {
+        bookmarks.delete(wordId);
+        setIsBookmarked(false);
+      } else {
+        bookmarks.add(wordId);
+        setIsBookmarked(true);
+      }
+      
+      localStorage.setItem("vocab_bookmarks", JSON.stringify(Array.from(bookmarks)));
+    } catch (e) {
+      console.error("Failed to toggle bookmark", e);
+    }
+  };
+
   return (
     <Button
       type="button"

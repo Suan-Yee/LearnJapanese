@@ -12,6 +12,8 @@ import {
   type JlptLevel,
 } from "@/lib/vocabulary";
 
+export const dynamicParams = false;
+
 type LessonPageProps = {
   params: Promise<{ level: string; lessonNumber: string }>;
 };

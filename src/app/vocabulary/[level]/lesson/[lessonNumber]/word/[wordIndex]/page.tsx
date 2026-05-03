@@ -22,6 +22,8 @@ import {
   type JlptLevel,
 } from "@/lib/vocabulary";
 
+export const dynamicParams = false;
+
 type WordPageProps = {
   params: Promise<{ level: string; lessonNumber: string; wordIndex: string }>;
 };
@@ -62,7 +64,7 @@ export default async function WordDetailPage({ params }: WordPageProps) {
   const word = getWordByRoute(typedLevel, lessonNumber, wordIndex);
   if (!word) notFound();
 
-  const conjugations = Object.entries(word.logic.conjugations);
+  const conjugations = Object.entries(word.logic.conjugations || {});
 
   return (
     <main className="flex-1 w-full p-4 sm:p-6 lg:p-8">
@@ -88,7 +90,7 @@ export default async function WordDetailPage({ params }: WordPageProps) {
               </h1>
               <p className="mt-2 text-lg font-medium text-muted-foreground">{word.base.reading}</p>
             </div>
-            <BookmarkWordButton />
+            <BookmarkWordButton wordId={word.word_id} />
           </div>
         </Card>
 

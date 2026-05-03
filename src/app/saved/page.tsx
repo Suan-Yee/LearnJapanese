@@ -5,7 +5,7 @@ import { BookmarkCheck, Eye, BookOpen, Brush } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { getSavedVocab, getSavedKanji } from "@/app/actions/getSavedItems";
+import { getSavedVocab, getSavedKanji } from "@/app/(actions)/getSavedItems";
 import type { VocabWord } from "@/lib/vocabulary";
 import type { KanjiItem } from "@/lib/kanji";
 import { getPrimaryMeaning } from "@/lib/vocabulary";

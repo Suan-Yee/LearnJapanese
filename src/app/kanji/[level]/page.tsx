@@ -11,6 +11,8 @@ import {
   type KanjiLevel,
 } from "@/lib/kanji";
 
+export const dynamicParams = false;
+
 type LevelPageProps = {
   params: Promise<{ level: string }>;
 };

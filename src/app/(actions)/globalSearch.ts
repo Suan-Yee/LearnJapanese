@@ -1,4 +1,3 @@
-"use server";
 
 import { getAllVocabulary, getPrimaryMeaning, type VocabWord } from "@/lib/vocabulary";
 import { getAllKanji, type KanjiItem } from "@/lib/kanji";

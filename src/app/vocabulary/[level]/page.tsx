@@ -12,6 +12,8 @@ import {
   type JlptLevel,
 } from "@/lib/vocabulary";
 
+export const dynamicParams = false;
+
 type LevelPageProps = {
   params: Promise<{ level: string }>;
 };

@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BookmarkCheck, Eye, Search, Loader2 } from "lucide-react";
+import { BookmarkCheck, Eye, Search, Loader2, BookOpen, Brush } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
-import { searchGlobal } from "@/app/actions/globalSearch";
+import { searchGlobal } from "@/app/(actions)/globalSearch";
 import type { VocabWord } from "@/lib/vocabulary";
 import type { KanjiItem } from "@/lib/kanji";
 import { getPrimaryMeaning } from "@/lib/vocabulary";

@@ -1,4 +1,3 @@
-"use server";
 
 import { getWordById, type VocabWord } from "@/lib/vocabulary";
 import { getKanjiById, type KanjiItem } from "@/lib/kanji";
