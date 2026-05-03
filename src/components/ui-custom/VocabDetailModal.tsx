@@ -13,7 +13,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { BookOpen, Info, Hash, Layers } from "lucide-react";
+import { BookOpen, Info, Hash, Layers, MessageCircle } from "lucide-react";
 import type { VocabWord } from "@/lib/vocabulary";
 
 interface VocabDetailModalProps {
@@ -38,6 +38,7 @@ export function VocabDetailModal({
   const conjugations = Object.entries(word.logic.conjugations || {});
   const hasGrammar = !!word.logic.grammar_pattern;
   const hasExplanation = !!(word.logic.explanation?.en || word.logic.explanation?.my || word.logic.usage);
+  const hasExamples = !!(word.usage && word.usage.length > 0);
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -89,12 +90,12 @@ export function VocabDetailModal({
               </div>
             </div>
             
-            {(hasGrammar || hasExplanation || conjugations.length > 0) && (
+            {(hasGrammar || hasExplanation || hasExamples || conjugations.length > 0) && (
               <div className="mt-8 border-t border-primary/20/80 pt-4"></div>
             )}
           </div>
 
-          {(hasGrammar || hasExplanation || conjugations.length > 0) && (
+          {(hasGrammar || hasExplanation || hasExamples || conjugations.length > 0) && (
             <div className="space-y-8 px-8 pb-8 pt-0 sm:px-12 sm:pb-12">
               <div className="h-px w-full bg-gradient-to-r from-transparent via-border/60 to-transparent"></div>
               {/* Grammar & Usage Section */}
@@ -145,6 +146,53 @@ export function VocabDetailModal({
                     </div>
                   </div>
                 )}
+              </section>
+            )}
+
+            {/* Examples Section */}
+            {hasExamples && (
+              <section className="space-y-6">
+                <div className="flex items-center gap-2">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <MessageCircle className="h-4 w-4" />
+                  </div>
+                  <h2 className="text-[10px] font-black uppercase tracking-[0.2em] text-primary/60">Examples</h2>
+                </div>
+                <div className="grid gap-4">
+                  {word.usage!.map((example, idx) => (
+                    <div key={idx} className="group overflow-hidden rounded-[1.5rem] border border-border/40 bg-card p-5 sm:p-6 shadow-sm transition-all hover:bg-primary/[0.02] hover:border-primary/20 hover:shadow-md">
+                      <div className="space-y-4">
+                        <div className="space-y-1">
+                          <p className="font-heading text-xl font-black tracking-tight text-foreground transition-colors group-hover:text-primary">
+                            {example.jp}
+                          </p>
+                          {example.reading && (
+                            <p className="text-sm font-medium text-muted-foreground/80">
+                              {example.reading}
+                            </p>
+                          )}
+                        </div>
+                        
+                        {(((languagePref === "en" || languagePref === "both") && example.en) || ((languagePref === "mm" || languagePref === "both") && example.my)) && (
+                          <div className="h-px w-full bg-border/40 transition-colors group-hover:bg-primary/10"></div>
+                        )}
+                        
+                        <div className="space-y-1.5">
+                          {(languagePref === "en" || languagePref === "both") && example.en && (
+                            <p className="text-sm font-medium text-foreground/90">
+                              {example.en}
+                            </p>
+                          )}
+                          {(languagePref === "mm" || languagePref === "both") && example.my && (
+                            <p className={`font-bold text-primary/80 ${languagePref === "both" ? "text-xs" : "text-sm"}`}>
+                              {example.my}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </section>
             )}
 

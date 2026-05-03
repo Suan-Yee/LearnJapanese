@@ -8,6 +8,13 @@ export type VocabConjugation = {
   my: string;
 };
 
+export type VocabUsage = {
+  jp: string;
+  reading?: string;
+  en: string;
+  my: string;
+};
+
 export type VocabWord = {
   word_id: string;
   jlpt: JlptLevel;
@@ -30,6 +37,7 @@ export type VocabWord = {
     };
     usage?: string;
   };
+  usage?: VocabUsage[];
 };
 
 export const LEVEL_CONFIG: Record<JlptLevel, { startLesson: number; endLesson: number }> = {
