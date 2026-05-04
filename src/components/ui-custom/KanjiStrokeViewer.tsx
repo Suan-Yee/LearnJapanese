@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 type StrokeState = "idle" | "loading" | "ready" | "missing" | "error";
 
-const KANJIVG_RAW_BASE = "/kanji";
+const KANJIVG_RAW_BASE = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/kanji`;
 
 interface KanjiStrokeViewerProps {
   character: string;

@@ -6,7 +6,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { BookOpen, Menu, X, Search } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 
-export type TabType = "kana" | "vocabulary" | "kanji" | "search" | "saved" | "quiz";
+export type TabType = "kana" | "vocabulary" | "kanji" | "grammar" | "search" | "saved" | "quiz";
 
 const LAST_VOCAB_PATH_KEY = "nihongo:last-vocabulary-path";
 
@@ -40,6 +40,7 @@ export function Navbar() {
     { id: "kana", label: "Kana", href: "/kana" },
     { id: "vocabulary", label: "Vocabulary", href: pathname.startsWith("/vocabulary") ? pathname : "/vocabulary" },
     { id: "kanji", label: "Kanji", href: "/kanji" },
+    { id: "grammar", label: "Grammar", href: "/grammar" },
     { id: "saved", label: "Saved", href: "/saved" },
     { id: "quiz", label: "Quiz", href: "/quiz" },
   ];

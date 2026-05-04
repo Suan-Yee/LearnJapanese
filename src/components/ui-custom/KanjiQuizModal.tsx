@@ -46,16 +46,29 @@ export function KanjiQuizModal({ lesson }: KanjiQuizModalProps) {
 
   const generateQuestions = () => {
     const generated = lesson.kanji.map(k => {
-      let pool = [...(k.confusing_kanji || [])];
-      // Pad with other kanji if less than 3
+      // Build distractor pool primarily from confusing_kanji
+      const confusingPool = (k.confusing_kanji || []).filter(c => c !== k.character);
+      
+      // If confusing_kanji has less than 3, pad with other lesson kanji
+      let pool = [...confusingPool];
       if (pool.length < 3) {
         const others = lesson.kanji
           .filter(other => other.id !== k.id && !pool.includes(other.character))
           .map(other => other.character);
-        pool = [...pool, ...others];
+        pool = [...pool, ...shuffleArray(others)];
       }
-      pool = shuffleArray(pool);
-      const incorrect = pool.slice(0, 3);
+
+      // Pick 3 unique distractors
+      const shuffledPool = shuffleArray(pool);
+      const selectedDistractors = new Set<string>();
+      for (const item of shuffledPool) {
+        if (selectedDistractors.size >= 3) break;
+        if (item !== k.character) {
+          selectedDistractors.add(item);
+        }
+      }
+
+      const incorrect = Array.from(selectedDistractors);
       const options = shuffleArray([k.character, ...incorrect]);
       return { kanjiItem: k, options };
     });
@@ -63,10 +76,8 @@ export function KanjiQuizModal({ lesson }: KanjiQuizModalProps) {
   };
 
   useEffect(() => {
-    if (open && questions.length === 0) {
-      generateQuestions();
-    }
     if (open) {
+      generateQuestions();
       setCurrentIndex(0);
       setScore(0);
       setSelectedOption(null);

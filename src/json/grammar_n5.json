@@ -1,0 +1,178 @@
+[
+  {
+    "lesson_metadata": { "jlpt_level": "N5", "lesson_id": 1, "title": "Basic Sentence Structure", "total_points": 4 },
+    "grammar_points": [
+      {
+        "id": "n5-g-001",
+        "pattern": "〜は〜です",
+        "meaning": { "en": "A is B (polite)", "my": "A သည် B ဖြစ်သည်" },
+        "formation": ["Noun + は + Noun / な-Adj + です"],
+        "explanation": { "en": "The most basic sentence pattern. は (wa) marks the topic, です makes it polite.", "my": "အခြေခံဝါကျပုံစံ။ は (wa) သည် ခေါင်းစဉ်ကိုညွှန်ပြပြီး です က ယဉ်ကျေးသောပုံစံဖြစ်သည်။" },
+        "conjugation": { "headers": ["Form", "Pattern", "Example"], "rows": [["Affirmative", "〜です", "学生です"], ["Negative", "〜じゃないです", "学生じゃないです"], ["Past Aff.", "〜でした", "学生でした"], ["Past Neg.", "〜じゃなかったです", "学生じゃなかったです"]] },
+        "examples": [
+          { "ja": "私は学生です。", "reading": "わたしはがくせいです。", "en": "I am a student.", "my": "ကျွန်တော်သည် ကျောင်းသားဖြစ်သည်။", "breakdown": [{ "word": "私", "reading": "わたし", "role": "topic", "gloss": "I" }, { "word": "は", "role": "particle" }, { "word": "学生", "reading": "がくせい", "role": "noun", "gloss": "student" }, { "word": "です", "role": "copula", "gloss": "is" }] },
+          { "ja": "田中さんは先生です。", "reading": "たなかさんはせんせいです。", "en": "Mr. Tanaka is a teacher.", "my": "တနကသည် ဆရာဖြစ်သည်။" }
+        ],
+        "tips": ["は is written HA but pronounced WA as a particle.", "です can be dropped in casual speech."],
+        "related": ["n5-g-002"], "tags": ["copula", "polite", "basic"]
+      },
+      {
+        "id": "n5-g-002",
+        "pattern": "〜じゃないです",
+        "meaning": { "en": "A is not B", "my": "A သည် B မဟုတ်ပါ" },
+        "formation": ["Noun + じゃないです", "Noun + ではありません (formal)"],
+        "explanation": { "en": "Negative form of です. じゃないです is conversational, ではありません is formal.", "my": "です ၏ အနုတ်ပုံစံ။ じゃないです သည် စကားပြောပုံစံ၊ ではありません သည် တရားဝင်ပုံစံ။" },
+        "examples": [
+          { "ja": "私は先生じゃないです。", "reading": "わたしはせんせいじゃないです。", "en": "I am not a teacher.", "my": "ကျွန်တော်သည် ဆရာမဟုတ်ပါ။", "breakdown": [{ "word": "私", "reading": "わたし", "role": "topic", "gloss": "I" }, { "word": "は", "role": "particle" }, { "word": "先生", "reading": "せんせい", "role": "noun", "gloss": "teacher" }, { "word": "じゃないです", "role": "copula", "gloss": "is not" }] },
+          { "ja": "これは本じゃないです。", "reading": "これはほんじゃないです。", "en": "This is not a book.", "my": "ဒါက စာအုပ်မဟုတ်ပါ။" }
+        ],
+        "tips": ["じゃ is a contraction of では.", "In writing, ではありません is preferred."],
+        "related": ["n5-g-001"], "tags": ["negative", "copula"]
+      },
+      {
+        "id": "n5-g-003",
+        "pattern": "〜ですか",
+        "meaning": { "en": "Is it ~? (question)", "my": "~လား (မေးခွန်း)" },
+        "formation": ["Statement + か"],
+        "explanation": { "en": "Add か to the end of a sentence to make it a yes/no question. Intonation rises.", "my": "ဝါကျအဆုံးတွင် か ထည့်ပြီး ဟုတ်/မဟုတ် မေးခွန်းပြုလုပ်သည်။" },
+        "examples": [
+          { "ja": "あなたは学生ですか。", "reading": "あなたはがくせいですか。", "en": "Are you a student?", "my": "မင်းသည် ကျောင်းသားလား။", "breakdown": [{ "word": "あなた", "role": "topic", "gloss": "you" }, { "word": "は", "role": "particle" }, { "word": "学生", "reading": "がくせい", "role": "noun", "gloss": "student" }, { "word": "です", "role": "copula", "gloss": "is" }, { "word": "か", "role": "particle", "gloss": "?" }] },
+          { "ja": "これは何ですか。", "reading": "これはなんですか。", "en": "What is this?", "my": "ဒါက ဘာလဲ။" }
+        ],
+        "tips": ["In casual speech, か can be replaced by rising intonation alone.", "Don't use か with の in casual questions — say の？ not のか？"],
+        "related": ["n5-g-001"], "tags": ["question", "basic"]
+      },
+      {
+        "id": "n5-g-004",
+        "pattern": "〜も",
+        "meaning": { "en": "Also / Too", "my": "လည်း / ကလည်း" },
+        "formation": ["Noun + も (replaces は)"],
+        "explanation": { "en": "も replaces は to mean 'also' or 'too'. It shows the same predicate applies to another topic.", "my": "も သည် は ကိုအစားထိုးပြီး 'လည်း' ဟုဆိုလိုသည်။" },
+        "examples": [
+          { "ja": "私も学生です。", "reading": "わたしもがくせいです。", "en": "I am also a student.", "my": "ကျွန်တော်လည်း ကျောင်းသားပါ။", "breakdown": [{ "word": "私", "reading": "わたし", "role": "topic", "gloss": "I" }, { "word": "も", "role": "particle", "gloss": "also" }, { "word": "学生", "reading": "がくせい", "role": "noun", "gloss": "student" }, { "word": "です", "role": "copula", "gloss": "is" }] },
+          { "ja": "田中さんも日本人です。", "reading": "たなかさんもにほんじんです。", "en": "Mr. Tanaka is also Japanese.", "my": "တနကလည်း ဂျပန်လူမျိုးပါ။" }
+        ],
+        "tips": ["も replaces は, を, and が — never use them together.", "You can chain: AもBも = both A and B."],
+        "related": ["n5-g-001"], "tags": ["particle", "basic"]
+      }
+    ]
+  },
+  {
+    "lesson_metadata": { "jlpt_level": "N5", "lesson_id": 2, "title": "Demonstratives & Possession", "total_points": 4 },
+    "grammar_points": [
+      {
+        "id": "n5-g-005",
+        "pattern": "これ / それ / あれ",
+        "meaning": { "en": "This / That / That over there", "my": "ဒါ / ဟိုဟာ / ဟိုးဟိုဘက်က" },
+        "formation": ["これ (near speaker)", "それ (near listener)", "あれ (far from both)"],
+        "explanation": { "en": "Japanese has three levels of distance for demonstrative pronouns: こ (here), そ (there), あ (over there).", "my": "ဂျပန်ဘာသာတွင် ညွှန်ပြသက္ကသာသုံးမျိုးရှိသည်: こ (ဒီမှာ), そ (ဟိုမှာ), あ (ဟိုးဟိုမှာ)။" },
+        "examples": [
+          { "ja": "これは本です。", "reading": "これはほんです。", "en": "This is a book.", "my": "ဒါက စာအုပ်ဖြစ်သည်။", "breakdown": [{ "word": "これ", "role": "topic", "gloss": "this" }, { "word": "は", "role": "particle" }, { "word": "本", "reading": "ほん", "role": "noun", "gloss": "book" }, { "word": "です", "role": "copula", "gloss": "is" }] },
+          { "ja": "それは何ですか。", "reading": "それはなんですか。", "en": "What is that?", "my": "ဟိုဟာက ဘာလဲ။" },
+          { "ja": "あれは山です。", "reading": "あれはやまです。", "en": "That over there is a mountain.", "my": "ဟိုဟာက တောင်ဖြစ်သည်။" }
+        ],
+        "tips": ["どれ (which one?) completes the こそあど pattern.", "These are standalone pronouns — they replace the noun entirely."],
+        "related": ["n5-g-006"], "tags": ["demonstrative", "pronoun"]
+      },
+      {
+        "id": "n5-g-006",
+        "pattern": "この / その / あの + Noun",
+        "meaning": { "en": "This ~ / That ~ / That ~ over there", "my": "ဒီ~ / ဟို~ / ဟိုးဟိုဘက်~" },
+        "formation": ["この + Noun", "その + Noun", "あの + Noun"],
+        "explanation": { "en": "Unlike これ/それ/あれ, these must be followed by a noun. They modify the noun.", "my": "これ/それ/あれ နှင့်မတူဘဲ၊ ဤသည်များသည် နာမ်နှင့်တွဲသုံးရသည်။" },
+        "examples": [
+          { "ja": "この本は面白いです。", "reading": "このほんはおもしろいです。", "en": "This book is interesting.", "my": "ဒီစာအုပ်က စိတ်ဝင်စားစရာကောင်းသည်။", "breakdown": [{ "word": "この", "role": "adjective", "gloss": "this" }, { "word": "本", "reading": "ほん", "role": "noun", "gloss": "book" }, { "word": "は", "role": "particle" }, { "word": "面白い", "reading": "おもしろい", "role": "adjective", "gloss": "interesting" }, { "word": "です", "role": "copula", "gloss": "is" }] },
+          { "ja": "あの人は誰ですか。", "reading": "あのひとはだれですか。", "en": "Who is that person?", "my": "ဟိုလူက ဘယ်သူလဲ။" }
+        ],
+        "tips": ["どの + Noun = which ~?", "Never say この alone without a noun — use これ instead."],
+        "related": ["n5-g-005"], "tags": ["demonstrative", "modifier"]
+      },
+      {
+        "id": "n5-g-007",
+        "pattern": "〜の",
+        "meaning": { "en": "Possessive / Noun modifier", "my": "ပိုင်ဆိုင်မှု / ~ရဲ့" },
+        "formation": ["Noun A + の + Noun B"],
+        "explanation": { "en": "の connects two nouns, showing possession, affiliation, or description. A の B = A's B.", "my": "の သည် နာမ်နှစ်ခုကိုချိတ်ဆက်ပြီး ပိုင်ဆိုင်မှု၊ ဆက်နွယ်မှုကိုပြသည်။" },
+        "examples": [
+          { "ja": "私の本です。", "reading": "わたしのほんです。", "en": "It's my book.", "my": "ကျွန်တော့ စာအုပ်ပါ။", "breakdown": [{ "word": "私", "reading": "わたし", "role": "topic", "gloss": "my" }, { "word": "の", "role": "particle", "gloss": "'s" }, { "word": "本", "reading": "ほん", "role": "noun", "gloss": "book" }, { "word": "です", "role": "copula", "gloss": "is" }] },
+          { "ja": "日本語の先生です。", "reading": "にほんごのせんせいです。", "en": "A Japanese language teacher.", "my": "ဂျပန်ဘာသာ ဆရာပါ။" }
+        ],
+        "tips": ["の can chain: 私の大学の先生 = my university's teacher.", "の can replace a noun when context is clear: 赤いのをください (Give me the red one)."],
+        "related": [], "tags": ["particle", "possessive"]
+      },
+      {
+        "id": "n5-g-008",
+        "pattern": "だれ / 何 / どこ",
+        "meaning": { "en": "Who / What / Where", "my": "ဘယ်သူ / ဘာ / ဘယ်နေရာ" },
+        "formation": ["だれ / 何 (なに・なん) / どこ + ですか"],
+        "explanation": { "en": "Basic question words. Use them in place of the unknown information, followed by ですか.", "my": "အခြေခံမေးခွန်းစကားလုံးများ။ မသိသောအချက်အလက်နေရာတွင် အသုံးပြုပြီး ですか နှင့်ဆုံးသည်။" },
+        "examples": [
+          { "ja": "あの人は誰ですか。", "reading": "あのひとはだれですか。", "en": "Who is that person?", "my": "ဟိုလူက ဘယ်သူလဲ။" },
+          { "ja": "トイレはどこですか。", "reading": "トイレはどこですか。", "en": "Where is the toilet?", "my": "အိမ်သာ ဘယ်မှာလဲ။", "breakdown": [{ "word": "トイレ", "role": "topic", "gloss": "toilet" }, { "word": "は", "role": "particle" }, { "word": "どこ", "role": "noun", "gloss": "where" }, { "word": "です", "role": "copula", "gloss": "is" }, { "word": "か", "role": "particle", "gloss": "?" }] }
+        ],
+        "tips": ["何 is read なに before most words, but なん before です, で, and counters.", "いつ (when), いくら (how much) follow the same pattern."],
+        "related": ["n5-g-003"], "tags": ["question", "basic"]
+      }
+    ]
+  },
+  {
+    "lesson_metadata": { "jlpt_level": "N5", "lesson_id": 3, "title": "Verbs & Actions", "total_points": 4 },
+    "grammar_points": [
+      {
+        "id": "n5-g-009",
+        "pattern": "〜ます / 〜ません",
+        "meaning": { "en": "Polite verb (affirmative / negative)", "my": "ယဉ်ကျေးသော ကြိယာ (အပြုသဘော / အနုတ်သဘော)" },
+        "formation": ["Verb stem + ます (affirmative)", "Verb stem + ません (negative)"],
+        "explanation": { "en": "ます is the polite present/future tense. ません is its negative. These are the first verb forms you learn.", "my": "ます သည် ယဉ်ကျေးသော ပစ္စုပ္ပန်/အနာဂတ်ပုံစံ။ ません သည် အနုတ်ပုံစံ။" },
+        "conjugation": { "headers": ["Form", "Pattern", "Example"], "rows": [["Present Aff.", "〜ます", "食べます (eat)"], ["Present Neg.", "〜ません", "食べません (don't eat)"], ["Past Aff.", "〜ました", "食べました (ate)"], ["Past Neg.", "〜ませんでした", "食べませんでした (didn't eat)"]] },
+        "examples": [
+          { "ja": "毎日日本語を勉強します。", "reading": "まいにちにほんごをべんきょうします。", "en": "I study Japanese every day.", "my": "နေ့တိုင်း ဂျပန်စာ လေ့လာသည်။", "breakdown": [{ "word": "毎日", "reading": "まいにち", "role": "adverb", "gloss": "every day" }, { "word": "日本語", "reading": "にほんご", "role": "noun", "gloss": "Japanese" }, { "word": "を", "role": "particle" }, { "word": "勉強します", "reading": "べんきょうします", "role": "verb", "gloss": "study" }] },
+          { "ja": "コーヒーを飲みません。", "reading": "コーヒーをのみません。", "en": "I don't drink coffee.", "my": "ကော်ဖီ မသောက်ပါ။" }
+        ],
+        "tips": ["ます form is safe for all situations — use it when in doubt.", "The verb stem is what comes before ます."],
+        "related": ["n5-g-010"], "tags": ["verb", "polite", "basic"]
+      },
+      {
+        "id": "n5-g-010",
+        "pattern": "〜ました / 〜ませんでした",
+        "meaning": { "en": "Past polite verb (affirmative / negative)", "my": "အတိတ်ကာလ ယဉ်ကျေးသော ကြိယာ" },
+        "formation": ["Verb stem + ました (past aff.)", "Verb stem + ませんでした (past neg.)"],
+        "explanation": { "en": "Past tense of polite verbs. ました = did, ませんでした = didn't.", "my": "ယဉ်ကျေးသော ကြိယာ၏ အတိတ်ကာလပုံစံ။" },
+        "examples": [
+          { "ja": "昨日映画を見ました。", "reading": "きのうえいがをみました。", "en": "I watched a movie yesterday.", "my": "မနေ့က ရုပ်ရှင်ကြည့်ခဲ့သည်။", "breakdown": [{ "word": "昨日", "reading": "きのう", "role": "adverb", "gloss": "yesterday" }, { "word": "映画", "reading": "えいが", "role": "noun", "gloss": "movie" }, { "word": "を", "role": "particle" }, { "word": "見ました", "reading": "みました", "role": "verb", "gloss": "watched" }] },
+          { "ja": "朝ごはんを食べませんでした。", "reading": "あさごはんをたべませんでした。", "en": "I didn't eat breakfast.", "my": "မနက်စာ မစားခဲ့ပါ။" }
+        ],
+        "tips": ["Time words like 昨日, 先週 signal past tense.", "ませんでした is always one word — don't break it apart."],
+        "related": ["n5-g-009"], "tags": ["verb", "past", "polite"]
+      },
+      {
+        "id": "n5-g-011",
+        "pattern": "〜を + Verb",
+        "meaning": { "en": "Object marker", "my": "ကံပြ particle" },
+        "formation": ["Noun + を + Verb"],
+        "explanation": { "en": "を marks the direct object of an action verb — the thing being acted upon.", "my": "を သည် ကြိယာ၏ ကံ (object) ကို ညွှန်ပြသည် — လုပ်ဆောင်ခံရသောအရာ။" },
+        "examples": [
+          { "ja": "水を飲みます。", "reading": "みずをのみます。", "en": "I drink water.", "my": "ရေ သောက်သည်။", "breakdown": [{ "word": "水", "reading": "みず", "role": "noun", "gloss": "water" }, { "word": "を", "role": "particle", "gloss": "(object)" }, { "word": "飲みます", "reading": "のみます", "role": "verb", "gloss": "drink" }] },
+          { "ja": "本を読みます。", "reading": "ほんをよみます。", "en": "I read a book.", "my": "စာအုပ် ဖတ်သည်။" },
+          { "ja": "音楽を聞きます。", "reading": "おんがくをききます。", "en": "I listen to music.", "my": "ဂီတ နားထောင်သည်။" }
+        ],
+        "tips": ["を is written with the character WO but pronounced O.", "Some verbs like 歩く (walk) use を for places you move through: 公園を歩く."],
+        "related": ["n5-g-012"], "tags": ["particle", "object"]
+      },
+      {
+        "id": "n5-g-012",
+        "pattern": "〜に / 〜へ 行きます",
+        "meaning": { "en": "Go to ~ (destination)", "my": "~သို့ သွားသည်" },
+        "formation": ["Place + に/へ + 行きます / 来ます / 帰ります"],
+        "explanation": { "en": "に and へ mark the destination of movement verbs. に is more precise, へ emphasizes direction.", "my": "に နှင့် へ သည် သွားလာမှုကြိယာ၏ ဦးတည်ရာကို ညွှန်ပြသည်။" },
+        "examples": [
+          { "ja": "学校に行きます。", "reading": "がっこうにいきます。", "en": "I go to school.", "my": "ကျောင်းသို့ သွားသည်။", "breakdown": [{ "word": "学校", "reading": "がっこう", "role": "noun", "gloss": "school" }, { "word": "に", "role": "particle", "gloss": "to" }, { "word": "行きます", "reading": "いきます", "role": "verb", "gloss": "go" }] },
+          { "ja": "日本へ来ました。", "reading": "にほんへきました。", "en": "I came to Japan.", "my": "ဂျပန်သို့ လာခဲ့သည်။" },
+          { "ja": "家に帰ります。", "reading": "いえにかえります。", "en": "I go home.", "my": "အိမ်သို့ ပြန်သည်။" }
+        ],
+        "tips": ["へ is written HE but pronounced E as a particle.", "に has many uses (time, location, purpose) — here it marks destination only."],
+        "related": ["n5-g-011"], "tags": ["particle", "direction", "movement"]
+      }
+    ]
+  }
+]
