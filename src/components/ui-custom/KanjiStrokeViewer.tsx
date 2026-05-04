@@ -20,7 +20,15 @@ function getKanjiSvgUrl(character: string) {
   const fileName = `${codePoint.toString(16).padStart(5, "0")}.svg`;
 
   // Use the environment variable set in next.config.ts
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  let basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
+  // Runtime fallback for GitHub Pages if the env var wasn't baked in correctly
+  if (typeof window !== "undefined" && !basePath) {
+    if (window.location.pathname.startsWith("/LearnJapanese")) {
+      basePath = "/LearnJapanese";
+    }
+  }
+
   return `${basePath}/kanji/${fileName}`;
 }
 
@@ -65,6 +73,7 @@ export function KanjiStrokeViewer({ character, variant = "panel" }: KanjiStrokeV
 
       try {
         const svgUrl = getKanjiSvgUrl(firstCharacter);
+        console.log(`[KanjiStrokeViewer] Fetching SVG: ${svgUrl}`);
 
         if (!svgUrl) {
           setPaths([]);
@@ -75,12 +84,14 @@ export function KanjiStrokeViewer({ character, variant = "panel" }: KanjiStrokeV
         const response = await fetch(svgUrl, { signal: controller.signal });
 
         if (response.status === 404) {
+          console.warn(`[KanjiStrokeViewer] SVG not found (404) at: ${svgUrl}`);
           setPaths([]);
           setState("missing");
           return;
         }
 
         if (!response.ok) {
+          console.error(`[KanjiStrokeViewer] Fetch failed with status ${response.status} for ${svgUrl}`);
           throw new Error("KanjiVG request failed.");
         }
 
