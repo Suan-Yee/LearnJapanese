@@ -7,8 +7,6 @@ import { cn } from "@/lib/utils";
 
 type StrokeState = "idle" | "loading" | "ready" | "missing" | "error";
 
-const KANJIVG_RAW_BASE = `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/kanji`;
-
 interface KanjiStrokeViewerProps {
   character: string;
   variant?: "panel" | "hero";
@@ -21,7 +19,9 @@ function getKanjiSvgUrl(character: string) {
 
   const fileName = `${codePoint.toString(16).padStart(5, "0")}.svg`;
 
-  return `${KANJIVG_RAW_BASE}/${fileName}`;
+  // Use the environment variable set in next.config.ts
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  return `${basePath}/kanji/${fileName}`;
 }
 
 function parseKanjiSvg(svgText: string) {

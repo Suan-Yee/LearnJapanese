@@ -6,6 +6,7 @@ const basePath = isProd ? '/LearnJapanese' : '';
 const nextConfig: NextConfig = {
   output: 'export',      // Required for GitHub Pages static hosting
   basePath: basePath,
+  assetPrefix: isProd ? '/LearnJapanese/' : '', // Add assetPrefix for static assets
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
