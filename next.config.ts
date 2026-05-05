@@ -1,12 +1,15 @@
 import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === 'production';
-const basePath = isProd ? '/LearnJapanese' : '';
+const isNetlify = !!process.env.NETLIFY;
+
+// Only use the /LearnJapanese subpath for GitHub Pages (non-Netlify production builds)
+const basePath = (isProd && !isNetlify) ? '/LearnJapanese' : '';
 
 const nextConfig: NextConfig = {
-  output: 'export',      // Required for GitHub Pages static hosting
+  output: 'export',      // Required for static hosting
   basePath: basePath,
-  assetPrefix: isProd ? '/LearnJapanese/' : '', // Add assetPrefix for static assets
+  assetPrefix: basePath ? `${basePath}/` : '', 
   env: {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },

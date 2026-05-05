@@ -73,7 +73,6 @@ export function KanjiStrokeViewer({ character, variant = "panel" }: KanjiStrokeV
 
       try {
         const svgUrl = getKanjiSvgUrl(firstCharacter);
-        console.log(`[KanjiStrokeViewer] Fetching SVG: ${svgUrl}`);
 
         if (!svgUrl) {
           setPaths([]);
@@ -84,14 +83,12 @@ export function KanjiStrokeViewer({ character, variant = "panel" }: KanjiStrokeV
         const response = await fetch(svgUrl, { signal: controller.signal });
 
         if (response.status === 404) {
-          console.warn(`[KanjiStrokeViewer] SVG not found (404) at: ${svgUrl}`);
           setPaths([]);
           setState("missing");
           return;
         }
 
         if (!response.ok) {
-          console.error(`[KanjiStrokeViewer] Fetch failed with status ${response.status} for ${svgUrl}`);
           throw new Error("KanjiVG request failed.");
         }
 
