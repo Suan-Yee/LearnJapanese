@@ -2,16 +2,17 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { setCachedPath } from "@/lib/navigation-path-cache";
 
 export function NavigationPersistence() {
   const pathname = usePathname();
 
   useEffect(() => {
     if (pathname.startsWith("/kanji/") && pathname !== "/kanji") {
-      localStorage.setItem("last_kanji_path", pathname);
+      setCachedPath("last_kanji_path", pathname);
     }
     if (pathname.startsWith("/vocabulary/") && pathname !== "/vocabulary") {
-      localStorage.setItem("last_vocab_path", pathname);
+      setCachedPath("last_vocab_path", pathname);
     }
   }, [pathname]);
 

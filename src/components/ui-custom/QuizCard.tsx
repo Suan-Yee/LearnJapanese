@@ -19,7 +19,6 @@ export interface QuizCardProps {
 export function QuizCard({ questions }: QuizCardProps) {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
 
@@ -28,7 +27,6 @@ export function QuizCard({ questions }: QuizCardProps) {
 
     const correct = answer === questions[currentQuestionIndex].correctAnswer;
     setSelectedAnswer(answer);
-    setIsCorrect(correct);
 
     if (correct) {
       setScore((prev) => prev + 1);
@@ -38,7 +36,6 @@ export function QuizCard({ questions }: QuizCardProps) {
       if (currentQuestionIndex < questions.length - 1) {
         setCurrentQuestionIndex((prev) => prev + 1);
         setSelectedAnswer(null);
-        setIsCorrect(null);
       } else {
         setIsFinished(true);
       }
@@ -48,7 +45,6 @@ export function QuizCard({ questions }: QuizCardProps) {
   const handleRetry = () => {
     setCurrentQuestionIndex(0);
     setSelectedAnswer(null);
-    setIsCorrect(null);
     setScore(0);
     setIsFinished(false);
   };

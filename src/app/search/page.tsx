@@ -12,6 +12,7 @@ import type { KanjiItem } from "@/lib/kanji";
 import { getPrimaryMeaning } from "@/lib/vocabulary";
 import { VocabDetailModal } from "@/components/ui-custom/VocabDetailModal";
 import { KanjiCard } from "@/components/ui-custom/KanjiCard";
+import { PronunciationButton } from "@/components/ui-custom/PronunciationButton";
 import { LanguageSelect, type LanguagePref } from "@/components/ui-custom/LanguageSelect";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { KanjiStrokeViewer } from "@/components/ui-custom/KanjiStrokeViewer";
@@ -33,10 +34,14 @@ export default function SearchPage() {
   const [selectedKanji, setSelectedKanji] = useState<KanjiItem | null>(null);
 
   useEffect(() => {
-    const vSaved = localStorage.getItem("vocab_bookmarks");
-    const kSaved = localStorage.getItem("kanji_bookmarks");
-    setVocabIds(new Set(vSaved ? JSON.parse(vSaved) : []));
-    setKanjiIds(new Set(kSaved ? JSON.parse(kSaved) : []));
+    const timer = window.setTimeout(() => {
+      const vSaved = localStorage.getItem("vocab_bookmarks");
+      const kSaved = localStorage.getItem("kanji_bookmarks");
+      setVocabIds(new Set(vSaved ? JSON.parse(vSaved) : []));
+      setKanjiIds(new Set(kSaved ? JSON.parse(kSaved) : []));
+    }, 0);
+
+    return () => window.clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -180,6 +185,10 @@ export default function SearchPage() {
                           </div>
 
                           <div className="flex flex-col gap-2">
+                            <PronunciationButton
+                              text={vocab.base.reading || vocab.base.kanji}
+                              label={`Pronounce ${vocab.base.kanji || vocab.base.reading}`}
+                            />
                             <button
                               type="button"
                               onClick={(e) => toggleVocabBookmark(vocab.word_id, e)}
@@ -299,6 +308,10 @@ export default function SearchPage() {
                           <span className="text-4xl leading-none">
                             {selectedKanji.emoji}
                           </span>
+                          <PronunciationButton
+                            text={selectedKanji.kunyomi || selectedKanji.onyomi || selectedKanji.character}
+                            label={`Pronounce ${selectedKanji.character}`}
+                          />
                         </div>
                       </div>
                     </div>
@@ -319,17 +332,33 @@ export default function SearchPage() {
                           <p className="text-xs font-bold uppercase tracking-widest text-primary/70">
                             Onyomi
                           </p>
-                          <p className="mt-2 wrap-break-word font-heading text-xl font-bold text-foreground">
-                            {selectedKanji.onyomi}
-                          </p>
+                          <div className="mt-2 flex items-center gap-2">
+                            <p className="wrap-break-word font-heading text-xl font-bold text-foreground">
+                              {selectedKanji.onyomi}
+                            </p>
+                            <PronunciationButton
+                              text={selectedKanji.onyomi}
+                              label={`Pronounce onyomi ${selectedKanji.onyomi}`}
+                              className="h-8 w-8 rounded-xl"
+                              iconClassName="h-4 w-4"
+                            />
+                          </div>
                         </div>
                         <div className="rounded-2xl border border-border bg-card/70 p-4">
                           <p className="text-xs font-bold uppercase tracking-widest text-primary/70">
                             Kunyomi
                           </p>
-                          <p className="mt-2 wrap-break-word font-heading text-xl font-bold text-foreground">
-                            {selectedKanji.kunyomi}
-                          </p>
+                          <div className="mt-2 flex items-center gap-2">
+                            <p className="wrap-break-word font-heading text-xl font-bold text-foreground">
+                              {selectedKanji.kunyomi}
+                            </p>
+                            <PronunciationButton
+                              text={selectedKanji.kunyomi}
+                              label={`Pronounce kunyomi ${selectedKanji.kunyomi}`}
+                              className="h-8 w-8 rounded-xl"
+                              iconClassName="h-4 w-4"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -349,9 +378,17 @@ export default function SearchPage() {
                           >
                             <div className="flex flex-col gap-3 min-[420px]:flex-row min-[420px]:items-center min-[420px]:justify-between">
                               <div className="min-w-0">
-                                <p className="wrap-break-word font-heading text-2xl font-bold text-foreground">
-                                  {example.word}
-                                </p>
+                                <div className="flex items-center gap-2">
+                                  <p className="wrap-break-word font-heading text-2xl font-bold text-foreground">
+                                    {example.word}
+                                  </p>
+                                  <PronunciationButton
+                                    text={example.reading || example.word}
+                                    label={`Pronounce ${example.word}`}
+                                    className="h-8 w-8 rounded-xl"
+                                    iconClassName="h-4 w-4"
+                                  />
+                                </div>
                                 <p className="wrap-break-word text-sm font-semibold text-muted-foreground">
                                   {example.reading}
                                 </p>

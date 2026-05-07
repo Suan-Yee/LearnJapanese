@@ -12,6 +12,7 @@ import {
   getKanjiLevels,
   type KanjiLevel,
 } from "@/lib/kanji";
+import { getCachedPath } from "@/lib/navigation-path-cache";
 
 export default function KanjiPage() {
   const router = useRouter();
@@ -19,12 +20,16 @@ export default function KanjiPage() {
   const levels = getKanjiLevels();
 
   useEffect(() => {
-    const lastPath = localStorage.getItem("last_kanji_path");
-    if (lastPath && lastPath !== "/kanji") {
-      router.replace(lastPath);
-    } else {
-      setIsRedirecting(false);
-    }
+    const timer = window.setTimeout(() => {
+      const lastPath = getCachedPath("last_kanji_path");
+      if (lastPath && lastPath !== "/kanji") {
+        router.replace(lastPath);
+      } else {
+        setIsRedirecting(false);
+      }
+    }, 0);
+
+    return () => window.clearTimeout(timer);
   }, [router]);
 
   if (isRedirecting) {

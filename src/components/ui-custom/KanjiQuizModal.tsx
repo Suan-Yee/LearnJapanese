@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { CheckCircle2, XCircle, Trophy, Play, RefreshCcw, Circle, X } from "lucide-react";
+import { CheckCircle2, XCircle, Trophy, Play, RefreshCcw, X } from "lucide-react";
 import type { KanjiLesson, KanjiItem } from "@/lib/kanji";
 import { cn } from "@/lib/utils";
 
@@ -38,13 +38,17 @@ export function KanjiQuizModal({ lesson }: KanjiQuizModalProps) {
   const storageKey = `kanji_quiz_score_${lesson.level}_${lesson.lessonNumber}`;
 
   useEffect(() => {
-    const saved = localStorage.getItem(storageKey);
-    if (saved) {
-      setBestScore(parseInt(saved, 10));
-    }
+    const timer = window.setTimeout(() => {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) {
+        setBestScore(parseInt(saved, 10));
+      }
+    }, 0);
+
+    return () => window.clearTimeout(timer);
   }, [storageKey]);
 
-  const generateQuestions = () => {
+  const generateQuestions = useCallback(() => {
     const generated = lesson.kanji.map(k => {
       // Build distractor pool primarily from confusing_kanji
       const confusingPool = (k.confusing_kanji || []).filter(c => c !== k.character);
@@ -73,17 +77,21 @@ export function KanjiQuizModal({ lesson }: KanjiQuizModalProps) {
       return { kanjiItem: k, options };
     });
     setQuestions(shuffleArray(generated));
-  };
+  }, [lesson.kanji]);
 
   useEffect(() => {
-    if (open) {
+    if (!open) return;
+
+    const timer = window.setTimeout(() => {
       generateQuestions();
       setCurrentIndex(0);
       setScore(0);
       setSelectedOption(null);
       setIsFinished(false);
-    }
-  }, [open, lesson]);
+    }, 0);
+
+    return () => window.clearTimeout(timer);
+  }, [generateQuestions, open]);
 
   const handleOptionClick = (option: string) => {
     if (selectedOption) return; // Prevent multiple clicks

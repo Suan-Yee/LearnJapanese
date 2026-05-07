@@ -3,6 +3,7 @@
 import { Card } from "@/components/ui/card";
 import { Bookmark, BookmarkCheck } from "lucide-react";
 import type { KanjiItem } from "@/lib/kanji";
+import { PronunciationButton } from "./PronunciationButton";
 
 interface KanjiCardProps {
   kanji: KanjiItem;
@@ -46,8 +47,16 @@ export function KanjiCard({ kanji, languagePref, isBookmarked, onToggleBookmark,
           </div>
         </div>
 
-        <div className="ml-2 shrink-0 origin-top-right text-3xl drop-shadow-sm transition-transform duration-300 group-hover:scale-110 sm:text-4xl">
-          {kanji.emoji}
+        <div className="ml-2 flex shrink-0 flex-col items-end gap-2">
+          <div className="origin-top-right text-3xl drop-shadow-sm transition-transform duration-300 group-hover:scale-110 sm:text-4xl">
+            {kanji.emoji}
+          </div>
+          <PronunciationButton
+            text={kanji.kunyomi || kanji.onyomi || kanji.character}
+            label={`Pronounce ${kanji.character}`}
+            className="h-9 w-9 rounded-xl"
+            iconClassName="h-4 w-4"
+          />
         </div>
       </div>
 

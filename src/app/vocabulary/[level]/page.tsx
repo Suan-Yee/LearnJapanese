@@ -3,9 +3,12 @@ import { notFound } from "next/navigation";
 import { ArrowRight, ChevronRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { BreadcrumbLink } from "@/components/ui-custom/BreadcrumbLink";
+import { LessonGridWanderer } from "@/components/ui-custom/LessonGridWanderer";
 import { VocabularyContentGate } from "../VocabularyContentGate";
 import {
+  getWordsByLesson,
   getLessonWordCounts,
+  getLessonsByLevel,
   getLevels,
   isLevel,
   LEVEL_CONFIG,
@@ -30,6 +33,14 @@ export default async function LevelPage({ params }: LevelPageProps) {
   const typedLevel = level as JlptLevel;
   const config = LEVEL_CONFIG[typedLevel];
   const lessons = getLessonWordCounts(typedLevel);
+  const walkerWords =
+    typedLevel === "N5"
+      ? getLessonsByLevel(typedLevel).flatMap((lesson) =>
+          getWordsByLesson(typedLevel, lesson)
+            .slice(0, 3)
+            .map((word) => word.base.reading || word.base.kanji),
+        )
+      : [];
 
   return (
     <main className="flex-1 w-full p-4 sm:p-6 lg:p-8">
@@ -54,23 +65,28 @@ export default async function LevelPage({ params }: LevelPageProps) {
           cacheKey={`vocabulary-level-${typedLevel}`}
           variant="lessons"
         >
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {lessons.map(({ lesson, count }) => (
-              <Link key={lesson} href={`/vocabulary/${typedLevel}/lesson/${lesson}`}>
-                <Card className="rounded-2xl border border-border/60 bg-card/80 p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all hover:-translate-y-0.5 hover:bg-card hover:shadow-lg">
-                  <div className="flex items-center justify-between gap-4">
-                    <div>
-                      <h2 className="font-heading text-xl font-bold text-foreground">
-                        Lesson {lesson}
-                      </h2>
-                      <p className="mt-1 text-sm text-muted-foreground">{count} words</p>
+          <LessonGridWanderer words={typedLevel === "N5" ? walkerWords : []}>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {lessons.map(({ lesson, count }) => (
+                <Link key={lesson} href={`/vocabulary/${typedLevel}/lesson/${lesson}`}>
+                  <Card
+                    data-lesson-card="true"
+                    className="rounded-2xl border border-border/60 bg-card/80 p-5 shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all hover:-translate-y-0.5 hover:bg-card hover:shadow-lg"
+                  >
+                    <div className="flex items-center justify-between gap-4">
+                      <div>
+                        <h2 className="font-heading text-xl font-bold text-foreground">
+                          Lesson {lesson}
+                        </h2>
+                        <p className="mt-1 text-sm text-muted-foreground">{count} words</p>
+                      </div>
+                      <ArrowRight className="h-5 w-5 text-primary" />
                     </div>
-                    <ArrowRight className="h-5 w-5 text-primary" />
-                  </div>
-                </Card>
-              </Link>
-            ))}
-          </div>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </LessonGridWanderer>
         </VocabularyContentGate>
       </div>
     </main>

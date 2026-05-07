@@ -5,10 +5,10 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { BookOpen, Menu, X, Search } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
+import { getCachedPath, setCachedPath } from "@/lib/navigation-path-cache";
 
 export type TabType = "kana" | "vocabulary" | "kanji" | "search" | "saved";
-
-const LAST_VOCAB_PATH_KEY = "nihongo:last-vocabulary-path";
+const LAST_VOCAB_PATH_KEY = "last_vocab_path";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -19,12 +19,12 @@ export function Navbar() {
   useEffect(() => {
     if (!pathname.startsWith("/vocabulary")) return;
 
-    window.localStorage.setItem(LAST_VOCAB_PATH_KEY, pathname);
+    setCachedPath(LAST_VOCAB_PATH_KEY, pathname);
     lastVocabularyPath.current = pathname;
   }, [pathname]);
 
   const getLastVocabularyPath = () => {
-    const stored = window.localStorage.getItem(LAST_VOCAB_PATH_KEY);
+    const stored = getCachedPath(LAST_VOCAB_PATH_KEY);
     if (stored?.startsWith("/vocabulary")) return stored;
     return lastVocabularyPath.current;
   };

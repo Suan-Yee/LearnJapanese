@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { VocabularyContentGate } from "./VocabularyContentGate";
 import { getLevels, getLessonWordCounts, LEVEL_CONFIG } from "@/lib/vocabulary";
+import { getCachedPath } from "@/lib/navigation-path-cache";
 
 export default function VocabularyPage() {
   const router = useRouter();
@@ -15,12 +16,16 @@ export default function VocabularyPage() {
   const levels = getLevels();
 
   useEffect(() => {
-    const lastPath = localStorage.getItem("last_vocab_path");
-    if (lastPath && lastPath !== "/vocabulary") {
-      router.replace(lastPath);
-    } else {
-      setIsRedirecting(false);
-    }
+    const timer = window.setTimeout(() => {
+      const lastPath = getCachedPath("last_vocab_path");
+      if (lastPath && lastPath !== "/vocabulary") {
+        router.replace(lastPath);
+      } else {
+        setIsRedirecting(false);
+      }
+    }, 0);
+
+    return () => window.clearTimeout(timer);
   }, [router]);
 
   if (isRedirecting) {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import { BookmarkCheck, Eye, BookOpen, Brush } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -11,6 +11,7 @@ import type { KanjiItem } from "@/lib/kanji";
 import { getPrimaryMeaning } from "@/lib/vocabulary";
 import { VocabDetailModal } from "@/components/ui-custom/VocabDetailModal";
 import { KanjiCard } from "@/components/ui-custom/KanjiCard";
+import { PronunciationButton } from "@/components/ui-custom/PronunciationButton";
 import { LanguageSelect, type LanguagePref } from "@/components/ui-custom/LanguageSelect";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { KanjiStrokeViewer } from "@/components/ui-custom/KanjiStrokeViewer";
@@ -66,7 +67,7 @@ export default function SavedPage() {
     });
   };
 
-  const toggleKanjiBookmark = (id: string, e?: React.MouseEvent) => {
+  const toggleKanjiBookmark = (id: string, e?: MouseEvent) => {
     if (e) e.stopPropagation();
     setKanjiIds((prev) => {
       const next = new Set(prev);
@@ -95,7 +96,7 @@ export default function SavedPage() {
           <LanguageSelect value={languagePref} onChange={setLanguagePref} />
         </div>
 
-        <Tabs defaultValue="vocab" className="w-full">
+        <Tabs defaultValue="vocab" className="w-full flex-col">
           <TabsList className="mb-8 inline-flex h-12 w-full max-w-sm items-center justify-center rounded-2xl bg-card/60 p-1 shadow-sm sm:w-auto">
             <TabsTrigger
               value="vocab"
@@ -111,7 +112,7 @@ export default function SavedPage() {
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="vocab" className="mt-0">
+          <TabsContent value="vocab" className="mt-0 w-full">
             {isLoading ? (
               <div className="text-center py-12 text-muted-foreground">Loading saved vocabulary...</div>
             ) : filteredVocab.length > 0 ? (
@@ -144,6 +145,10 @@ export default function SavedPage() {
                         </div>
 
                         <div className="flex flex-col gap-2">
+                          <PronunciationButton
+                            text={vocab.base.reading || vocab.base.kanji}
+                            label={`Pronounce ${vocab.base.kanji || vocab.base.reading}`}
+                          />
                           <button
                             type="button"
                             onClick={() => toggleVocabBookmark(vocab.word_id)}
@@ -189,7 +194,7 @@ export default function SavedPage() {
             )}
           </TabsContent>
 
-          <TabsContent value="kanji" className="mt-0">
+          <TabsContent value="kanji" className="mt-0 w-full">
             {isLoading ? (
               <div className="text-center py-12 text-muted-foreground">Loading saved kanji...</div>
             ) : filteredKanji.length > 0 ? (
@@ -264,6 +269,10 @@ export default function SavedPage() {
                           <span className="text-4xl leading-none">
                             {selectedKanji.emoji}
                           </span>
+                          <PronunciationButton
+                            text={selectedKanji.kunyomi || selectedKanji.onyomi || selectedKanji.character}
+                            label={`Pronounce ${selectedKanji.character}`}
+                          />
                         </div>
                       </div>
                     </div>
@@ -284,17 +293,33 @@ export default function SavedPage() {
                           <p className="text-xs font-bold uppercase tracking-widest text-primary/70">
                             Onyomi
                           </p>
-                          <p className="mt-2 wrap-break-word font-heading text-xl font-bold text-foreground">
-                            {selectedKanji.onyomi}
-                          </p>
+                          <div className="mt-2 flex items-center gap-2">
+                            <p className="wrap-break-word font-heading text-xl font-bold text-foreground">
+                              {selectedKanji.onyomi}
+                            </p>
+                            <PronunciationButton
+                              text={selectedKanji.onyomi}
+                              label={`Pronounce onyomi ${selectedKanji.onyomi}`}
+                              className="h-8 w-8 rounded-xl"
+                              iconClassName="h-4 w-4"
+                            />
+                          </div>
                         </div>
                         <div className="rounded-2xl border border-border bg-card/70 p-4">
                           <p className="text-xs font-bold uppercase tracking-widest text-primary/70">
                             Kunyomi
                           </p>
-                          <p className="mt-2 wrap-break-word font-heading text-xl font-bold text-foreground">
-                            {selectedKanji.kunyomi}
-                          </p>
+                          <div className="mt-2 flex items-center gap-2">
+                            <p className="wrap-break-word font-heading text-xl font-bold text-foreground">
+                              {selectedKanji.kunyomi}
+                            </p>
+                            <PronunciationButton
+                              text={selectedKanji.kunyomi}
+                              label={`Pronounce kunyomi ${selectedKanji.kunyomi}`}
+                              className="h-8 w-8 rounded-xl"
+                              iconClassName="h-4 w-4"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -314,9 +339,17 @@ export default function SavedPage() {
                           >
                             <div className="flex flex-col gap-3 min-[420px]:flex-row min-[420px]:items-center min-[420px]:justify-between">
                               <div className="min-w-0">
-                                <p className="wrap-break-word font-heading text-2xl font-bold text-foreground">
-                                  {example.word}
-                                </p>
+                                <div className="flex items-center gap-2">
+                                  <p className="wrap-break-word font-heading text-2xl font-bold text-foreground">
+                                    {example.word}
+                                  </p>
+                                  <PronunciationButton
+                                    text={example.reading || example.word}
+                                    label={`Pronounce ${example.word}`}
+                                    className="h-8 w-8 rounded-xl"
+                                    iconClassName="h-4 w-4"
+                                  />
+                                </div>
                                 <p className="wrap-break-word text-sm font-semibold text-muted-foreground">
                                   {example.reading}
                                 </p>

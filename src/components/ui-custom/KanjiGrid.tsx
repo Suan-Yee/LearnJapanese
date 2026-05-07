@@ -16,6 +16,7 @@ import { Pagination } from "./Pagination";
 import { LessonSelect } from "./LessonSelect";
 import { LanguageSelect, type LanguagePref } from "./LanguageSelect";
 import type { KanjiItem, KanjiLesson, KanjiLevel } from "@/lib/kanji";
+import { PronunciationButton } from "./PronunciationButton";
 import { BookOpen, Brush } from "lucide-react";
 
 interface KanjiGridProps {
@@ -33,14 +34,18 @@ export function KanjiGrid({ level, lesson, lessons }: KanjiGridProps) {
   const normalizedSearch = searchQuery.trim().toLowerCase();
 
   useEffect(() => {
-    const saved = localStorage.getItem("kanji_bookmarks");
-    if (saved) {
-      try {
-        setBookmarkedIds(new Set(JSON.parse(saved)));
-      } catch (e) {
-        console.error("Failed to parse kanji bookmarks", e);
+    const timer = window.setTimeout(() => {
+      const saved = localStorage.getItem("kanji_bookmarks");
+      if (saved) {
+        try {
+          setBookmarkedIds(new Set(JSON.parse(saved)));
+        } catch (e) {
+          console.error("Failed to parse kanji bookmarks", e);
+        }
       }
-    }
+    }, 0);
+
+    return () => window.clearTimeout(timer);
   }, []);
 
   const toggleBookmark = (id: string, e: React.MouseEvent) => {
@@ -188,6 +193,10 @@ export function KanjiGrid({ level, lesson, lessons }: KanjiGridProps) {
                         <span className="text-4xl leading-none">
                           {selectedKanji.emoji}
                         </span>
+                        <PronunciationButton
+                          text={selectedKanji.kunyomi || selectedKanji.onyomi || selectedKanji.character}
+                          label={`Pronounce ${selectedKanji.character}`}
+                        />
                       </div>
                     </div>
                   </div>
@@ -208,17 +217,33 @@ export function KanjiGrid({ level, lesson, lessons }: KanjiGridProps) {
                         <p className="text-xs font-bold uppercase tracking-widest text-primary/70">
                           Onyomi
                         </p>
-                        <p className="mt-2 wrap-break-word font-heading text-xl font-bold text-foreground">
-                          {selectedKanji.onyomi}
-                        </p>
+                        <div className="mt-2 flex items-center gap-2">
+                          <p className="wrap-break-word font-heading text-xl font-bold text-foreground">
+                            {selectedKanji.onyomi}
+                          </p>
+                          <PronunciationButton
+                            text={selectedKanji.onyomi}
+                            label={`Pronounce onyomi ${selectedKanji.onyomi}`}
+                            className="h-8 w-8 rounded-xl"
+                            iconClassName="h-4 w-4"
+                          />
+                        </div>
                       </div>
                       <div className="rounded-2xl border border-border bg-card/70 p-4">
                         <p className="text-xs font-bold uppercase tracking-widest text-primary/70">
                           Kunyomi
                         </p>
-                        <p className="mt-2 wrap-break-word font-heading text-xl font-bold text-foreground">
-                          {selectedKanji.kunyomi}
-                        </p>
+                        <div className="mt-2 flex items-center gap-2">
+                          <p className="wrap-break-word font-heading text-xl font-bold text-foreground">
+                            {selectedKanji.kunyomi}
+                          </p>
+                          <PronunciationButton
+                            text={selectedKanji.kunyomi}
+                            label={`Pronounce kunyomi ${selectedKanji.kunyomi}`}
+                            className="h-8 w-8 rounded-xl"
+                            iconClassName="h-4 w-4"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -238,9 +263,17 @@ export function KanjiGrid({ level, lesson, lessons }: KanjiGridProps) {
                         >
                           <div className="flex flex-col gap-3 min-[420px]:flex-row min-[420px]:items-center min-[420px]:justify-between">
                             <div className="min-w-0">
-                              <p className="wrap-break-word font-heading text-2xl font-bold text-foreground">
-                                {example.word}
-                              </p>
+                              <div className="flex items-center gap-2">
+                                <p className="wrap-break-word font-heading text-2xl font-bold text-foreground">
+                                  {example.word}
+                                </p>
+                                <PronunciationButton
+                                  text={example.reading || example.word}
+                                  label={`Pronounce ${example.word}`}
+                                  className="h-8 w-8 rounded-xl"
+                                  iconClassName="h-4 w-4"
+                                />
+                              </div>
                               <p className="wrap-break-word text-sm font-semibold text-muted-foreground">
                                 {example.reading}
                               </p>

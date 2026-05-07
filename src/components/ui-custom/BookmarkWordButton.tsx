@@ -14,15 +14,19 @@ export function BookmarkWordButton({ wordId, className }: BookmarkWordButtonProp
   const [isBookmarked, setIsBookmarked] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem("vocab_bookmarks");
-    if (saved) {
-      try {
-        const bookmarks = new Set(JSON.parse(saved));
-        setIsBookmarked(bookmarks.has(wordId));
-      } catch (e) {
-        console.error("Failed to parse vocab bookmarks", e);
+    const timer = window.setTimeout(() => {
+      const saved = localStorage.getItem("vocab_bookmarks");
+      if (saved) {
+        try {
+          const bookmarks = new Set(JSON.parse(saved));
+          setIsBookmarked(bookmarks.has(wordId));
+        } catch (e) {
+          console.error("Failed to parse vocab bookmarks", e);
+        }
       }
-    }
+    }, 0);
+
+    return () => window.clearTimeout(timer);
   }, [wordId]);
 
   const onToggle = () => {

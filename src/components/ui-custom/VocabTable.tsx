@@ -19,6 +19,7 @@ import { Pagination } from "./Pagination";
 import { LessonSelect } from "./LessonSelect";
 import { LanguageSelect, type LanguagePref } from "./LanguageSelect";
 import { VocabDetailModal } from "./VocabDetailModal";
+import { PronunciationButton } from "./PronunciationButton";
 import type { JlptLevel, VocabWord } from "@/lib/vocabulary";
 
 interface VocabTableProps {
@@ -96,14 +97,18 @@ export function VocabTable({ level, lessonNumber, lessons, words }: VocabTablePr
   }, [words, normalizedSearch]);
 
   React.useEffect(() => {
-    const saved = localStorage.getItem("vocab_bookmarks");
-    if (saved) {
-      try {
-        setBookmarkedIds(new Set(JSON.parse(saved)));
-      } catch (e) {
-        console.error("Failed to parse vocab bookmarks", e);
+    const timer = window.setTimeout(() => {
+      const saved = localStorage.getItem("vocab_bookmarks");
+      if (saved) {
+        try {
+          setBookmarkedIds(new Set(JSON.parse(saved)));
+        } catch (e) {
+          console.error("Failed to parse vocab bookmarks", e);
+        }
       }
-    }
+    }, 0);
+
+    return () => window.clearTimeout(timer);
   }, []);
 
   const toggleBookmark = (id: string, e?: React.MouseEvent) => {
@@ -198,6 +203,10 @@ export function VocabTable({ level, lessonNumber, lessons, words }: VocabTablePr
                   </div>
 
                   <div className="flex flex-col gap-2">
+                    <PronunciationButton
+                      text={vocab.base.reading || getJapaneseDisplay(vocab)}
+                      label={`Pronounce ${getJapaneseDisplay(vocab)}`}
+                    />
                     <button
                       type="button"
                       onClick={(e) => toggleBookmark(vocab.word_id, e)}
@@ -282,9 +291,17 @@ export function VocabTable({ level, lessonNumber, lessons, words }: VocabTablePr
                             {vocab.base.reading}
                           </span>
                         )}
-                        <span className="font-heading text-base font-bold leading-tight tracking-wide text-primary sm:text-xl cursor-pointer hover:text-primary/80 transition-colors break-all whitespace-normal">
-                          {getJapaneseDisplay(vocab)}
-                        </span>
+                        <div className="flex items-center gap-2">
+                          <span className="font-heading text-base font-bold leading-tight tracking-wide text-primary sm:text-xl cursor-pointer hover:text-primary/80 transition-colors break-all whitespace-normal">
+                            {getJapaneseDisplay(vocab)}
+                          </span>
+                          <PronunciationButton
+                            text={vocab.base.reading || getJapaneseDisplay(vocab)}
+                            label={`Pronounce ${getJapaneseDisplay(vocab)}`}
+                            className="h-8 w-8 rounded-xl"
+                            iconClassName="h-4 w-4"
+                          />
+                        </div>
                       </div>
                     </TableCell>
                     <TableCell className="w-[36%] px-2 py-3 align-top">

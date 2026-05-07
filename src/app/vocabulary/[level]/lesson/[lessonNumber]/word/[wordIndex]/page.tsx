@@ -12,6 +12,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { BookmarkWordButton } from "@/components/ui-custom/BookmarkWordButton";
+import { PronunciationButton } from "@/components/ui-custom/PronunciationButton";
 import {
   getJapaneseDisplay,
   getLessonsByLevel,
@@ -65,7 +66,6 @@ export default async function WordDetailPage({ params }: WordPageProps) {
   if (!word) notFound();
 
   const conjugations = Object.entries(word.logic.conjugations || {});
-
   return (
     <main className="flex-1 w-full p-4 sm:p-6 lg:p-8">
       <div className="mx-auto max-w-5xl space-y-6">
@@ -85,9 +85,15 @@ export default async function WordDetailPage({ params }: WordPageProps) {
                 <Badge variant="secondary">{word.logic.pos}</Badge>
                 <Badge variant="outline">{word.word_id}</Badge>
               </div>
-              <h1 className="font-heading text-4xl font-bold text-foreground">
-                {getJapaneseDisplay(word)}
-              </h1>
+              <div className="flex items-center gap-3">
+                <h1 className="font-heading text-4xl font-bold text-foreground">
+                  {getJapaneseDisplay(word)}
+                </h1>
+                <PronunciationButton
+                  text={word.base.reading || getJapaneseDisplay(word)}
+                  label={`Pronounce ${getJapaneseDisplay(word)}`}
+                />
+              </div>
               <p className="mt-2 text-lg font-medium text-muted-foreground">{word.base.reading}</p>
             </div>
             <BookmarkWordButton wordId={word.word_id} />
@@ -113,7 +119,19 @@ export default async function WordDetailPage({ params }: WordPageProps) {
                   conjugations.map(([form, value]) => (
                     <TableRow key={form} className="border-border/30 hover:bg-primary/5">
                       <TableCell className="pl-6 font-semibold capitalize">{labelFromKey(form)}</TableCell>
-                      <TableCell className="font-heading text-xl font-semibold">{value.jp || "-"}</TableCell>
+                      <TableCell className="font-heading text-xl font-semibold">
+                        <div className="flex items-center gap-2">
+                          <span>{value.jp || "-"}</span>
+                          {value.jp && (
+                            <PronunciationButton
+                              text={value.jp}
+                              label={`Pronounce ${value.jp}`}
+                              className="h-8 w-8 rounded-xl"
+                              iconClassName="h-4 w-4"
+                            />
+                          )}
+                        </div>
+                      </TableCell>
                       <TableCell>{value.en || "-"}</TableCell>
                       <TableCell className="pr-6 font-medium">{value.my || "-"}</TableCell>
                     </TableRow>

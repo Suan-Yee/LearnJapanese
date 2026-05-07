@@ -13,8 +13,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { BookOpen, Info, Hash, Layers, MessageCircle } from "lucide-react";
+import { Info, Hash, Layers, MessageCircle } from "lucide-react";
 import type { VocabWord } from "@/lib/vocabulary";
+import { PronunciationButton } from "@/components/ui-custom/PronunciationButton";
 
 interface VocabDetailModalProps {
   word: VocabWord | null;
@@ -63,9 +64,16 @@ export function VocabDetailModal({
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:gap-12">
               {/* Left Column: Japanese */}
               <div className="space-y-2 min-w-0 sm:shrink-0 sm:max-w-[45%]">
-                <h1 className="font-heading text-4xl font-black tracking-tighter text-foreground sm:text-5xl break-words">
-                  {word.base.kanji || word.base.reading}
-                </h1>
+                <div className="flex items-start gap-3">
+                  <h1 className="font-heading text-4xl font-black tracking-tighter text-foreground sm:text-5xl break-words">
+                    {word.base.kanji || word.base.reading}
+                  </h1>
+                  <PronunciationButton
+                    text={word.base.reading || word.base.kanji}
+                    label={`Pronounce ${word.base.kanji || word.base.reading}`}
+                    className="mt-1"
+                  />
+                </div>
                 <p className="text-base font-medium text-muted-foreground sm:text-lg break-words">
                   {word.base.reading}
                 </p>
@@ -98,6 +106,7 @@ export function VocabDetailModal({
           {(hasGrammar || hasExplanation || hasExamples || conjugations.length > 0) && (
             <div className="space-y-8 px-8 pb-8 pt-0 sm:px-12 sm:pb-12">
               <div className="h-px w-full bg-gradient-to-r from-transparent via-border/60 to-transparent"></div>
+
               {/* Grammar & Usage Section */}
             {(hasGrammar || hasExplanation) && (
               <section className="grid gap-6 sm:grid-cols-2">
@@ -163,9 +172,17 @@ export function VocabDetailModal({
                     <div key={idx} className="group overflow-hidden rounded-[1.5rem] border border-border/40 bg-card p-5 sm:p-6 shadow-sm transition-all hover:bg-primary/[0.02] hover:border-primary/20 hover:shadow-md">
                       <div className="space-y-4">
                         <div className="space-y-1">
-                          <p className="font-heading text-xl font-black tracking-tight text-foreground transition-colors group-hover:text-primary">
-                            {example.jp}
-                          </p>
+                          <div className="flex items-start gap-3">
+                            <p className="font-heading text-xl font-black tracking-tight text-foreground transition-colors group-hover:text-primary">
+                              {example.jp}
+                            </p>
+                            <PronunciationButton
+                              text={example.reading || example.jp}
+                              label={`Pronounce ${example.jp}`}
+                              className="h-9 w-9 rounded-xl"
+                              iconClassName="h-4 w-4"
+                            />
+                          </div>
                           {example.reading && (
                             <p className="text-sm font-medium text-muted-foreground/80">
                               {example.reading}
@@ -219,7 +236,19 @@ export function VocabDetailModal({
                       {conjugations.map(([form, value]) => (
                         <TableRow key={form} className="group border-border/20 transition-colors hover:bg-primary/[0.02]">
                           <TableCell className="px-4 py-3 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">{labelFromKey(form)}</TableCell>
-                          <TableCell className="px-4 py-3 font-heading text-lg font-black text-primary">{value.jp || "-"}</TableCell>
+                          <TableCell className="px-4 py-3 font-heading text-lg font-black text-primary">
+                            <div className="flex items-center gap-2">
+                              <span>{value.jp || "-"}</span>
+                              {value.jp && (
+                                <PronunciationButton
+                                  text={value.jp}
+                                  label={`Pronounce ${value.jp}`}
+                                  className="h-8 w-8 rounded-xl"
+                                  iconClassName="h-4 w-4"
+                                />
+                              )}
+                            </div>
+                          </TableCell>
                           <TableCell className="px-4 py-3 text-xs font-medium text-muted-foreground">{value.en || "-"}</TableCell>
                           <TableCell className="px-4 py-3 text-xs font-bold text-muted-foreground/70">{value.my || "-"}</TableCell>
                         </TableRow>

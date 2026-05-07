@@ -1,27 +1,54 @@
 import { QuizCard, type Question } from "@/components/ui-custom/QuizCard";
+import { getNormalizedKanji, getNormalizedVocabulary } from "@/lib/pipeline-data";
 
-const mockQuestions: Question[] = [
-  {
-    id: "1",
-    question: "What is the reading of 日本?",
-    options: ["にほん", "にっぽん", "ひもと", "にちほん"],
-    correctAnswer: "にほん",
-  },
-  {
-    id: "2",
-    question: "What does 水 mean?",
-    options: ["Fire", "Tree", "Water", "Earth"],
-    correctAnswer: "Water",
-  },
-  {
-    id: "3",
-    question: "Select the kanji for 'Person'.",
-    options: ["木", "人", "入", "八"],
-    correctAnswer: "人",
-  },
-];
+function uniqueOptions(correct: string, distractors: string[], max = 4) {
+  const set = new Set<string>([correct, ...distractors.filter(Boolean)]);
+  return Array.from(set).slice(0, max);
+}
+
+function buildQuestions(): Question[] {
+  const vocab = getNormalizedVocabulary().slice(0, 2);
+  const kanji = getNormalizedKanji().slice(0, 2);
+  const vocabPool = getNormalizedVocabulary();
+  const kanjiPool = getNormalizedKanji();
+  const questions: Question[] = [];
+
+  for (const word of vocab) {
+    if (!word.writing.primary || !word.writing.kana) continue;
+    const distractors = vocabPool
+      .filter((candidate) => candidate.id !== word.id)
+      .slice(0, 8)
+      .map((candidate) => candidate.writing.kana);
+    questions.push({
+      id: `vq-${word.id}`,
+      question: `What is the reading of ${word.writing.primary}?`,
+      options: uniqueOptions(word.writing.kana, distractors),
+      correctAnswer: word.writing.kana,
+    });
+  }
+
+  for (const item of kanji) {
+    const meaning = item.meanings[0]?.en;
+    if (!item.character || !meaning) continue;
+    const distractors = kanjiPool
+      .filter((candidate) => candidate.id !== item.id)
+      .slice(0, 8)
+      .map((candidate) => candidate.meanings[0]?.en ?? "")
+      .filter(Boolean);
+    questions.push({
+      id: `kq-${item.id}`,
+      question: `What does ${item.character} mean?`,
+      options: uniqueOptions(meaning, distractors),
+      correctAnswer: meaning,
+    });
+  }
+
+  return questions.slice(0, 6);
+}
 
 export default function QuizPage() {
+  const questions = buildQuestions();
+
   return (
     <main className="flex-1 w-full p-4 sm:p-6 lg:p-8">
       <div className="mx-auto max-w-5xl">
@@ -34,7 +61,7 @@ export default function QuizPage() {
           </p>
         </div>
 
-        <QuizCard questions={mockQuestions} />
+        <QuizCard questions={questions} />
       </div>
     </main>
   );
