@@ -1,0 +1,928 @@
+[
+    {
+        "course": "Minna no Nihongo",
+        "chapter": 1,
+        "title": "Introduction to Nouns and Particles",
+        "grammar_points": [
+            {
+                "id": "1.1",
+                "pattern": "N1 は N2 です",
+                "explanation": "This is the basic affirmative sentence structure used to identify people, things, or occupations. 'Wa' marks the topic, and 'Desu' acts as the polite copula (is/am/are).",
+                "translation_burmese": "N1 သည် N2 ဖြစ်ပါသည်။",
+                "examples": [
+                    {
+                        "japanese": "わたしはマイク・ミラーです。",
+                        "furigana": "わたし は マイク・ミラー です。",
+                        "romaji": "Watashi wa Maiku Miraa desu.",
+                        "translation_burmese": "ကျွန်တော်က မိုက်ခ်မေလာ ဖြစ်ပါတယ်။",
+                        "english": "I am Mike Miller."
+                    },
+                    {
+                        "japanese": "サントスさんはブラジル人です。",
+                        "furigana": "サントスさん は ブラジルじん(人) です。",
+                        "romaji": "Santosu-san wa Burajiru-jin desu.",
+                        "translation_burmese": "ဆန်းတိုးစ်က ဘရာဇီးလ်လူမျိုး ဖြစ်ပါတယ်။",
+                        "english": "Mr. Santos is Brazilian."
+                    }
+                ],
+                "notes": "Always add '~san' to others' names. Never use '~san' for yourself.",
+                "tips": "In Japanese, the subject 'I' (Watashi) is often omitted if it's obvious from the context."
+            },
+            {
+                "id": "1.2",
+                "pattern": "N1 は N2 じゃありません",
+                "explanation": "This is the negative form of 'Desu'. 'Ja arimasen' is used in daily conversation.",
+                "translation_burmese": "N1 သည် N2 မဟုတ်ပါ။",
+                "examples": [
+                    {
+                        "japanese": "サントスさんは学生じゃありません。",
+                        "furigana": "サントスさん は がくせい(学生) じゃありません。",
+                        "romaji": "Santosu-san wa gakusei ja arimasen.",
+                        "translation_burmese": "ဆန်းတိုးစ်က ကျောင်းသားမဟုတ်ပါ။",
+                        "english": "Mr. Santos is not a student."
+                    }
+                ],
+                "notes": "'Dewa arimasen' (ではありません) is used in formal speeches or writing.",
+                "tips": "Pronounce 'wa' clearly even though it is written as 'ha'."
+            },
+            {
+                "id": "1.3",
+                "pattern": "S + か",
+                "explanation": "The particle 'Ka' at the end of a sentence indicates a question.",
+                "translation_burmese": "S လား ?",
+                "examples": [
+                    {
+                        "japanese": "ミラーさんは会社員ですか。",
+                        "furigana": "ミラーさん は かいしゃいん(会社員) ですか。",
+                        "romaji": "Miraa-san wa kaishain desu ka.",
+                        "translation_burmese": "မေလာက ကုမ္ပဏီဝန်ထမ်းလားခင်ဗျာ။",
+                        "english": "Is Mr. Miller an office worker?"
+                    }
+                ],
+                "notes": "Japanese questions do not use a question mark (?) in formal writing, but a period (.) is sufficient because 'Ka' already signals a question.",
+                "tips": "Raise your pitch slightly at the end of the sentence."
+            },
+            {
+                "id": "1.4",
+                "pattern": "N も N です",
+                "explanation": "The particle 'Mo' means 'also' or 'too'. It replaces 'Wa'.",
+                "translation_burmese": "N လည်း N ဖြစ်ပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "グプタさんも会社員です。",
+                        "furigana": "グプタさん も かいしゃいん(会社員) です。",
+                        "romaji": "Guputa-san mo kaishain desu.",
+                        "translation_burmese": "ဂုပတလည်း ကုမ္ပဏီဝန်ထမ်း ဖြစ်ပါတယ်။",
+                        "english": "Mr. Gupta is also an office worker."
+                    }
+                ],
+                "notes": "Use 'Mo' only when the predicate (the part after the particle) is exactly the same as the previous sentence.",
+                "tips": "It's a very common way to avoid repeating 'Wa'."
+            },
+            {
+                "id": "1.5",
+                "pattern": "N1 の N2",
+                "explanation": "The particle 'No' connects two nouns. In Chapter 1, it usually indicates belonging or affiliation.",
+                "translation_burmese": "N1 ၏ N2 (သို့မဟုတ်) N1 မှ N2",
+                "examples": [
+                    {
+                        "japanese": "ミラーさんはIMCの社員です。",
+                        "furigana": "ミラーさん は IMC の しゃいん(社員) です。",
+                        "romaji": "Miraa-san wa IMC no shain desu.",
+                        "translation_burmese": "မေလာက IMC ရဲ့ ဝန်ထမ်းတစ်ဦး ဖြစ်ပါတယ်။",
+                        "english": "Mr. Miller is an employee of IMC."
+                    }
+                ],
+                "notes": "In Japanese, the larger organization comes first (N1), followed by the specific person or role (N2).",
+                "tips": "Think of it as 'N2 belonging to N1'."
+            }
+        ]
+    },
+    {
+        "course": "Minna no Nihongo",
+        "chapter": 2,
+        "title": "Demonstratives and Possessives",
+        "grammar_points": [
+            {
+                "id": "2.1",
+                "pattern": "これ / それ / あれ は N です",
+                "explanation": "These are demonstrative pronouns. Kore (near speaker), Sore (near listener), Are (far from both).",
+                "translation_burmese": "ဒါ / အဲဒါ / ဟိုဟာ သည် N ဖြစ်ပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "これは辞書です。",
+                        "furigana": "これ は じしょ(辞書) です。",
+                        "romaji": "Kore wa jisho desu.",
+                        "translation_burmese": "ဒါက အဘိဓာန်ဖြစ်ပါတယ်။",
+                        "english": "This is a dictionary."
+                    },
+                    {
+                        "japanese": "それはわたしの傘です。",
+                        "furigana": "それ は わたし の かさ(傘) です。",
+                        "romaji": "Sore wa watashi no kasa desu.",
+                        "translation_burmese": "အဲဒါ ကျွန်တော့်ထီး ဖြစ်ပါတယ်။",
+                        "english": "That is my umbrella."
+                    },
+                    {
+                        "japanese": "あれはコンピューターです。",
+                        "furigana": "あれ は コンピューター です。",
+                        "romaji": "Are wa konpyuutaa desu.",
+                        "translation_burmese": "ဟိုဟာက ကွန်ပျူတာဖြစ်ပါတယ်။",
+                        "english": "That over there is a computer."
+                    }
+                ],
+                "notes": "These words function as nouns and stand alone before the particle 'wa'.",
+                "tips": "Use 'Kore' for things you can touch, 'Sore' for things near the person you're talking to."
+            },
+            {
+                "id": "2.2",
+                "pattern": "この / その / あの N は ... です",
+                "explanation": "These are demonstrative adjectives. They must be followed by a noun.",
+                "translation_burmese": "ဒီ N / အဲဒီ N / ဟို N သည် ... ဖြစ်ပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "この本はわたしのです。",
+                        "furigana": "この ほん(本) は わたし の です。",
+                        "romaji": "Kono hon wa watashi no desu.",
+                        "translation_burmese": "ဒီစာအုပ်က ကျွန်တော့်ဟာ ဖြစ်ပါတယ်။",
+                        "english": "This book is mine."
+                    }
+                ],
+                "notes": "Unlike Kore/Sore/Are, you cannot use Kono/Sono/Ano without a noun immediately after them.",
+                "tips": "Think of 'Kono' as 'This [Noun]'."
+            },
+            {
+                "id": "2.3",
+                "pattern": "そう です / そう じゃ ありません",
+                "explanation": "Used to agree or disagree with a noun-based question.",
+                "translation_burmese": "ဟုတ်ပါတယ် / မဟုတ်ပါဘူး။",
+                "examples": [
+                    {
+                        "japanese": "それはテレホンカードですか。はい、そうです。",
+                        "furigana": "それ は テレホンカード ですか。 はい、 そう です。",
+                        "romaji": "Sore wa terehonkaado desu ka. Hai, sou desu.",
+                        "translation_burmese": "အဲဒါ တယ်လီဖုန်းကတ်လားဟင်? ဟုတ်ကဲ့၊ ဟုတ်ပါတယ်။",
+                        "english": "Is that a telephone card? Yes, it is."
+                    }
+                ],
+                "notes": "'Sou' refers to the statement made by the other person.",
+                "tips": "This is a natural way to answer instead of repeating the whole noun."
+            },
+            {
+                "id": "2.4",
+                "pattern": "S1 か、S2 か",
+                "explanation": "Used when giving a choice between two alternatives (Alternative Question).",
+                "translation_burmese": "S1 လား၊ S2 လား?",
+                "examples": [
+                    {
+                        "japanese": "これは「၉」ですか、「၇」ですか。",
+                        "furigana": "これ は 「၉」 ですか、 「၇」 ですか。",
+                        "romaji": "Kore wa '9' desu ka, '7' desu ka.",
+                        "translation_burmese": "ဒါက '၉' လား၊ '၇' လား?",
+                        "english": "Is this a '9' or a '7'?"
+                    }
+                ],
+                "notes": "You don't say 'Yes' or 'No' to these questions; you pick one of the options.",
+                "tips": "Useful for clarifying things you aren't sure about."
+            },
+            {
+                "id": "2.5",
+                "pattern": "N1 の N2 (Possession/Content)",
+                "explanation": "Further use of 'No' to show what a thing is about or who it belongs to.",
+                "translation_burmese": "N1 ရဲ့ N2 / N1 အကြောင်း N2",
+                "examples": [
+                    {
+                        "japanese": "これはコンピューターの本です。",
+                        "furigana": "これ は コンピューター の ほん(本) です。",
+                        "romaji": "Kore wa konpyuutaa no hon desu.",
+                        "translation_burmese": "ဒါက ကွန်ပျူတာအကြောင်း စာအုပ်ဖြစ်ပါတယ်။",
+                        "english": "This is a book about computers."
+                    }
+                ],
+                "notes": "If the noun N2 is clear from context, it can sometimes be omitted (e.g., 'Watashi no desu').",
+                "tips": "'No' is like a glue that sticks nouns together."
+            }
+        ]
+    },
+    {
+        "course": "Minna no Nihongo",
+        "chapter": 3,
+        "title": "Places and Directions",
+        "grammar_points": [
+            {
+                "id": "3.1",
+                "pattern": "ここ / そこ / あそこ は N (place) です",
+                "explanation": "Demonstrative pronouns for locations. Koko (here), Soko (there), Asoko (over there).",
+                "translation_burmese": "ဒီနေရာ / အဲဒီနေရာ / ဟိုနေရာ သည် N (နေရာ) ဖြစ်ပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "ここは食堂です。",
+                        "furigana": "ここ は しょくどう(食堂) です。",
+                        "romaji": "Koko wa shokudou desu.",
+                        "translation_burmese": "ဒီနေရာက ထမင်းစားခန်း ဖြစ်ပါတယ်။",
+                        "english": "This place is the cafeteria."
+                    },
+                    {
+                        "japanese": "あそこは会議室です。",
+                        "furigana": "あそこ は かいぎしつ(会議室) です。",
+                        "romaji": "Asoko wa kaigishitsu desu.",
+                        "translation_burmese": "ဟိုနေရာက အစည်းအဝေးခန်းဖြစ်ပါတယ်။",
+                        "english": "That place over there is the meeting room."
+                    }
+                ],
+                "notes": "Used to identify a specific location relative to the speaker and listener.",
+                "tips": "Matches the 'Ko-So-A-Do' pattern you learned in Lesson 2."
+            },
+            {
+                "id": "3.2",
+                "pattern": "N は Place です",
+                "explanation": "Used to state where a person, thing, or place is located.",
+                "translation_burmese": "N က (နေရာ) မှာ ရှိပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "お手洗いはあそこです。",
+                        "furigana": "おてあらい(お手洗い) は あそこ です。",
+                        "romaji": "Otearai wa asoko desu.",
+                        "translation_burmese": "အိမ်သာက ဟိုမှာ ဖြစ်ပါတယ်။",
+                        "english": "The restroom is over there."
+                    },
+                    {
+                        "japanese": "食堂は２階です。",
+                        "furigana": "しょくどう(食堂) は ２かい(２階) です。",
+                        "romaji": "Shokudou wa nikai desu.",
+                        "translation_burmese": "ထမင်းစားခန်းက ၂ လွှာမှာရှိပါတယ်။",
+                        "english": "The cafeteria is on the 2nd floor."
+                    }
+                ],
+                "notes": "The subject (N) can be a person or an object.",
+                "tips": "Very useful for asking and giving directions."
+            },
+            {
+                "id": "3.3",
+                "pattern": "こちら / そちら / あちら",
+                "explanation": "Polite versions of Koko/Soko/Asoko. Can also indicate direction.",
+                "translation_burmese": "ဒီဘက် / အဲဒီဘက် / ဟိုဘက် (ယဉ်ကျေးသော အသုံးအနှုန်း)",
+                "examples": [
+                    {
+                        "japanese": "電話はどちらですか。",
+                        "furigana": "でんわ(電話) は どちら ですか。",
+                        "romaji": "Denwa wa dochira desu ka.",
+                        "translation_burmese": "ဖုန်းက ဘယ်ဘက်မှာပါလဲခင်ဗျာ။",
+                        "english": "Where (which direction) is the telephone?"
+                    },
+                    {
+                        "japanese": "受付はこちらです。",
+                        "furigana": "うけつけ(受付) は こちら です。",
+                        "romaji": "Uketsuke wa kochira desu.",
+                        "translation_burmese": "ဧည့်ကြိုကောင်တာက ဒီဘက်မှာပါခင်ဗျာ။",
+                        "english": "The reception is this way."
+                    }
+                ],
+                "notes": "Always use these when speaking to customers or superiors.",
+                "tips": "'Dochira' is the polite version of 'Doko' (Where)."
+            }
+        ]
+    },
+    {
+        "course": "Minna no Nihongo",
+        "chapter": 4,
+        "title": "Time, Verbs, and Particles",
+        "grammar_points": [
+            {
+                "id": "4.1",
+                "pattern": "今 －時 －分 です",
+                "explanation": "Telling time in hours (ji) and minutes (fun/pun).",
+                "translation_burmese": "အခု －နာရီ －မိနစ် ရှိပါပြီ။",
+                "examples": [
+                    {
+                        "japanese": "今４時５分です。",
+                        "furigana": "いま(今) ４じ(時) ５ふん(分) です。",
+                        "romaji": "Ima yoji gofun desu.",
+                        "translation_burmese": "အခု ၄ နာရီ ၅ မိနစ် ရှိပါပြီ။",
+                        "english": "It is 4:05 now."
+                    }
+                ],
+                "notes": "Pay attention to irregular readings like 4:00 (yoji), 7:00 (shichiji), and 9:00 (kuji).",
+                "tips": "Use 'Nan-ji' to ask 'What time?'."
+            },
+            {
+                "id": "4.2",
+                "pattern": "V ます / V ません / V ました / V ませんでした",
+                "explanation": "Polite verb conjugations for present/future and past, affirmative and negative.",
+                "translation_burmese": "ကြိယာ (လုပ်သည် / မလုပ်ပါ / လုပ်ခဲ့သည် / မလုပ်ခဲ့ပါ)",
+                "examples": [
+                    {
+                        "japanese": "毎日勉強します。",
+                        "furigana": "まいにち(毎日) べんきょう(勉強) します。",
+                        "romaji": "Mainichi benkyou shimasu.",
+                        "translation_burmese": "နေ့တိုင်း စာလေ့လာပါတယ်။",
+                        "english": "I study every day."
+                    },
+                    {
+                        "japanese": "昨日は働きませんでした。",
+                        "furigana": "きのう(昨日) は はたら(働) きませんでした。",
+                        "romaji": "Kinou wa hatarakimasen deshita.",
+                        "translation_burmese": "မနေ့က အလုပ်မလုပ်ခဲ့ပါဘူး။",
+                        "english": "I didn't work yesterday."
+                    }
+                ],
+                "notes": "The '~masu' form is the standard polite way to end a sentence with an action.",
+                "tips": "Japanese verbs don't change based on the person (I/You/He/She)."
+            },
+            {
+                "id": "4.3",
+                "pattern": "N (Time) に V",
+                "explanation": "The particle 'Ni' is used to indicate a specific point in time when an action happens.",
+                "translation_burmese": "N (အချိန်) မှာ V လုပ်ပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "６時半に起きます。",
+                        "furigana": "６じはん(６時半) に お(起) きます。",
+                        "romaji": "Rokujihan ni okimasu.",
+                        "translation_burmese": "၆ နာရီခွဲမှာ အိပ်ရာထပါတယ်။",
+                        "english": "I wake up at 6:30."
+                    }
+                ],
+                "notes": "Do not use 'Ni' with relative time words like 'today', 'tomorrow', or 'every day'.",
+                "tips": "Only use 'Ni' with words that contain numbers (clock times, dates)."
+            },
+            {
+                "id": "4.4",
+                "pattern": "N1 から N2 まで",
+                "explanation": "Indicates a starting point (Kara) and an ending point (Made) in time or space.",
+                "translation_burmese": "N1 မှ N2 အထိ",
+                "examples": [
+                    {
+                        "japanese": "９時から５時まで働きます。",
+                        "furigana": "９じ(時) から ５じ(時) まで はたら(働) きます。",
+                        "romaji": "Kuji kara goji made hatarakimasu.",
+                        "translation_burmese": "၉ နာရီကနေ ၅ နာရီအထိ အလုပ်လုပ်ပါတယ်။",
+                        "english": "I work from 9 to 5."
+                    }
+                ],
+                "notes": "You can use 'Kara' and 'Made' separately as well.",
+                "tips": "This pattern is very common for business hours."
+            }
+        ]
+    },
+    {
+        "course": "Minna no Nihongo",
+        "chapter": 5,
+        "title": "Movement and Transportation",
+        "grammar_points": [
+            {
+                "id": "5.1",
+                "pattern": "N (Place) へ 行きます / 来ます / 帰ります",
+                "explanation": "The particle 'e' indicates the direction of movement. 'Ikimasu' (go), 'Kimasu' (come), and 'Kaerimasu' (return home).",
+                "translation_burmese": "N (နေရာ) သို့ သွားသည် / လာသည် / ပြန်သည်။",
+                "examples": [
+                    {
+                        "japanese": "京都へ行きます。",
+                        "furigana": "きょうと(京都) へ い(行) きます。",
+                        "romaji": "Kyouto e ikimasu.",
+                        "translation_burmese": "ကျိုတိုကို သွားပါမယ်။",
+                        "english": "I am going to Kyoto."
+                    },
+                    {
+                        "japanese": "日本へ来ました。",
+                        "furigana": "にほん(日本) へ き(来) ました。",
+                        "romaji": "Nihon e kimashita.",
+                        "translation_burmese": "ဂျပန်ကို လာခဲ့ပါတယ်။",
+                        "english": "I came to Japan."
+                    },
+                    {
+                        "japanese": "うちへ帰ります。",
+                        "furigana": "うち へ かえ(帰) ります。",
+                        "romaji": "Uchi e kaerimasu.",
+                        "translation_burmese": "အိမ်ပြန်ပါမယ်။",
+                        "english": "I am returning home."
+                    }
+                ],
+                "notes": "The particle 'へ' is written as 'he' but pronounced as 'e'.",
+                "tips": "Use 'Doko e mo ikimasen' to say 'I'm not going anywhere'."
+            },
+            {
+                "id": "5.2",
+                "pattern": "N (Vehicle) で 行きます / 来ます / 帰ります",
+                "explanation": "The particle 'de' indicates the means of transportation.",
+                "translation_burmese": "N (ယာဉ်) ဖြင့် သွားသည် / လာသည် / ပြန်သည်။",
+                "examples": [
+                    {
+                        "japanese": "電車で行きます。",
+                        "furigana": "でんしゃ(電車) で い(行) きます。",
+                        "romaji": "Densha de ikimasu.",
+                        "translation_burmese": "ရထားနဲ့ သွားပါမယ်။",
+                        "english": "I go by train."
+                    },
+                    {
+                        "japanese": "タクシーで来ました。",
+                        "furigana": "タクシー で き(来) ました。",
+                        "romaji": "Takushii de kimashita.",
+                        "translation_burmese": "တက္ကစီနဲ့ လာခဲ့ပါတယ်။",
+                        "english": "I came by taxi."
+                    }
+                ],
+                "notes": "If you go on foot, use 'aruite' (歩いて) without the particle 'de'.",
+                "tips": "Think of 'de' as 'by means of'."
+            },
+            {
+                "id": "5.3",
+                "pattern": "N (Person/Animal) と 行きます / 来ます / 帰ります",
+                "explanation": "The particle 'to' indicates the person or animal you go with.",
+                "translation_burmese": "N (လူ / သတ္တဝါ) နှင့်အတူ သွားသည် / လာသည် / ပြန်သည်။",
+                "examples": [
+                    {
+                        "japanese": "家族と日本へ来ました。",
+                        "furigana": "かぞく(家族) と にほん(日本) へ き(来) ました。",
+                        "romaji": "Kazoku to Nihon e kimashita.",
+                        "translation_burmese": "မိသားစုနဲ့အတူ ဂျပန်ကို လာခဲ့ပါတယ်။",
+                        "english": "I came to Japan with my family."
+                    },
+                    {
+                        "japanese": "友達と帰ります。",
+                        "furigana": "ともだち(友達) と かえ(帰) ります。",
+                        "romaji": "Tomodachi to kaerimasu.",
+                        "translation_burmese": "သူငယ်ချင်းနဲ့အတူ ပြန်ပါမယ်။",
+                        "english": "I will return with a friend."
+                    }
+                ],
+                "notes": "If you are alone, use 'hitori de' (一人で).",
+                "tips": "'To' acts like 'with' in this context."
+            }
+        ]
+    },
+    {
+        "course": "Minna no Nihongo",
+        "chapter": 6,
+        "title": "Verb Objects and Invitations",
+        "grammar_points": [
+            {
+                "id": "6.1",
+                "pattern": "N を V (transitive)",
+                "explanation": "The particle 'o' marks the direct object of a transitive verb.",
+                "translation_burmese": "N ကို V (ပြုလုပ်သည်)။",
+                "examples": [
+                    {
+                        "japanese": "ごはんを食べます。",
+                        "furigana": "ごはん を た(食) べます。",
+                        "romaji": "Gohan o tabemasu.",
+                        "translation_burmese": "ထမင်းစားပါတယ်။",
+                        "english": "I eat a meal."
+                    },
+                    {
+                        "japanese": "お酒を飲みます。",
+                        "furigana": "おさけ(お酒) を の(飲) みます。",
+                        "romaji": "Osake o nomimasu.",
+                        "translation_burmese": "အရက်သောက်ပါတယ်။",
+                        "english": "I drink sake."
+                    }
+                ],
+                "notes": "The particle 'を' is written as 'wo' but pronounced as 'o'.",
+                "tips": "Use 'Nani o shimasu ka' to ask 'What are you doing?'."
+            },
+            {
+                "id": "6.2",
+                "pattern": "N (Place) で V",
+                "explanation": "The particle 'de' indicates the location where an action or event takes place.",
+                "translation_burmese": "N (နေရာ) မှာ V ကို ပြုလုပ်ပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "駅で新聞を買います。",
+                        "furigana": "えき(駅) で しんぶん(新聞) を か(買) います。",
+                        "romaji": "Eki de shinbun o kaimasu.",
+                        "translation_burmese": "ဘူတာမှာ သတင်းစာဝယ်ပါတယ်။",
+                        "english": "I buy a newspaper at the station."
+                    },
+                    {
+                        "japanese": "スーパーで卵を買いました。",
+                        "furigana": "スーパー で たまご(卵) を か(買) いました。",
+                        "romaji": "Suupaa de tamago o kaimashita.",
+                        "translation_burmese": " supermarket မှာ ကြက်ဥဝယ်ခဲ့ပါတယ်။",
+                        "english": "I bought eggs at the supermarket."
+                    }
+                ],
+                "notes": "Do not confuse this with 'Ni', which is used for existence (staying) rather than action.",
+                "tips": "Think of 'de' as 'at' for actions."
+            },
+            {
+                "id": "6.3",
+                "pattern": "いっしょに V-ませんか",
+                "explanation": "Used to invite someone to do something together. It is more polite than just a direct question.",
+                "translation_burmese": "အတူတူ V ကြမလား?",
+                "examples": [
+                    {
+                        "japanese": "いっしょに京都へ行きませんか。",
+                        "furigana": "いっしょに きょうと(京都) へ い(行) きませんか。",
+                        "romaji": "Issho ni Kyouto e ikimasen ka.",
+                        "translation_burmese": "အတူတူ ကျိုတိုကို သွားကြမလား?",
+                        "english": "Won't you go to Kyoto with me?"
+                    },
+                    {
+                        "japanese": "いっしょにお茶を飲みませんか。",
+                        "furigana": "いっしょに おちゃ(お茶) を の(飲) みませんか。",
+                        "romaji": "Issho ni ocha o nomimasen ka.",
+                        "translation_burmese": "အတူတူ လက်ဖက်ရည်သောက်ကြမလား?",
+                        "english": "Would you like to drink tea together?"
+                    }
+                ],
+                "notes": "Even if the answer is no, this form sounds very soft and considerate.",
+                "tips": "Add 'Ee, ii desu ne' to accept the invitation."
+            },
+            {
+                "id": "6.4",
+                "pattern": "V-ましょう",
+                "explanation": "Used when the speaker is suggesting an action positively or responding to an invitation.",
+                "translation_burmese": "V ကြစို့ / V ရအောင်။",
+                "examples": [
+                    {
+                        "japanese": "ちょっと休みましょう。",
+                        "furigana": "ちょっと やす(休) みましょう。",
+                        "romaji": "Chotto yasumimashou.",
+                        "translation_burmese": "ခဏလောက် နားကြစို့။",
+                        "english": "Let's take a short break."
+                    },
+                    {
+                        "japanese": "あそこで食べましょう。",
+                        "furigana": "あそこで た(食) べましょう。",
+                        "romaji": "Asoko de tabemashou.",
+                        "translation_burmese": "ဟိုမှာ စားကြရအောင်။",
+                        "english": "Let's eat over there."
+                    }
+                ],
+                "notes": "This is a 'Let's' expression.",
+                "tips": "Usually used after an agreement is reached."
+            }
+        ]
+    },
+    {
+        "course": "Minna no Nihongo",
+        "chapter": 7,
+        "title": "Tools, Means, and Giving/Receiving",
+        "grammar_points": [
+            {
+                "id": "7.1",
+                "pattern": "N (Tool/Means) で V",
+                "explanation": "The particle 'de' indicates the tool or means used to perform an action.",
+                "translation_burmese": "N (ကိရိယာ/နည်းလမ်း) ဖြင့် V ကို ပြုလုပ်ပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "はしで食べます。",
+                        "furigana": "はし で た(食) べます。",
+                        "romaji": "Hashi de tabemasu.",
+                        "translation_burmese": "တူနဲ့ စားပါတယ်။",
+                        "english": "I eat with chopsticks."
+                    },
+                    {
+                        "japanese": "日本語でレポートを書きます。",
+                        "furigana": "にほんご(日本語) で レポート を か(書) きます。",
+                        "romaji": "Nihongo de repooto o kakimasu.",
+                        "translation_burmese": "ဂျပန်ဘာသာနဲ့ ရီပို့ရေးပါတယ်။",
+                        "english": "I write a report in Japanese."
+                    }
+                ],
+                "notes": "Used for languages, tools, and instruments.",
+                "tips": "Think of it as 'by means of' or 'using'."
+            },
+            {
+                "id": "7.2",
+                "pattern": "N1 (Person) に N2 を あげます",
+                "explanation": "Used when the speaker gives something to someone else.",
+                "translation_burmese": "N1 (လူ) ကို N2 ကို ပေးပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "木村さんに花をあげます。",
+                        "furigana": "きむら(木村)さん に はな(花) を あげます。",
+                        "romaji": "Kimura-san ni hana o agemasu.",
+                        "translation_burmese": "ခိမူရာဆန်ကို ပန်းပေးပါတယ်။",
+                        "english": "I give flowers to Ms. Kimura."
+                    },
+                    {
+                        "japanese": "イーさんに本をあげました。",
+                        "furigana": "イーさん に ほん(本) を あげました。",
+                        "romaji": "Ii-san ni hon o agemashita.",
+                        "translation_burmese": "အီးဆန်ကို စာအုပ်ပေးခဲ့ပါတယ်။",
+                        "english": "I gave a book to Mr. Lee."
+                    }
+                ],
+                "notes": "The receiver is marked with 'ni'.",
+                "tips": "Agemasu is only for giving 'outward' from the speaker."
+            },
+            {
+                "id": "7.3",
+                "pattern": "N1 (Person) に N2 を もらいます",
+                "explanation": "Used when the speaker receives something from someone else.",
+                "translation_burmese": "N1 (လူ) ဆီက N2 ကို လက်ခံရရှိပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "カリナさんに本をもらいました。",
+                        "furigana": "カリナさん に ほん(本) を もらいました。",
+                        "romaji": "Karina-san ni hon o moraimashita.",
+                        "translation_burmese": "ကာရီနာဆန်ဆီက စာအုပ်ရခဲ့ပါတယ်။",
+                        "english": "I received a book from Ms. Karina."
+                    },
+                    {
+                        "japanese": "父に時計をもらいました。",
+                        "furigana": "ちち(父) に とけい(時計) を もらいました。",
+                        "romaji": "Chichi ni tokei o moraimashita.",
+                        "translation_burmese": "အဖေဆီက နာရီရခဲ့ပါတယ်။",
+                        "english": "I received a watch from my father."
+                    }
+                ],
+                "notes": "You can use 'kara' instead of 'ni' when receiving from an institution.",
+                "tips": "Moraimasu is for receiving 'inward'."
+            }
+        ]
+    },
+    {
+        "course": "Minna no Nihongo",
+        "chapter": 8,
+        "title": "Adjectives (Na-adj and I-adj)",
+        "grammar_points": [
+            {
+                "id": "8.1",
+                "pattern": "Na-adj [な] / I-adj (~い)",
+                "explanation": "Japanese has two types of adjectives: Na-adjectives and I-adjectives.",
+                "translation_burmese": "နာမဝိသေသန (Na-adj နှင့် I-adj)။",
+                "examples": [
+                    {
+                        "japanese": "ワット先生は親切です。",
+                        "furigana": "ワット せんせい(先生) は しんせつ(親切) です。",
+                        "romaji": "Watto-sensei wa shinsetsu desu.",
+                        "translation_burmese": "ဝပ်ဆရာက ကြင်နာတတ်ပါတယ်။",
+                        "english": "Prof. Watt is kind."
+                    },
+                    {
+                        "japanese": "富士山は高いです。",
+                        "furigana": "ふじさん(富士山) は たか(高) いです。",
+                        "romaji": "Fujisan wa takai desu.",
+                        "translation_burmese": "ဖူဂျီတောင်က မြင့်ပါတယ်။",
+                        "english": "Mt. Fuji is high."
+                    }
+                ],
+                "notes": "Na-adj need 'na' when preceding a noun. I-adj always end in '~i'.",
+                "tips": "Be careful: 'Kirei' and 'Kirai' look like I-adj but are actually Na-adj!"
+            },
+            {
+                "id": "8.2",
+                "pattern": "Adj Negative forms",
+                "explanation": "Na-adj use 'ja arimasen'. I-adj change '~i' to '~kunai desu'.",
+                "translation_burmese": "နာမဝိသေသန အငြင်းပုံစံများ။",
+                "examples": [
+                    {
+                        "japanese": "この部屋はきれいじゃありません。",
+                        "furigana": "この へや(部屋) は きれい じゃありません。",
+                        "romaji": "Kono heya wa kirei ja arimasen.",
+                        "translation_burmese": "ဒီအခန်းက မသန့်ရှင်းပါဘူး။",
+                        "english": "This room is not clean."
+                    },
+                    {
+                        "japanese": "この本は面白くないです。",
+                        "furigana": "この ほん(本) は おもしろ(面白) くないです。",
+                        "romaji": "Kono hon wa omoshirokunai desu.",
+                        "translation_burmese": "ဒီစာအုပ်က စိတ်ဝင်စားဖို့မကောင်းပါဘူး။",
+                        "english": "This book is not interesting."
+                    }
+                ],
+                "notes": "The negative of 'ii' (good) is 'yokunai'.",
+                "tips": "Always remember to drop the final 'i' before adding 'kunai'."
+            },
+            {
+                "id": "8.3",
+                "pattern": "とても / あまり",
+                "explanation": "Adverbs of degree. 'Totemo' (very) is used in affirmative, 'Amari' (not very) in negative.",
+                "translation_burmese": "အလွန် / သိပ်မ...ပါ။",
+                "examples": [
+                    {
+                        "japanese": "北京はとても寒いです。",
+                        "furigana": "ペキン は とても さむ(寒) いです。",
+                        "romaji": "Pekin wa totemo samui desu.",
+                        "translation_burmese": "ပေကျင်းက အရမ်းအေးပါတယ်။",
+                        "english": "Beijing is very cold."
+                    },
+                    {
+                        "japanese": "上海はあまり寒くないです。",
+                        "furigana": "シャンハイ は あまり さむ(寒) くないです。",
+                        "romaji": "Shanhai wa amari samukunai desu.",
+                        "translation_burmese": "ရှန်ဟိုင်းက သိပ်မအေးပါဘူး။",
+                        "english": "Shanghai is not very cold."
+                    }
+                ],
+                "notes": "'Amari' must always be followed by a negative verb or adjective.",
+                "tips": "Use these to sound more natural when describing things."
+            }
+        ]
+    },
+    {
+        "course": "Minna no Nihongo",
+        "chapter": 9,
+        "title": "Preferences, Abilities, and Reasons",
+        "grammar_points": [
+            {
+                "id": "9.1",
+                "pattern": "N は N が 好きです / 嫌いです",
+                "explanation": "The particle 'ga' is used to mark the object of preference (likes/dislikes).",
+                "translation_burmese": "N သည် N ကို ကြိုက်နှစ်သက်သည် / မုန်းတီးသည်။",
+                "examples": [
+                    {
+                        "japanese": "わたしは映画が好きです。",
+                        "furigana": "わたし は えいが(映画) が す(好) きです。",
+                        "romaji": "Watashi wa eiga ga suki desu.",
+                        "translation_burmese": "ကျွန်တော်က ရုပ်ရှင်ကြည့်ရတာကို ကြိုက်ပါတယ်။",
+                        "english": "I like movies."
+                    },
+                    {
+                        "japanese": "サントスさんは料理が好きですか。はい、好きです。",
+                        "furigana": "サントスさん は りょうり(料理) が す(好) きですか。 はい、 す(好) きです。",
+                        "romaji": "Santosu-san wa ryouri ga suki desu ka. Hai, suki desu.",
+                        "translation_burmese": "ဆန်းတိုးစ်က ဟင်းချက်ရတာကို ကြိုက်ပါသလား? ဟုတ်ကဲ့၊ ကြိုက်ပါတယ်။",
+                        "english": "Do you like cooking, Mr. Santos? Yes, I do."
+                    }
+                ],
+                "notes": "Suki and Kirai are Na-adjectives.",
+                "tips": "Use 'Daisuki' to say you love something."
+            },
+            {
+                "id": "9.2",
+                "pattern": "N は N が 上手です / 下手です",
+                "explanation": "Used to describe skill levels. 'Ga' marks the subject of the skill.",
+                "translation_burmese": "N သည် N မှာ တော်သည် / ညံ့သည်။",
+                "examples": [
+                    {
+                        "japanese": "ミラーさんは日本語が上手です。",
+                        "furigana": "ミラーさん は にほんご(日本語) が じょうず(上手) です。",
+                        "romaji": "Miraa-san wa Nihongo ga jouzu desu.",
+                        "translation_burmese": "မေလာက ဂျပန်စာတော်ပါတယ်။",
+                        "english": "Mr. Miller is good at Japanese."
+                    },
+                    {
+                        "japanese": "マリアさんは歌が上手ですか。いいえ、あまり上手じゃありません。",
+                        "furigana": "マリアさん は うた(歌) が じょうず(上手) ですか。 いいえ、 あまり じょうず(上手) じゃありません。",
+                        "romaji": "Maria-san wa uta ga jouzu desu ka. Iie, amari jouzu ja arimasen.",
+                        "translation_burmese": "မာရီယာက သီချင်းဆိုတော်ပါသလား? ဟင့်အင်း၊ သိပ်မတော်ပါဘူး။",
+                        "english": "Is Maria good at singing? No, she is not very good."
+                    }
+                ],
+                "notes": "Never use 'Jouzu' to describe yourself; use 'Tokui' instead.",
+                "tips": "'Heta' means poor at something."
+            },
+            {
+                "id": "9.3",
+                "pattern": "N が わかります / わかりません",
+                "explanation": "Used to state understanding. The object understood is marked with 'ga'.",
+                "translation_burmese": "N ကို နားလည်သည် / နားမလည်ပါ။",
+                "examples": [
+                    {
+                        "japanese": "英語がわかります。",
+                        "furigana": "えいご(英語) が わかります。",
+                        "romaji": "Eigo ga wakarimasu.",
+                        "translation_burmese": "အင်္ဂလိပ်စာကို နားလည်ပါတယ်။",
+                        "english": "I understand English."
+                    },
+                    {
+                        "japanese": "漢字がわかりますか。いいえ、全然わかりません。",
+                        "furigana": "かんじ(漢字) が わかりますか。 いいえ、 ぜんぜん(全然) わかりません。",
+                        "romaji": "Kanji ga wakarimasu ka. Iie, zenzen wakarimasen.",
+                        "translation_burmese": "ခန်ဂျီကို နားလည်ပါသလား? ဟင့်အင်း၊ လုံးဝနားမလည်ပါဘူး။",
+                        "english": "Do you understand Kanji? No, not at all."
+                    }
+                ],
+                "notes": "Verbs like 'wakarimasu' take 'ga' instead of 'o'.",
+                "tips": "Use 'Yoku' (well) or 'Daitai' (mostly) to show the degree of understanding."
+            },
+            {
+                "id": "9.4",
+                "pattern": "N が あります / ありません",
+                "explanation": "Used to express possession of inanimate objects or to state that an event exists.",
+                "translation_burmese": "N ရှိသည် / မရှိပါ။",
+                "examples": [
+                    {
+                        "japanese": "お金があります。",
+                        "furigana": "おかね(お金) が あります。",
+                        "romaji": "Okane ga arimasu.",
+                        "translation_burmese": "ပိုက်ဆံရှိပါတယ်။",
+                        "english": "I have money."
+                    },
+                    {
+                        "japanese": "時間がありますか。いいえ、ありません。",
+                        "furigana": "じかん(時間) が ありますか。 いいえ、 ありません。",
+                        "romaji": "Jikan ga arimasu ka. Iie, arimasen.",
+                        "translation_burmese": "အချိန်ရှိပါသလား? ဟင့်အင်း၊ မရှိပါဘူး။",
+                        "english": "Do you have time? No, I don't."
+                    }
+                ],
+                "notes": "Only use 'arimasu' for non-living things.",
+                "tips": "Can also be used for appointments (yakusoku) or errands (youji)."
+            },
+            {
+                "id": "9.5",
+                "pattern": "S1 から、S2",
+                "explanation": "Used to connect a reason (S1) with a consequence (S2).",
+                "translation_burmese": "S1 ကြောင့် S2 ဖြစ်ပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "時間がありませんから、テレビを見ません。",
+                        "furigana": "じかん(時間) が ありませんから、 テレビ を み(見) ません。",
+                        "romaji": "Jikan ga arimasen kara, terebi o mimasen.",
+                        "translation_burmese": "အချိန်မရှိတဲ့အတွက်ကြောင့် တီဗွီမကြည့်ပါဘူး။",
+                        "english": "Because I don't have time, I don't watch TV."
+                    },
+                    {
+                        "japanese": "どうして昨日休みましたか。病気でしたから。",
+                        "furigana": "どうして きのう(昨日) やす(休) みましたか。 びょうき(病気) でしたから。",
+                        "romaji": "Doushite kinou yasumimashita ka. Byouki deshita kara.",
+                        "translation_burmese": "ဘာကြောင့် မနေ့က နားခဲ့တာလဲ? နေမကောင်းဖြစ်ခဲ့လို့ပါ။",
+                        "english": "Why did you take a day off yesterday? Because I was sick."
+                    }
+                ],
+                "notes": "The reason (Kara) comes before the result.",
+                "tips": "Use 'Doushite' to ask 'Why?'."
+            }
+        ]
+    },
+    {
+        "course": "Minna no Nihongo",
+        "chapter": 10,
+        "title": "Existence (Arimasu and Imasu)",
+        "grammar_points": [
+            {
+                "id": "10.1",
+                "pattern": "N (Place) に N が あります / います",
+                "explanation": "Used to describe the existence of a thing (arimasu) or a person/animal (imasu) at a specific location.",
+                "translation_burmese": "N (နေရာ) မှာ N ရှိပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "あそこに机があります。",
+                        "furigana": "あそこ に つくえ(机) が あります。",
+                        "romaji": "Asoko ni tsukue ga arimasu.",
+                        "translation_burmese": "ဟိုမှာ စားပွဲရှိပါတယ်။",
+                        "english": "There is a desk over there."
+                    },
+                    {
+                        "japanese": "あそこに猫がいます。",
+                        "furigana": "あそこ に ねこ(猫) が います。",
+                        "romaji": "Asoko ni neko ga imasu.",
+                        "translation_burmese": "ဟိုမှာ ကြောင်ရှိပါတယ်။",
+                        "english": "There is a cat over there."
+                    },
+                    {
+                        "japanese": "事務所に誰がいますか。誰もいません。",
+                        "furigana": "じむしょ(事務所) に だれ が いますか。 だれ も いません。",
+                        "romaji": "Jimusho ni dare ga imasu ka. Dare mo imasen.",
+                        "translation_burmese": "ရုံးခန်းထဲမှာ ဘယ်သူရှိလဲ? ဘယ်သူမှမရှိပါဘူး။",
+                        "english": "Who is in the office? No one is there."
+                    }
+                ],
+                "notes": "Imasu is for living things; Arimasu is for inanimate objects.",
+                "tips": "Use 'Nani mo arimasen' to say 'There is nothing'."
+            },
+            {
+                "id": "10.2",
+                "pattern": "N は N (Place) に あります / います",
+                "explanation": "Used when the subject is the topic and you are describing its location.",
+                "translation_burmese": "N သည် N (နေရာ) မှာ ရှိပါတယ်။",
+                "examples": [
+                    {
+                        "japanese": "東京ディズニーランドは千葉県にあります。",
+                        "furigana": "とうきょう(東京)ディズニーランド は ちばけん(千葉県) に あります。",
+                        "romaji": "Toukyou Dizuniirando wa Chiba-ken ni arimasu.",
+                        "translation_burmese": "တိုကျိုဒစ္စနေးလန်းက ချီဘခရိုင်မှာ ရှိပါတယ်။",
+                        "english": "Tokyo Disneyland is in Chiba Prefecture."
+                    },
+                    {
+                        "japanese": "ミラーさんはあそこにいます。",
+                        "furigana": "ミラーさん は あそこ に います。",
+                        "romaji": "Miraa-san wa asoko ni imasu.",
+                        "translation_burmese": "မေလာက ဟိုမှာ ရှိပါတယ်။",
+                        "english": "Mr. Miller is over there."
+                    }
+                ],
+                "notes": "This shifts the focus to 'Where is N?'",
+                "tips": "Useful for asking 'Where is [person/place]?'."
+            },
+            {
+                "id": "10.3",
+                "pattern": "N1 (Thing/Person) の N2 (Position)",
+                "explanation": "Used to describe relative positions like 'on', 'under', 'inside', or 'behind'.",
+                "translation_burmese": "N1 ရဲ့ N2 (နေရာအထားအသို) မှာ။",
+                "examples": [
+                    {
+                        "japanese": "机の上に写真があります。",
+                        "furigana": "つくえ(机) の うえ(上) に しゃしん(写真) が あります。",
+                        "romaji": "Tsukue no ue ni shashin ga arimasu.",
+                        "translation_burmese": "စားပွဲပေါ်မှာ ဓာတ်ပုံရှိပါတယ်။",
+                        "english": "There is a photo on the desk."
+                    },
+                    {
+                        "japanese": "箱の中に何がありますか。",
+                        "furigana": "はこ(箱) の なか(中) に なに が ありますか。",
+                        "romaji": "Hako no naka ni nani ga arimasu ka.",
+                        "translation_burmese": "သေတ္တာထဲမှာ ဘာရှိလဲဟင်?",
+                        "english": "What is inside the box?"
+                    }
+                ],
+                "notes": "Common positions: Ue (top), Naka (inside), Shita (under), Tonari (next to).",
+                "tips": "Think of it as 'Position of N1'."
+            }
+        ]
+    }
+]

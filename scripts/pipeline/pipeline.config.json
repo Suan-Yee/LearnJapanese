@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "lessonSizing": {
+    "N5": { "vocabPerLesson": 18, "kanjiPerLesson": 10 },
+    "N4": { "vocabPerLesson": 20, "kanjiPerLesson": 12 },
+    "N3": { "vocabPerLesson": 22, "kanjiPerLesson": 14 },
+    "N2": { "vocabPerLesson": 24, "kanjiPerLesson": 16 },
+    "N1": { "vocabPerLesson": 26, "kanjiPerLesson": 18 }
+  },
+  "defaults": {
+    "sourceLocaleOrder": ["en", "my"],
+    "reviewNewIntervalDays": 1
+  }
+}

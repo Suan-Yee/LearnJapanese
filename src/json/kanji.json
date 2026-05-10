@@ -1,0 +1,5393 @@
+[
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 1,
+            "title": "Nature and the Elements",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "山",
+                "onyomi": "サン",
+                "kunyomi": "やま",
+                "meaning": {
+                    "en": "Mountain",
+                    "my": "တောင်"
+                },
+                "emoji": "⛰️",
+                "confusing_kanji": [
+                    "出",
+                    "仙",
+                    "岩",
+                    "炭",
+                    "岐",
+                    "嵐",
+                    "岬"
+                ],
+                "examples": [
+                    {
+                        "kanji": "ふじ山",
+                        "reading": "ふじさん",
+                        "meaning": {
+                            "en": "Mt. Fuji",
+                            "my": "ဖူဂျီတောင်"
+                        }
+                    },
+                    {
+                        "kanji": "登山",
+                        "reading": "とざん",
+                        "meaning": {
+                            "en": "Mountain climbing",
+                            "my": "တောင်တက်ခြင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "川",
+                "onyomi": "セン",
+                "kunyomi": "かわ",
+                "meaning": {
+                    "en": "River",
+                    "my": "မြစ်"
+                },
+                "emoji": "🌊",
+                "confusing_kanji": [
+                    "州",
+                    "順",
+                    "訓",
+                    "三",
+                    "災",
+                    "巡",
+                    "釧"
+                ],
+                "examples": [
+                    {
+                        "kanji": "山川さん",
+                        "reading": "やまかわさん",
+                        "meaning": {
+                            "en": "Mr./Ms. Yamakawa",
+                            "my": "ယမကာဝါးဆန်"
+                        }
+                    },
+                    {
+                        "kanji": "インダス川",
+                        "reading": "インダスがわ",
+                        "meaning": {
+                            "en": "Indus River",
+                            "my": "အိန္ဒုမြစ်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "田",
+                "onyomi": "デン",
+                "kunyomi": "た",
+                "meaning": {
+                    "en": "Rice field",
+                    "my": "လယ်ကွင်း"
+                },
+                "emoji": "🌾",
+                "confusing_kanji": [
+                    "由",
+                    "甲",
+                    "申",
+                    "町",
+                    "思",
+                    "男",
+                    "胃",
+                    "苗",
+                    "画"
+                ],
+                "examples": [
+                    {
+                        "kanji": "山田さん",
+                        "reading": "やまださん",
+                        "meaning": {
+                            "en": "Mr./Ms. Yamada",
+                            "my": "ယာမာဒါဆန်"
+                        }
+                    },
+                    {
+                        "kanji": "水田",
+                        "reading": "すいでん",
+                        "meaning": {
+                            "en": "Water-filled paddy field",
+                            "my": "ရေသွင်းစပါးခင်း"
+                        }
+                    },
+                    {
+                        "kanji": "油田",
+                        "reading": "ゆでん",
+                        "meaning": {
+                            "en": "Oil field",
+                            "my": "ရေနံမြေ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "日",
+                "onyomi": "ニチ、ジツ",
+                "kunyomi": "ひ、-び、-か",
+                "meaning": {
+                    "en": "Sun, Day",
+                    "my": "နေ၊ နေ့"
+                },
+                "emoji": "☀️",
+                "confusing_kanji": [
+                    "目",
+                    "白",
+                    "口",
+                    "旧",
+                    "旦",
+                    "旬",
+                    "旨",
+                    "早"
+                ],
+                "examples": [
+                    {
+                        "kanji": "日曜日",
+                        "reading": "にちようび",
+                        "meaning": {
+                            "en": "Sunday",
+                            "my": "တနင်္ဂနွေနေ့"
+                        }
+                    },
+                    {
+                        "kanji": "日本",
+                        "reading": "にほん",
+                        "meaning": {
+                            "en": "Japan",
+                            "my": "ဂျပန်"
+                        }
+                    },
+                    {
+                        "kanji": "休日",
+                        "reading": "きゅうじつ",
+                        "meaning": {
+                            "en": "Holiday",
+                            "my": "အားလပ်ရက်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "月",
+                "onyomi": "ゲツ、ガツ",
+                "kunyomi": "つき",
+                "meaning": {
+                    "en": "Moon, Month",
+                    "my": "လ၊ လပိုင်း"
+                },
+                "emoji": "🌙",
+                "confusing_kanji": [
+                    "用",
+                    "肉",
+                    "目",
+                    "肌",
+                    "有",
+                    "朋",
+                    "胃",
+                    "肖"
+                ],
+                "examples": [
+                    {
+                        "kanji": "月曜日",
+                        "reading": "げつようび",
+                        "meaning": {
+                            "en": "Monday",
+                            "my": "တနင်္လာနေ့"
+                        }
+                    },
+                    {
+                        "kanji": "1月",
+                        "reading": "いちがつ",
+                        "meaning": {
+                            "en": "January",
+                            "my": "ဇန်နဝါရီလ"
+                        }
+                    },
+                    {
+                        "kanji": "今月",
+                        "reading": "こんげつ",
+                        "meaning": {
+                            "en": "This month",
+                            "my": "ဒီလ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "火",
+                "onyomi": "カ",
+                "kunyomi": "ひ、-び",
+                "meaning": {
+                    "en": "Fire",
+                    "my": "မီး"
+                },
+                "emoji": "🔥",
+                "confusing_kanji": [
+                    "人",
+                    "入",
+                    "大",
+                    "秋",
+                    "災",
+                    "灯",
+                    "灰",
+                    "点"
+                ],
+                "examples": [
+                    {
+                        "kanji": "火曜日",
+                        "reading": "かようび",
+                        "meaning": {
+                            "en": "Tuesday",
+                            "my": "အင်္ဂါနေ့"
+                        }
+                    },
+                    {
+                        "kanji": "火山",
+                        "reading": "かざん",
+                        "meaning": {
+                            "en": "Volcano",
+                            "my": "မီးတောင်"
+                        }
+                    },
+                    {
+                        "kanji": "火事",
+                        "reading": "かじ",
+                        "meaning": {
+                            "en": "A fire (accident)",
+                            "my": "မီးလောင်မှု"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "水",
+                "onyomi": "スイ",
+                "kunyomi": "みず",
+                "meaning": {
+                    "en": "Water",
+                    "my": "ရေ"
+                },
+                "emoji": "💧",
+                "confusing_kanji": [
+                    "氷",
+                    "永",
+                    "求",
+                    "泉",
+                    "泰",
+                    "泳",
+                    "河",
+                    "洗"
+                ],
+                "examples": [
+                    {
+                        "kanji": "水曜日",
+                        "reading": "すいようび",
+                        "meaning": {
+                            "en": "Wednesday",
+                            "my": "ဗုဒ္ဓဟူးနေ့"
+                        }
+                    },
+                    {
+                        "kanji": "水道",
+                        "reading": "すいどう",
+                        "meaning": {
+                            "en": "Waterworks/Tap water",
+                            "my": "ရေပိုက်လိုင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "木",
+                "onyomi": "モク、ボク",
+                "kunyomi": "き",
+                "meaning": {
+                    "en": "Tree, Wood",
+                    "my": "သစ်ပင်"
+                },
+                "emoji": "🌳",
+                "confusing_kanji": [
+                    "本",
+                    "未",
+                    "末",
+                    "休",
+                    "林",
+                    "森",
+                    "札",
+                    "机",
+                    "村"
+                ],
+                "examples": [
+                    {
+                        "kanji": "木曜日",
+                        "reading": "もくようび",
+                        "meaning": {
+                            "en": "Thursday",
+                            "my": "ကြာသပတေးနေ့"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "金",
+                "onyomi": "キン",
+                "kunyomi": "かね",
+                "meaning": {
+                    "en": "Gold, Money",
+                    "my": "ရွှေ၊ ပိုက်ဆံ"
+                },
+                "emoji": "💰",
+                "confusing_kanji": [
+                    "全",
+                    "釜",
+                    "企",
+                    "銀",
+                    "銅",
+                    "鉄",
+                    "針",
+                    "釣"
+                ],
+                "examples": [
+                    {
+                        "kanji": "お金",
+                        "reading": "おかね",
+                        "meaning": {
+                            "en": "Money",
+                            "my": "ပိုက်ဆံ"
+                        }
+                    },
+                    {
+                        "kanji": "金曜日",
+                        "reading": "きんようび",
+                        "meaning": {
+                            "en": "Friday",
+                            "my": "သောကြာနေ့"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "土",
+                "onyomi": "ド、ト",
+                "kunyomi": "つち",
+                "meaning": {
+                    "en": "Soil, Earth",
+                    "my": "မြေကြီး"
+                },
+                "emoji": "🪵",
+                "confusing_kanji": [
+                    "士",
+                    "上",
+                    "止",
+                    "圧",
+                    "在",
+                    "地",
+                    "城",
+                    "域"
+                ],
+                "examples": [
+                    {
+                        "kanji": "土曜日",
+                        "reading": "どようび",
+                        "meaning": {
+                            "en": "Saturday",
+                            "my": "စနေနေ့"
+                        }
+                    },
+                    {
+                        "kanji": "土地",
+                        "reading": "とち",
+                        "meaning": {
+                            "en": "Land",
+                            "my": "မြေကွက်"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 2,
+            "title": "Numbers and Time",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "一",
+                "onyomi": "イチ、イツ",
+                "kunyomi": "ひと-つ、ひと-",
+                "meaning": {
+                    "en": "One",
+                    "my": "တစ်"
+                },
+                "emoji": "1️⃣",
+                "confusing_kanji": [
+                    "二",
+                    "三",
+                    "工",
+                    "土",
+                    "士",
+                    "丁",
+                    "つ"
+                ],
+                "examples": [
+                    {
+                        "kanji": "一つ",
+                        "reading": "ひとつ",
+                        "meaning": {
+                            "en": "One (thing)",
+                            "my": "တစ်ခု"
+                        }
+                    },
+                    {
+                        "kanji": "一月",
+                        "reading": "いちがつ",
+                        "meaning": {
+                            "en": "January",
+                            "my": "ဇန်နဝါရီလ"
+                        }
+                    },
+                    {
+                        "kanji": "一日",
+                        "reading": "ついたち",
+                        "meaning": {
+                            "en": "1st day of the month",
+                            "my": "လဆန်း ၁ ရက်နေ့"
+                        }
+                    },
+                    {
+                        "kanji": "一日",
+                        "reading": "いちにち",
+                        "meaning": {
+                            "en": "One day",
+                            "my": "တစ်ရက်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "二",
+                "onyomi": "ニ",
+                "kunyomi": "ふた-つ、ふた-",
+                "meaning": {
+                    "en": "Two",
+                    "my": "နှစ်"
+                },
+                "emoji": "2️⃣",
+                "confusing_kanji": [
+                    "一",
+                    "三",
+                    "工",
+                    "土",
+                    "士",
+                    "与",
+                    "匸"
+                ],
+                "examples": [
+                    {
+                        "kanji": "二つ",
+                        "reading": "ふたつ",
+                        "meaning": {
+                            "en": "Two (things)",
+                            "my": "နှစ်ခု"
+                        }
+                    },
+                    {
+                        "kanji": "二月",
+                        "reading": "ニがつ",
+                        "meaning": {
+                            "en": "February",
+                            "my": "ဖေဖော်ဝါရီလ"
+                        }
+                    },
+                    {
+                        "kanji": "二日",
+                        "reading": "ふつか",
+                        "meaning": {
+                            "en": "2nd day of the month",
+                            "my": "၂ ရက်နေ့"
+                        }
+                    },
+                    {
+                        "kanji": "二人",
+                        "reading": "ふたり",
+                        "meaning": {
+                            "en": "Two people",
+                            "my": "နှစ်ယောက်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "三",
+                "onyomi": "サン",
+                "kunyomi": "み-っつ、みつ-",
+                "meaning": {
+                    "en": "Three",
+                    "my": "သုံး"
+                },
+                "emoji": "3️⃣",
+                "confusing_kanji": [
+                    "二",
+                    "王",
+                    "主",
+                    "五",
+                    "正",
+                    "玉",
+                    "𠂉"
+                ],
+                "examples": [
+                    {
+                        "kanji": "三つ",
+                        "reading": "みっつ",
+                        "meaning": {
+                            "en": "Three (things)",
+                            "my": "သုံးခု"
+                        }
+                    },
+                    {
+                        "kanji": "三月",
+                        "reading": "さんがつ",
+                        "meaning": {
+                            "en": "March",
+                            "my": "မတ်လ"
+                        }
+                    },
+                    {
+                        "kanji": "三日",
+                        "reading": "みっか",
+                        "meaning": {
+                            "en": "3rd day of the month",
+                            "my": "၃ ရက်နေ့"
+                        }
+                    },
+                    {
+                        "kanji": "三角",
+                        "reading": "さんかく",
+                        "meaning": {
+                            "en": "Triangle",
+                            "my": "တြိဂံ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "四",
+                "onyomi": "シ",
+                "kunyomi": "よ-っつ、よん、よ-",
+                "meaning": {
+                    "en": "Four",
+                    "my": "လေး"
+                },
+                "emoji": "4️⃣",
+                "confusing_kanji": [
+                    "西",
+                    "口",
+                    "回",
+                    "因",
+                    "目",
+                    "田",
+                    "皿"
+                ],
+                "examples": [
+                    {
+                        "kanji": "四つ",
+                        "reading": "よっつ",
+                        "meaning": {
+                            "en": "Four (things)",
+                            "my": "လေးခု"
+                        }
+                    },
+                    {
+                        "kanji": "四月",
+                        "reading": "しがつ",
+                        "meaning": {
+                            "en": "April",
+                            "my": "ဧပြီလ"
+                        }
+                    },
+                    {
+                        "kanji": "四日",
+                        "reading": "よっか",
+                        "meaning": {
+                            "en": "4th day of the month",
+                            "my": "၄ ရက်နေ့"
+                        }
+                    },
+                    {
+                        "kanji": "四人",
+                        "reading": "よにん",
+                        "meaning": {
+                            "en": "Four people",
+                            "my": "လေးယောက်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "五",
+                "onyomi": "ゴ",
+                "kunyomi": "いつ-つ、いつ-",
+                "meaning": {
+                    "en": "Five",
+                    "my": "ငါး"
+                },
+                "emoji": "5️⃣",
+                "confusing_kanji": [
+                    "互",
+                    "正",
+                    "丑",
+                    "王",
+                    "且",
+                    "丘",
+                    "立"
+                ],
+                "examples": [
+                    {
+                        "kanji": "五つ",
+                        "reading": "いつつつ",
+                        "meaning": {
+                            "en": "Five (things)",
+                            "my": "ငါးခု"
+                        }
+                    },
+                    {
+                        "kanji": "五月",
+                        "reading": "ごがつ",
+                        "meaning": {
+                            "en": "May",
+                            "my": "မေလ"
+                        }
+                    },
+                    {
+                        "kanji": "五日",
+                        "reading": "いつか",
+                        "meaning": {
+                            "en": "5th day of the month",
+                            "my": "၅ ရက်နေ့"
+                        }
+                    },
+                    {
+                        "kanji": "五円",
+                        "reading": "ごえん",
+                        "meaning": {
+                            "en": "Five yen",
+                            "my": "ငါးယန်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "六",
+                "onyomi": "ロク",
+                "kunyomi": "む-っつ、むつ-",
+                "meaning": {
+                    "en": "Six",
+                    "my": "ခြောက်"
+                },
+                "emoji": "6️⃣",
+                "confusing_kanji": [
+                    "大",
+                    "立",
+                    "交",
+                    "文",
+                    "穴",
+                    "亢",
+                    "衣"
+                ],
+                "examples": [
+                    {
+                        "kanji": "六つ",
+                        "reading": "むっつ",
+                        "meaning": {
+                            "en": "Six (things)",
+                            "my": "ခြောက်ခု"
+                        }
+                    },
+                    {
+                        "kanji": "六月",
+                        "reading": "ろくがつ",
+                        "meaning": {
+                            "en": "June",
+                            "my": "ဇွန်လ"
+                        }
+                    },
+                    {
+                        "kanji": "六日",
+                        "reading": "むいか",
+                        "meaning": {
+                            "en": "6th day of the month",
+                            "my": "၆ ရက်နေ့"
+                        }
+                    },
+                    {
+                        "kanji": "六本木",
+                        "reading": "ろっぽんぎ",
+                        "meaning": {
+                            "en": "Roppongi (place)",
+                            "my": "ရုပွန်ဂီ (အရပ်ဒေသ)"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "七",
+                "onyomi": "シチ",
+                "kunyomi": "なな-つ、なな-",
+                "meaning": {
+                    "en": "Seven",
+                    "my": "ခုနစ်"
+                },
+                "emoji": "7️⃣",
+                "confusing_kanji": [
+                    "ヒ",
+                    "切",
+                    "九",
+                    "乜",
+                    "匕",
+                    "乇",
+                    "𠤎"
+                ],
+                "examples": [
+                    {
+                        "kanji": "七つ",
+                        "reading": "ななつ",
+                        "meaning": {
+                            "en": "Seven (things)",
+                            "my": "ခုနစ်ခု"
+                        }
+                    },
+                    {
+                        "kanji": "七月",
+                        "reading": "しちがつ",
+                        "meaning": {
+                            "en": "July",
+                            "my": "ဇူလိုင်လ"
+                        }
+                    },
+                    {
+                        "kanji": "七日",
+                        "reading": "なのか",
+                        "meaning": {
+                            "en": "7th day of the month",
+                            "my": "၇ ရက်နေ့"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "八",
+                "onyomi": "ハチ",
+                "kunyomi": "や-っつ、やつ-",
+                "meaning": {
+                    "en": "Eight",
+                    "my": "ရှစ်"
+                },
+                "emoji": "8️⃣",
+                "confusing_kanji": [
+                    "人",
+                    "入",
+                    "ハ",
+                    "父",
+                    "尣",
+                    "几",
+                    "儿"
+                ],
+                "examples": [
+                    {
+                        "kanji": "八つ",
+                        "reading": "やっつ",
+                        "meaning": {
+                            "en": "Eight (things)",
+                            "my": "ရှစ်ခု"
+                        }
+                    },
+                    {
+                        "kanji": "八月",
+                        "reading": "はちがつ",
+                        "meaning": {
+                            "en": "August",
+                            "my": "သြဂုတ်လ"
+                        }
+                    },
+                    {
+                        "kanji": "八日",
+                        "reading": "ようか",
+                        "meaning": {
+                            "en": "8th day of the month",
+                            "my": "၈ ရက်နေ့"
+                        }
+                    },
+                    {
+                        "kanji": "八百屋",
+                        "reading": "やおや",
+                        "meaning": {
+                            "en": "Greengrocer",
+                            "my": "ဟင်းသီးဟင်းရွက်ဆိုင်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "九",
+                "onyomi": "キュウ、ク",
+                "kunyomi": "ここの-つ、ここの-",
+                "meaning": {
+                    "en": "Nine",
+                    "my": "ကိုး"
+                },
+                "emoji": "9️⃣",
+                "confusing_kanji": [
+                    "丸",
+                    "力",
+                    "凡",
+                    "几",
+                    "乙",
+                    "仇",
+                    "尢"
+                ],
+                "examples": [
+                    {
+                        "kanji": "九つ",
+                        "reading": "ここのつ",
+                        "meaning": {
+                            "en": "Nine (things)",
+                            "my": "ကိုးခု"
+                        }
+                    },
+                    {
+                        "kanji": "九月",
+                        "reading": "くがつ",
+                        "meaning": {
+                            "en": "September",
+                            "my": "စက်တင်ဘာလ"
+                        }
+                    },
+                    {
+                        "kanji": "九日",
+                        "reading": "ここのか",
+                        "meaning": {
+                            "en": "9th day of the month",
+                            "my": "၉ ရက်နေ့"
+                        }
+                    },
+                    {
+                        "kanji": "九州",
+                        "reading": "きゅうしゅう",
+                        "meaning": {
+                            "en": "Kyushu (place)",
+                            "my": "ကျူရှူးကျွန်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "十",
+                "onyomi": "ジュウ",
+                "kunyomi": "とお",
+                "meaning": {
+                    "en": "Ten",
+                    "my": "တစ်ဆယ်"
+                },
+                "emoji": "🔟",
+                "confusing_kanji": [
+                    "千",
+                    "土",
+                    "士",
+                    "木",
+                    "才",
+                    "干",
+                    "本"
+                ],
+                "examples": [
+                    {
+                        "kanji": "十",
+                        "reading": "じゅう",
+                        "meaning": {
+                            "en": "Ten",
+                            "my": "တစ်ဆယ်"
+                        }
+                    },
+                    {
+                        "kanji": "十月",
+                        "reading": "じゅうがつ",
+                        "meaning": {
+                            "en": "October",
+                            "my": "အောက်တိုဘာလ"
+                        }
+                    },
+                    {
+                        "kanji": "十日",
+                        "reading": "とおか",
+                        "meaning": {
+                            "en": "10th day of the month",
+                            "my": "၁၀ ရက်နေ့"
+                        }
+                    },
+                    {
+                        "kanji": "十分な",
+                        "reading": "じゅうぶんな",
+                        "meaning": {
+                            "en": "Enough",
+                            "my": "လုံလောက်သော"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 3,
+            "title": "Numbers, Position, and Time",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "百",
+                "onyomi": "ヒャク",
+                "kunyomi": "もも",
+                "meaning": {
+                    "en": "Hundred",
+                    "my": "တစ်ရာ"
+                },
+                "emoji": "💯",
+                "confusing_kanji": [
+                    "白",
+                    "自",
+                    "日",
+                    "旧",
+                    "伯",
+                    "陌",
+                    "宿",
+                    "面"
+                ],
+                "examples": [
+                    {
+                        "kanji": "百",
+                        "reading": "ひゃく",
+                        "meaning": {
+                            "en": "One hundred",
+                            "my": "တစ်ရာ"
+                        }
+                    },
+                    {
+                        "kanji": "三百",
+                        "reading": "さんびゃく",
+                        "meaning": {
+                            "en": "Three hundred",
+                            "my": "သုံးရာ"
+                        }
+                    },
+                    {
+                        "kanji": "六百",
+                        "reading": "ろっぴゃく",
+                        "meaning": {
+                            "en": "Six hundred",
+                            "my": "ခြောက်ရာ"
+                        }
+                    },
+                    {
+                        "kanji": "百科事典",
+                        "reading": "ひゃっかじてん",
+                        "meaning": {
+                            "en": "Encyclopedia",
+                            "my": "စွယ်စုံကျမ်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "千",
+                "onyomi": "セン",
+                "kunyomi": "ち",
+                "meaning": {
+                    "en": "Thousand",
+                    "my": "တစ်ထောင်"
+                },
+                "emoji": "🏘️",
+                "confusing_kanji": [
+                    "チ",
+                    "十",
+                    "干",
+                    "平",
+                    "午",
+                    "半",
+                    "手",
+                    "毛",
+                    "舌",
+                    "升"
+                ],
+                "examples": [
+                    {
+                        "kanji": "千",
+                        "reading": "せん",
+                        "meaning": {
+                            "en": "One thousand",
+                            "my": "တစ်ထောင်"
+                        }
+                    },
+                    {
+                        "kanji": "二千",
+                        "reading": "にせん",
+                        "meaning": {
+                            "en": "Two thousand",
+                            "my": "နှစ်ထောင်"
+                        }
+                    },
+                    {
+                        "kanji": "三千",
+                        "reading": "さんぜん",
+                        "meaning": {
+                            "en": "Three thousand",
+                            "my": "သုံးထောင်"
+                        }
+                    },
+                    {
+                        "kanji": "千葉県",
+                        "reading": "ちばけん",
+                        "meaning": {
+                            "en": "Chiba Prefecture",
+                            "my": "ချီဘခရိုင်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "万",
+                "onyomi": "マン、バン",
+                "kunyomi": "よろず",
+                "meaning": {
+                    "en": "Ten Thousand",
+                    "my": "တစ်သောင်း"
+                },
+                "emoji": "💸",
+                "confusing_kanji": [
+                    "方",
+                    "力",
+                    "刀",
+                    "刃",
+                    "勺",
+                    "切",
+                    "勿",
+                    "句"
+                ],
+                "examples": [
+                    {
+                        "kanji": "万",
+                        "reading": "まん",
+                        "meaning": {
+                            "en": "Ten thousand",
+                            "my": "တစ်သောင်း"
+                        }
+                    },
+                    {
+                        "kanji": "一万",
+                        "reading": "いちまん",
+                        "meaning": {
+                            "en": "10,000",
+                            "my": "တစ်သောင်း"
+                        }
+                    },
+                    {
+                        "kanji": "万国",
+                        "reading": "ばんこく",
+                        "meaning": {
+                            "en": "All nations",
+                            "my": "နိုင်ငံအားလုံး"
+                        }
+                    },
+                    {
+                        "kanji": "万年筆",
+                        "reading": "まんねんひつ",
+                        "meaning": {
+                            "en": "Fountain pen",
+                            "my": "ဖောင်တိန်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "円",
+                "onyomi": "エン",
+                "kunyomi": "まるい",
+                "meaning": {
+                    "en": "Yen / Circle",
+                    "my": "ယန်းငွေ / အဝိုင်း"
+                },
+                "emoji": "¥",
+                "confusing_kanji": [
+                    "四",
+                    "口",
+                    "日",
+                    "目",
+                    "因",
+                    "困",
+                    "回",
+                    "国",
+                    "内",
+                    "肉"
+                ],
+                "examples": [
+                    {
+                        "kanji": "四万円",
+                        "reading": "よんまんえん",
+                        "meaning": {
+                            "en": "40,000 Yen",
+                            "my": "၄ သောင်းယန်း"
+                        }
+                    },
+                    {
+                        "kanji": "円高",
+                        "reading": "えんだか",
+                        "meaning": {
+                            "en": "Strong yen",
+                            "my": "ယန်းငွေဈေးတက်ခြင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "年",
+                "onyomi": "ネン",
+                "kunyomi": "とし",
+                "meaning": {
+                    "en": "Year",
+                    "my": "နှစ်"
+                },
+                "emoji": "📅",
+                "confusing_kanji": [
+                    "午",
+                    "牛",
+                    "手",
+                    "毛",
+                    "千",
+                    "平",
+                    "生",
+                    "升",
+                    "舟"
+                ],
+                "examples": [
+                    {
+                        "kanji": "二千年",
+                        "reading": "にせんねん",
+                        "meaning": {
+                            "en": "Year 2000",
+                            "my": "နှစ် ၂၀၀၀"
+                        }
+                    },
+                    {
+                        "kanji": "来年",
+                        "reading": "らいねん",
+                        "meaning": {
+                            "en": "Next year",
+                            "my": "နောက်နှစ်"
+                        }
+                    },
+                    {
+                        "kanji": "年金",
+                        "reading": "ねんきん",
+                        "meaning": {
+                            "en": "Pension",
+                            "my": "ပင်စင်လစာ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "上",
+                "onyomi": "ジョウ",
+                "kunyomi": "うえ、あがる",
+                "meaning": {
+                    "en": "Above / Up",
+                    "my": "အပေါ် / တက်သည်"
+                },
+                "emoji": "⬆️",
+                "confusing_kanji": [
+                    "下",
+                    "止",
+                    "正",
+                    "土",
+                    "士",
+                    "工",
+                    "与",
+                    "卡"
+                ],
+                "examples": [
+                    {
+                        "kanji": "上がる",
+                        "reading": "あがる",
+                        "meaning": {
+                            "en": "To go up",
+                            "my": "အထက်သို့တက်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "水上スキー",
+                        "reading": "すいじょうスキー",
+                        "meaning": {
+                            "en": "Water skiing",
+                            "my": "ရေပေါ်စကီးစီးခြင်း"
+                        }
+                    },
+                    {
+                        "kanji": "上着",
+                        "reading": "うわぎ",
+                        "meaning": {
+                            "en": "Jacket/Coat",
+                            "my": "အပေါ်အင်္ကျီ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "下",
+                "onyomi": "カ、ゲ",
+                "kunyomi": "した、さがる",
+                "meaning": {
+                    "en": "Below / Down",
+                    "my": "အောက် / ဆင်းသည်"
+                },
+                "emoji": "⬇️",
+                "confusing_kanji": [
+                    "上",
+                    "不",
+                    "与",
+                    "万",
+                    "工",
+                    "丁",
+                    "卞",
+                    "斤",
+                    "卞"
+                ],
+                "examples": [
+                    {
+                        "kanji": "下がる",
+                        "reading": "さがる",
+                        "meaning": {
+                            "en": "To go down",
+                            "my": "အောက်သို့ဆင်းသည်"
+                        }
+                    },
+                    {
+                        "kanji": "上下",
+                        "reading": "じょうげ",
+                        "meaning": {
+                            "en": "Up and down",
+                            "my": "အထက်အောက်"
+                        }
+                    },
+                    {
+                        "kanji": "地下鉄",
+                        "reading": "ちかてつ",
+                        "meaning": {
+                            "en": "Subway",
+                            "my": "မြေအောက်ရထား"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "中",
+                "onyomi": "チュウ",
+                "kunyomi": "なか",
+                "meaning": {
+                    "en": "Inside / Middle",
+                    "my": "အထဲ / အလယ်"
+                },
+                "emoji": "📦",
+                "confusing_kanji": [
+                    "口",
+                    "申",
+                    "串",
+                    "由",
+                    "甲",
+                    "田",
+                    "央",
+                    "史",
+                    "虫"
+                ],
+                "examples": [
+                    {
+                        "kanji": "一日中",
+                        "reading": "いちにちじゅう",
+                        "meaning": {
+                            "en": "All day long",
+                            "my": "တစ်နေကုန်"
+                        }
+                    },
+                    {
+                        "kanji": "中学",
+                        "reading": "ちゅうがく",
+                        "meaning": {
+                            "en": "Junior high school",
+                            "my": "အလယ်တန်းကျောင်း"
+                        }
+                    },
+                    {
+                        "kanji": "中心",
+                        "reading": "ちゅうしん",
+                        "meaning": {
+                            "en": "Center",
+                            "my": "ဗဟို"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "半",
+                "onyomi": "ハン",
+                "kunyomi": "なかば",
+                "meaning": {
+                    "en": "Half",
+                    "my": "တစ်ဝက်"
+                },
+                "emoji": "🌓",
+                "confusing_kanji": [
+                    "平",
+                    "年",
+                    "羊",
+                    "辛",
+                    "幸",
+                    "千",
+                    "午",
+                    "牛",
+                    "伴",
+                    "判"
+                ],
+                "examples": [
+                    {
+                        "kanji": "半年",
+                        "reading": "はんとし",
+                        "meaning": {
+                            "en": "Half a year",
+                            "my": "နှစ်ဝက်"
+                        }
+                    },
+                    {
+                        "kanji": "半分",
+                        "reading": "はんぶん",
+                        "meaning": {
+                            "en": "Half portion",
+                            "my": "တစ်ဝက်တိတိ"
+                        }
+                    },
+                    {
+                        "kanji": "四時半",
+                        "reading": "よじはん",
+                        "meaning": {
+                            "en": "4:30",
+                            "my": "၄ နာရီခွဲ"
+                        }
+                    },
+                    {
+                        "kanji": "半日",
+                        "reading": "はんにち",
+                        "meaning": {
+                            "en": "Half a day",
+                            "my": "တစ်ရက်၏တစ်ဝက်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "分",
+                "onyomi": "フン、ブン",
+                "kunyomi": "わける",
+                "meaning": {
+                    "en": "Minute / Divide",
+                    "my": "မိနစ် / ခွဲဝေသည်"
+                },
+                "emoji": "⏱️",
+                "confusing_kanji": [
+                    "公",
+                    "今",
+                    "介",
+                    "合",
+                    "父",
+                    "八",
+                    "刀",
+                    "刃",
+                    "忍",
+                    "忿"
+                ],
+                "examples": [
+                    {
+                        "kanji": "分ける",
+                        "reading": "わける",
+                        "meaning": {
+                            "en": "To divide",
+                            "my": "ခွဲဝေသည်"
+                        }
+                    },
+                    {
+                        "kanji": "分かる",
+                        "reading": "わかる",
+                        "meaning": {
+                            "en": "To understand",
+                            "my": "နားလည်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "10分",
+                        "reading": "じゅっぷん",
+                        "meaning": {
+                            "en": "10 minutes",
+                            "my": "၁၀ မိနစ်"
+                        }
+                    },
+                    {
+                        "kanji": "十分",
+                        "reading": "じゅうぶん",
+                        "meaning": {
+                            "en": "Enough",
+                            "my": "လုံလောက်သော"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 4,
+            "title": "People and Body Parts",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "人",
+                "onyomi": "ジン, ニン",
+                "kunyomi": "ひと",
+                "meaning": {
+                    "en": "Person",
+                    "my": "လူ"
+                },
+                "emoji": "👤",
+                "confusing_kanji": [
+                    "入",
+                    "八",
+                    "大",
+                    "久",
+                    "火",
+                    "个",
+                    "矢",
+                    "欠"
+                ],
+                "examples": [
+                    {
+                        "kanji": "一人",
+                        "reading": "ひとり",
+                        "meaning": {
+                            "en": "One person / Alone",
+                            "my": "တစ်ယောက်တည်း"
+                        }
+                    },
+                    {
+                        "kanji": "三人",
+                        "reading": "さんにん",
+                        "meaning": {
+                            "en": "Three people",
+                            "my": "လူသုံးယောက်"
+                        }
+                    },
+                    {
+                        "kanji": "日本人",
+                        "reading": "にほんじん",
+                        "meaning": {
+                            "en": "Japanese person",
+                            "my": "ဂျပန်လူမျိုး"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "子",
+                "onyomi": "シ",
+                "kunyomi": "こ",
+                "meaning": {
+                    "en": "Child",
+                    "my": "ကလေး"
+                },
+                "emoji": "👶",
+                "confusing_kanji": [
+                    "了",
+                    "予",
+                    "学",
+                    "字",
+                    "存",
+                    "好",
+                    "季",
+                    "孟"
+                ],
+                "examples": [
+                    {
+                        "kanji": "子ども",
+                        "reading": "こども",
+                        "meaning": {
+                            "en": "Child",
+                            "my": "ကလေး"
+                        }
+                    },
+                    {
+                        "kanji": "女子",
+                        "reading": "じょし",
+                        "meaning": {
+                            "en": "Girl / Woman",
+                            "my": "အမျိုးသမီး"
+                        }
+                    },
+                    {
+                        "kanji": "親子",
+                        "reading": "おやこ",
+                        "meaning": {
+                            "en": "Parent and child",
+                            "my": "မိဘနှင့်သားသမီး"
+                        }
+                    },
+                    {
+                        "kanji": "調子",
+                        "reading": "ちょうし",
+                        "meaning": {
+                            "en": "Condition",
+                            "my": "အခြေအနေ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "女",
+                "onyomi": "ジョ",
+                "kunyomi": "おんな",
+                "meaning": {
+                    "en": "Woman",
+                    "my": "မိန်းမ"
+                },
+                "emoji": "👩",
+                "confusing_kanji": [
+                    "安",
+                    "如",
+                    "好",
+                    "妥",
+                    "委",
+                    "姿",
+                    "妻",
+                    "母"
+                ],
+                "examples": [
+                    {
+                        "kanji": "女の人",
+                        "reading": "おんなのひと",
+                        "meaning": {
+                            "en": "Woman",
+                            "my": "အမျိုးသမီး"
+                        }
+                    },
+                    {
+                        "kanji": "女の子",
+                        "reading": "おんなのこ",
+                        "meaning": {
+                            "en": "Girl",
+                            "my": "မိန်းကလေး"
+                        }
+                    },
+                    {
+                        "kanji": "女性",
+                        "reading": "じょせい",
+                        "meaning": {
+                            "en": "Female / Women",
+                            "my": "မိန်မသား / အမျိုးသမီး"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "男",
+                "onyomi": "ダン, ナン",
+                "kunyomi": "おとこ",
+                "meaning": {
+                    "en": "Man",
+                    "my": "ယောက်ျား"
+                },
+                "emoji": "👨",
+                "confusing_kanji": [
+                    "田",
+                    "力",
+                    "勇",
+                    "界",
+                    "留",
+                    "略",
+                    "罰",
+                    "羅"
+                ],
+                "examples": [
+                    {
+                        "kanji": "男の子",
+                        "reading": "おとこのこ",
+                        "meaning": {
+                            "en": "Boy",
+                            "my": "ယောက်ျားလေး"
+                        }
+                    },
+                    {
+                        "kanji": "男女",
+                        "reading": "だんじょ",
+                        "meaning": {
+                            "en": "Men and women",
+                            "my": "ကျား/မ"
+                        }
+                    },
+                    {
+                        "kanji": "男性",
+                        "reading": "だんせい",
+                        "meaning": {
+                            "en": "Male",
+                            "my": "အမျိုးသား"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "目",
+                "onyomi": "モク",
+                "kunyomi": "め",
+                "meaning": {
+                    "en": "Eye",
+                    "my": "မျက်စိ"
+                },
+                "emoji": "👁️",
+                "confusing_kanji": [
+                    "日",
+                    "自",
+                    "月",
+                    "且",
+                    "貝",
+                    "見",
+                    "具",
+                    "面"
+                ],
+                "examples": [
+                    {
+                        "kanji": "一日目",
+                        "reading": "いちにちめ",
+                        "meaning": {
+                            "en": "The first day",
+                            "my": "ပထမနေ့"
+                        }
+                    },
+                    {
+                        "kanji": "目薬",
+                        "reading": "めぐすり",
+                        "meaning": {
+                            "en": "Eye drops",
+                            "my": "မျက်စဉ်းဆေး"
+                        }
+                    },
+                    {
+                        "kanji": "目的",
+                        "reading": "もくてき",
+                        "meaning": {
+                            "en": "Purpose",
+                            "my": "ရည်ရွယ်ချက်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "口",
+                "onyomi": "コウ, ク",
+                "kunyomi": "くち",
+                "meaning": {
+                    "en": "Mouth",
+                    "my": "ပါးစပ်"
+                },
+                "emoji": "👄",
+                "confusing_kanji": [
+                    "ロ",
+                    "日",
+                    "品",
+                    "中",
+                    "回",
+                    "石",
+                    "右",
+                    "占"
+                ],
+                "examples": [
+                    {
+                        "kanji": "入口",
+                        "reading": "いりぐち",
+                        "meaning": {
+                            "en": "Entrance",
+                            "my": "အဝင်ဝ"
+                        }
+                    },
+                    {
+                        "kanji": "人口",
+                        "reading": "じんこう",
+                        "meaning": {
+                            "en": "Population",
+                            "my": "လူဦးရေ"
+                        }
+                    },
+                    {
+                        "kanji": "非常口",
+                        "reading": "ひじょうぐち",
+                        "meaning": {
+                            "en": "Emergency exit",
+                            "my": "အရေးပေါ်ထွက်ပေါက်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "耳",
+                "onyomi": "ジ",
+                "kunyomi": "みみ",
+                "meaning": {
+                    "en": "Ear",
+                    "my": "နား"
+                },
+                "emoji": "👂",
+                "confusing_kanji": [
+                    "取",
+                    "最",
+                    "聞",
+                    "職",
+                    "敢",
+                    "恥",
+                    "助",
+                    "目"
+                ],
+                "examples": [
+                    {
+                        "kanji": "耳",
+                        "reading": "みみ",
+                        "meaning": {
+                            "en": "Ear",
+                            "my": "နား"
+                        }
+                    },
+                    {
+                        "kanji": "耳鼻科",
+                        "reading": "じびか",
+                        "meaning": {
+                            "en": "ENT department",
+                            "my": "နား၊ နှာခေါင်း၊ လည်ချောင်းဌာန"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "手",
+                "onyomi": "シュ",
+                "kunyomi": "て",
+                "meaning": {
+                    "en": "Hand",
+                    "my": "လက်"
+                },
+                "emoji": "✋",
+                "confusing_kanji": [
+                    "毛",
+                    "年",
+                    "失",
+                    "千",
+                    "平",
+                    "半",
+                    "我",
+                    "承"
+                ],
+                "examples": [
+                    {
+                        "kanji": "上手な",
+                        "reading": "じょうずな",
+                        "meaning": {
+                            "en": "Skillful",
+                            "my": "ကျွမ်းကျင်သော"
+                        }
+                    },
+                    {
+                        "kanji": "下手な",
+                        "reading": "へたな",
+                        "meaning": {
+                            "en": "Unskillful",
+                            "my": "ညံ့ဖျင်းသော"
+                        }
+                    },
+                    {
+                        "kanji": "手紙",
+                        "reading": "てがみ",
+                        "meaning": {
+                            "en": "Letter",
+                            "my": "စာ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "足",
+                "onyomi": "ソク",
+                "kunyomi": "あし, た(りる)",
+                "meaning": {
+                    "en": "Leg / Foot",
+                    "my": "ခြေထောက်"
+                },
+                "emoji": "🦵",
+                "confusing_kanji": [
+                    "是",
+                    "走",
+                    "定",
+                    "促",
+                    "路",
+                    "従",
+                    "徒",
+                    "捉"
+                ],
+                "examples": [
+                    {
+                        "kanji": "一足",
+                        "reading": "いっそく",
+                        "meaning": {
+                            "en": "One pair (shoes)",
+                            "my": "တစ်ရန်"
+                        }
+                    },
+                    {
+                        "kanji": "足りる",
+                        "reading": "たりる",
+                        "meaning": {
+                            "en": "To be sufficient",
+                            "my": "လုံလောက်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "遠足",
+                        "reading": "えんそく",
+                        "meaning": {
+                            "en": "Excursion / Trip",
+                            "my": "အပျော်ခရီး"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "力",
+                "onyomi": "リョク, リキ",
+                "kunyomi": "ちから",
+                "meaning": {
+                    "en": "Power / Strength",
+                    "my": "အင်အား"
+                },
+                "emoji": "💪",
+                "confusing_kanji": [
+                    "カ",
+                    "刀",
+                    "万",
+                    "方",
+                    "九",
+                    "刃",
+                    "加",
+                    "助"
+                ],
+                "examples": [
+                    {
+                        "kanji": "水力",
+                        "reading": "すいりょく",
+                        "meaning": {
+                            "en": "Water power",
+                            "my": "ရေအား"
+                        }
+                    },
+                    {
+                        "kanji": "体力",
+                        "reading": "たいりょく",
+                        "meaning": {
+                            "en": "Physical strength",
+                            "my": "ခန္ဓာကိုယ်အင်အား"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 5,
+            "title": "Family, School, and Daily Life",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "父",
+                "onyomi": "フ",
+                "kunyomi": "ちち",
+                "meaning": {
+                    "en": "Father",
+                    "my": "အဖေ"
+                },
+                "emoji": "👨",
+                "confusing_kanji": [
+                    "交",
+                    "文",
+                    "火",
+                    "又",
+                    "丈",
+                    "市",
+                    "区",
+                    "代"
+                ],
+                "examples": [
+                    {
+                        "kanji": "父",
+                        "reading": "ちち",
+                        "meaning": {
+                            "en": "My father",
+                            "my": "ကျွန်တော့်အဖေ"
+                        }
+                    },
+                    {
+                        "kanji": "お父さん",
+                        "reading": "おとうさん",
+                        "meaning": {
+                            "en": "Father (polite)",
+                            "my": "ဖခင် / အဖေ"
+                        }
+                    },
+                    {
+                        "kanji": "父親",
+                        "reading": "ちちおや",
+                        "meaning": {
+                            "en": "Father (formal)",
+                            "my": "ဖခင်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "母",
+                "onyomi": "ボ",
+                "kunyomi": "はは",
+                "meaning": {
+                    "en": "Mother",
+                    "my": "အမေ"
+                },
+                "emoji": "👩",
+                "confusing_kanji": [
+                    "毎",
+                    "海",
+                    "女",
+                    "毒",
+                    "貫",
+                    "悔",
+                    "毋",
+                    "舟"
+                ],
+                "examples": [
+                    {
+                        "kanji": "母",
+                        "reading": "はは",
+                        "meaning": {
+                            "en": "My mother",
+                            "my": "ကျွန်တော့်အမေ"
+                        }
+                    },
+                    {
+                        "kanji": "お母さん",
+                        "reading": "おかあさん",
+                        "meaning": {
+                            "en": "Mother (polite)",
+                            "my": "မိခင် / အမေ"
+                        }
+                    },
+                    {
+                        "kanji": "父母",
+                        "reading": "ふぼ",
+                        "meaning": {
+                            "en": "Parents",
+                            "my": "မိဘ"
+                        }
+                    },
+                    {
+                        "kanji": "母国",
+                        "reading": "ぼこく",
+                        "meaning": {
+                            "en": "Mother country",
+                            "my": "မိခင်နိုင်ငံ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "先",
+                "onyomi": "セン",
+                "kunyomi": "さき",
+                "meaning": {
+                    "en": "Ahead / Previous",
+                    "my": "အရင် / ရှေ့"
+                },
+                "emoji": "⬅️",
+                "confusing_kanji": [
+                    "元",
+                    "光",
+                    "去",
+                    "売",
+                    "失",
+                    "失",
+                    "朱",
+                    "洗"
+                ],
+                "examples": [
+                    {
+                        "kanji": "先月",
+                        "reading": "せんげつ",
+                        "meaning": {
+                            "en": "Last month",
+                            "my": "ပြီးခဲ့သည့်လ"
+                        }
+                    },
+                    {
+                        "kanji": "先輩",
+                        "reading": "せんぱい",
+                        "meaning": {
+                            "en": "Senior",
+                            "my": "စီနီယာ"
+                        }
+                    },
+                    {
+                        "kanji": "お先に",
+                        "reading": "おさきに",
+                        "meaning": {
+                            "en": "Ahead of (you)",
+                            "my": "အရင်နှင့်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "生",
+                "onyomi": "セイ, ショウ",
+                "kunyomi": "い(きる), う(まれる), なま",
+                "meaning": {
+                    "en": "Life / Birth",
+                    "my": "မွေးဖွားခြင်း / အသက်"
+                },
+                "emoji": "🌱",
+                "confusing_kanji": [
+                    "主",
+                    "王",
+                    "年",
+                    "牛",
+                    "性",
+                    "産",
+                    "正",
+                    "立"
+                ],
+                "examples": [
+                    {
+                        "kanji": "生まれる",
+                        "reading": "うまれる",
+                        "meaning": {
+                            "en": "To be born",
+                            "my": "မွေးဖွားသည်"
+                        }
+                    },
+                    {
+                        "kanji": "先生",
+                        "reading": "せんせい",
+                        "meaning": {
+                            "en": "Teacher",
+                            "my": "ဆရာ"
+                        }
+                    },
+                    {
+                        "kanji": "生きる",
+                        "reading": "いきる",
+                        "meaning": {
+                            "en": "To live",
+                            "my": "ရှင်သန်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "生活",
+                        "reading": "せいかつ",
+                        "meaning": {
+                            "en": "Daily life",
+                            "my": "နေ့စဉ်ဘဝ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "学",
+                "onyomi": "ガク",
+                "kunyomi": "まな(ぶ)",
+                "meaning": {
+                    "en": "Study / Learning",
+                    "my": "ပညာသင်ကြားခြင်း"
+                },
+                "emoji": "🎓",
+                "confusing_kanji": [
+                    "字",
+                    "子",
+                    "守",
+                    "完",
+                    "校",
+                    "覚",
+                    "堂",
+                    "常"
+                ],
+                "examples": [
+                    {
+                        "kanji": "学生",
+                        "reading": "がくせい",
+                        "meaning": {
+                            "en": "Student",
+                            "my": "ကျောင်းသား"
+                        }
+                    },
+                    {
+                        "kanji": "大学",
+                        "reading": "だいがく",
+                        "meaning": {
+                            "en": "University",
+                            "my": "တက္ကသိုလ်"
+                        }
+                    },
+                    {
+                        "kanji": "科学",
+                        "reading": "かがく",
+                        "meaning": {
+                            "en": "Science",
+                            "my": "သိပ္ပံပညာ"
+                        }
+                    },
+                    {
+                        "kanji": "留学する",
+                        "reading": "りゅうがくする",
+                        "meaning": {
+                            "en": "To study abroad",
+                            "my": "နိုင်ငံခြားတွင်ပညာသင်သည်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "校",
+                "onyomi": "コウ",
+                "kunyomi": "N/A",
+                "meaning": {
+                    "en": "School / Exam",
+                    "my": "ကျောင်း"
+                },
+                "emoji": "🏫",
+                "confusing_kanji": [
+                    "較",
+                    "交",
+                    "格",
+                    "様",
+                    "橋",
+                    "材",
+                    "村",
+                    "松"
+                ],
+                "examples": [
+                    {
+                        "kanji": "学校",
+                        "reading": "がっこう",
+                        "meaning": {
+                            "en": "School",
+                            "my": "ကျောင်း"
+                        }
+                    },
+                    {
+                        "kanji": "校長",
+                        "reading": "こうちょう",
+                        "meaning": {
+                            "en": "Principal",
+                            "my": "ကျောင်းအုပ်ဆရာကြီး"
+                        }
+                    },
+                    {
+                        "kanji": "小学校",
+                        "reading": "しょうがっこう",
+                        "meaning": {
+                            "en": "Elementary school",
+                            "my": "မူလတန်းကျောင်း"
+                        }
+                    },
+                    {
+                        "kanji": "母校",
+                        "reading": "ぼこう",
+                        "meaning": {
+                            "en": "Alma mater",
+                            "my": "မိမိတက်ခဲ့သောကျောင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "友",
+                "onyomi": "ユウ",
+                "kunyomi": "とも",
+                "meaning": {
+                    "en": "Friend",
+                    "my": "သူငယ်ချင်း"
+                },
+                "emoji": "🤝",
+                "confusing_kanji": [
+                    "反",
+                    "受",
+                    "愛",
+                    "有",
+                    "左",
+                    "右",
+                    "抜",
+                    "支"
+                ],
+                "examples": [
+                    {
+                        "kanji": "友だち",
+                        "reading": "ともだち",
+                        "meaning": {
+                            "en": "Friend",
+                            "my": "သူငယ်ချင်း"
+                        }
+                    },
+                    {
+                        "kanji": "友人",
+                        "reading": "ゆうじん",
+                        "meaning": {
+                            "en": "Friend (formal)",
+                            "my": "မိတ်ဆွေ"
+                        }
+                    },
+                    {
+                        "kanji": "親友",
+                        "reading": "しんゆう",
+                        "meaning": {
+                            "en": "Best friend",
+                            "my": "အရင်းနှီးဆုံးသူငယ်ချင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "本",
+                "onyomi": "ホン",
+                "kunyomi": "もと",
+                "meaning": {
+                    "en": "Book / Origin",
+                    "my": "စာအုပ် / အရင်းအမြစ်"
+                },
+                "emoji": "📚",
+                "confusing_kanji": [
+                    "木",
+                    "体",
+                    "末",
+                    "未",
+                    "札",
+                    "朱",
+                    "半",
+                    "太"
+                ],
+                "examples": [
+                    {
+                        "kanji": "日本",
+                        "reading": "にほん",
+                        "meaning": {
+                            "en": "Japan",
+                            "my": "ဂျပန်"
+                        }
+                    },
+                    {
+                        "kanji": "本屋",
+                        "reading": "ほんや",
+                        "meaning": {
+                            "en": "Bookstore",
+                            "my": "စာအုပ်ဆိုင်"
+                        }
+                    },
+                    {
+                        "kanji": "山本さん",
+                        "reading": "やまもとさん",
+                        "meaning": {
+                            "en": "Mr./Ms. Yamamoto",
+                            "my": "မစ္စတာယာမာမိုတို"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "毎",
+                "onyomi": "マイ",
+                "kunyomi": "N/A",
+                "meaning": {
+                    "en": "Every",
+                    "my": "တိုင်း"
+                },
+                "emoji": "🔁",
+                "confusing_kanji": [
+                    "母",
+                    "海",
+                    "悔",
+                    "繁",
+                    "侮",
+                    "梅",
+                    "毒",
+                    "敏"
+                ],
+                "examples": [
+                    {
+                        "kanji": "毎日",
+                        "reading": "まいにち",
+                        "meaning": {
+                            "en": "Every day",
+                            "my": "နေ့တိုင်း"
+                        }
+                    },
+                    {
+                        "kanji": "毎月",
+                        "reading": "まいつき",
+                        "meaning": {
+                            "en": "Every month",
+                            "my": "လတိုင်း"
+                        }
+                    },
+                    {
+                        "kanji": "毎年",
+                        "reading": "まいねん / まいとし",
+                        "meaning": {
+                            "en": "Every year",
+                            "my": "နှစ်တိုင်း"
+                        }
+                    },
+                    {
+                        "kanji": "毎朝",
+                        "reading": "まいあさ",
+                        "meaning": {
+                            "en": "Every morning",
+                            "my": "မနက်တိုင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "何",
+                "onyomi": "カ",
+                "kunyomi": "なに, なん",
+                "meaning": {
+                    "en": "What",
+                    "my": "ဘာလဲ"
+                },
+                "emoji": "❓",
+                "confusing_kanji": [
+                    "向",
+                    "荷",
+                    "河",
+                    "可",
+                    "阿",
+                    "伺",
+                    "価",
+                    "便"
+                ],
+                "examples": [
+                    {
+                        "kanji": "何月",
+                        "reading": "なんがつ",
+                        "meaning": {
+                            "en": "What month",
+                            "my": "ဘယ်လလဲ"
+                        }
+                    },
+                    {
+                        "kanji": "何人",
+                        "reading": "なんにん",
+                        "meaning": {
+                            "en": "How many people",
+                            "my": "လူဘယ်နှစ်ယောက်လဲ"
+                        }
+                    },
+                    {
+                        "kanji": "何時",
+                        "reading": "なんじ",
+                        "meaning": {
+                            "en": "What time",
+                            "my": "ဘယ်နှစ်နာရီလဲ"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 6,
+            "title": "Directions and Location",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "前",
+                "onyomi": "ゼン",
+                "kunyomi": "まえ",
+                "meaning": {
+                    "en": "Front / Before",
+                    "my": "ရှေ့ / အရင်"
+                },
+                "emoji": "⬅️",
+                "confusing_kanji": [
+                    "後",
+                    "南",
+                    "荷",
+                    "煎",
+                    "輸",
+                    "愉",
+                    "諭",
+                    "揃"
+                ],
+                "examples": [
+                    {
+                        "kanji": "前",
+                        "reading": "まえ",
+                        "meaning": {
+                            "en": "Front / Before",
+                            "my": "ရှေ့ / အရင်"
+                        }
+                    },
+                    {
+                        "kanji": "三日前",
+                        "reading": "みっかまえ",
+                        "meaning": {
+                            "en": "Three days ago",
+                            "my": "လွန်ခဲ့သော ၃ ရက်"
+                        }
+                    },
+                    {
+                        "kanji": "前半",
+                        "reading": "ぜんはん",
+                        "meaning": {
+                            "en": "First half",
+                            "my": "ပထမပိုင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "後",
+                "onyomi": "ゴ, コウ",
+                "kunyomi": "うし(ろ), あと, のち",
+                "meaning": {
+                    "en": "Back / After",
+                    "my": "နောက် / ပြီးနောက်"
+                },
+                "emoji": "➡️",
+                "confusing_kanji": [
+                    "前",
+                    "待",
+                    "役",
+                    "彼",
+                    "復",
+                    "従",
+                    "得",
+                    "御"
+                ],
+                "examples": [
+                    {
+                        "kanji": "後ろ",
+                        "reading": "うしろ",
+                        "meaning": {
+                            "en": "Behind / Back",
+                            "my": "နောက်ကျော / အနောက်"
+                        }
+                    },
+                    {
+                        "kanji": "前後",
+                        "reading": "ぜんご",
+                        "meaning": {
+                            "en": "Front and back / Before and after",
+                            "my": "ရှေ့နောက်"
+                        }
+                    },
+                    {
+                        "kanji": "最後",
+                        "reading": "さいご",
+                        "meaning": {
+                            "en": "Last / End",
+                            "my": "နောက်ဆုံး"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "外",
+                "onyomi": "ガイ, ゲ",
+                "kunyomi": "そと, はず(れる)",
+                "meaning": {
+                    "en": "Outside",
+                    "my": "အပြင်"
+                },
+                "emoji": "🚪",
+                "confusing_kanji": [
+                    "内",
+                    "タ",
+                    "名",
+                    "各",
+                    "処",
+                    "客",
+                    "補",
+                    "掛"
+                ],
+                "examples": [
+                    {
+                        "kanji": "外",
+                        "reading": "そと",
+                        "meaning": {
+                            "en": "Outside",
+                            "my": "အပြင်ဘက်"
+                        }
+                    },
+                    {
+                        "kanji": "外国",
+                        "reading": "がいこく",
+                        "meaning": {
+                            "en": "Foreign country",
+                            "my": "နိုင်ငံခြား"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "左",
+                "onyomi": "サ",
+                "kunyomi": "ひだり",
+                "meaning": {
+                    "en": "Left",
+                    "my": "ဘယ်ဘက်"
+                },
+                "emoji": "👈",
+                "confusing_kanji": [
+                    "右",
+                    "在",
+                    "存",
+                    "友",
+                    "布",
+                    "佐",
+                    "差",
+                    "若"
+                ],
+                "examples": [
+                    {
+                        "kanji": "左手",
+                        "reading": "ひだりて",
+                        "meaning": {
+                            "en": "Left hand",
+                            "my": "ဘယ်လက်"
+                        }
+                    },
+                    {
+                        "kanji": "左側",
+                        "reading": "ひだりがわ",
+                        "meaning": {
+                            "en": "Left side",
+                            "my": "ဘယ်ဘက်ခြမ်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "右",
+                "onyomi": "ウ, ユウ",
+                "kunyomi": "みぎ",
+                "meaning": {
+                    "en": "Right",
+                    "my": "ညာဘက်"
+                },
+                "emoji": "👉",
+                "confusing_kanji": [
+                    "左",
+                    "石",
+                    "若",
+                    "占",
+                    "古",
+                    "台",
+                    "召",
+                    "佑"
+                ],
+                "examples": [
+                    {
+                        "kanji": "右手",
+                        "reading": "みぎて",
+                        "meaning": {
+                            "en": "Right hand",
+                            "my": "ညာလက်"
+                        }
+                    },
+                    {
+                        "kanji": "左右",
+                        "reading": "さゆう",
+                        "meaning": {
+                            "en": "Left and right",
+                            "my": "ဘယ်ညာ"
+                        }
+                    },
+                    {
+                        "kanji": "右側",
+                        "reading": "みぎがわ",
+                        "meaning": {
+                            "en": "Right side",
+                            "my": "ညာဘက်ခြမ်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "東",
+                "onyomi": "トウ",
+                "kunyomi": "ひがし",
+                "meaning": {
+                    "en": "East",
+                    "my": "အရှေ့ဘက်"
+                },
+                "emoji": "🌅",
+                "confusing_kanji": [
+                    "束",
+                    "車",
+                    "重",
+                    "棟",
+                    "凍",
+                    "練",
+                    "陳",
+                    "更"
+                ],
+                "examples": [
+                    {
+                        "kanji": "東口",
+                        "reading": "ひがしぐち",
+                        "meaning": {
+                            "en": "East exit",
+                            "my": "အရှေ့ပေါက်"
+                        }
+                    },
+                    {
+                        "kanji": "東京",
+                        "reading": "とうきょう",
+                        "meaning": {
+                            "en": "Tokyo",
+                            "my": "တိုကျို"
+                        }
+                    },
+                    {
+                        "kanji": "東洋",
+                        "reading": "とうよう",
+                        "meaning": {
+                            "en": "The East / Orient",
+                            "my": "အရှေ့တိုင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "西",
+                "onyomi": "セイ, サイ",
+                "kunyomi": "にし",
+                "meaning": {
+                    "en": "West",
+                    "my": "အနောက်ဘက်"
+                },
+                "emoji": "🌇",
+                "confusing_kanji": [
+                    "酉",
+                    "酒",
+                    "要",
+                    "価",
+                    "栗",
+                    "票",
+                    "茜",
+                    "腰"
+                ],
+                "examples": [
+                    {
+                        "kanji": "西口",
+                        "reading": "にしぐち",
+                        "meaning": {
+                            "en": "West exit",
+                            "my": "အနောက်ပေါက်"
+                        }
+                    },
+                    {
+                        "kanji": "東西",
+                        "reading": "とうざい",
+                        "meaning": {
+                            "en": "East and west",
+                            "my": "အရှေ့အနောက်"
+                        }
+                    },
+                    {
+                        "kanji": "西洋",
+                        "reading": "せいよう",
+                        "meaning": {
+                            "en": "The West / Occident",
+                            "my": "အနောက်တိုင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "南",
+                "onyomi": "ナン",
+                "kunyomi": "みなみ",
+                "meaning": {
+                    "en": "South",
+                    "my": "တောင်ဘက်"
+                },
+                "emoji": "🏝️",
+                "confusing_kanji": [
+                    "幸",
+                    "楠",
+                    "献",
+                    "前",
+                    "商",
+                    "岡",
+                    "箇",
+                    "網"
+                ],
+                "examples": [
+                    {
+                        "kanji": "南口",
+                        "reading": "みなみぐち",
+                        "meaning": {
+                            "en": "South exit",
+                            "my": "တောင်ပေါက်"
+                        }
+                    },
+                    {
+                        "kanji": "東南アジア",
+                        "reading": "とうなんアジア",
+                        "meaning": {
+                            "en": "Southeast Asia",
+                            "my": "အရှေ့တောင်အာရှ"
+                        }
+                    },
+                    {
+                        "kanji": "南極",
+                        "reading": "なんきょく",
+                        "meaning": {
+                            "en": "South Pole / Antarctica",
+                            "my": "တောင်ဝင်ရိုးစွန်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "北",
+                "onyomi": "ホク",
+                "kunyomi": "きた",
+                "meaning": {
+                    "en": "North",
+                    "my": "မြောက်ဘက်"
+                },
+                "emoji": "❄️",
+                "confusing_kanji": [
+                    "比",
+                    "此",
+                    "背",
+                    "昆",
+                    "皆",
+                    "旨",
+                    "兆",
+                    "化"
+                ],
+                "examples": [
+                    {
+                        "kanji": "北口",
+                        "reading": "きたぐち",
+                        "meaning": {
+                            "en": "North exit",
+                            "my": "မြောက်ပေါက်"
+                        }
+                    },
+                    {
+                        "kanji": "南北",
+                        "reading": "なんぼく",
+                        "meaning": {
+                            "en": "North and south",
+                            "my": "တောင်မြောက်"
+                        }
+                    },
+                    {
+                        "kanji": "北海道",
+                        "reading": "ほっかいどう",
+                        "meaning": {
+                            "en": "Hokkaido",
+                            "my": "ဟော့ကိုင်းဒိုး"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "名",
+                "onyomi": "メイ, ミョウ",
+                "kunyomi": "な",
+                "meaning": {
+                    "en": "Name",
+                    "my": "နာမည်"
+                },
+                "emoji": "🏷️",
+                "confusing_kanji": [
+                    "外",
+                    "各",
+                    "多",
+                    "明",
+                    "命",
+                    "召",
+                    "銘",
+                    "石"
+                ],
+                "examples": [
+                    {
+                        "kanji": "名前",
+                        "reading": "なまえ",
+                        "meaning": {
+                            "en": "Name",
+                            "my": "နာမည်"
+                        }
+                    },
+                    {
+                        "kanji": "十名",
+                        "reading": "じゅうめい",
+                        "meaning": {
+                            "en": "10 people (formal)",
+                            "my": "လူ ၁၀ ယောက်"
+                        }
+                    },
+                    {
+                        "kanji": "有名な",
+                        "reading": "ゆうめいな",
+                        "meaning": {
+                            "en": "Famous",
+                            "my": "ကျော်ကြားသော"
+                        }
+                    },
+                    {
+                        "kanji": "人名",
+                        "reading": "じんめい",
+                        "meaning": {
+                            "en": "Person's name",
+                            "my": "လူအမည်"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 7,
+            "title": "Animals and Nature",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "牛",
+                "onyomi": "ギュウ",
+                "kunyomi": "うし",
+                "meaning": {
+                    "en": "Cow / Bull",
+                    "my": "နွား"
+                },
+                "emoji": "🐄",
+                "confusing_kanji": [
+                    "午",
+                    "年",
+                    "半",
+                    "生",
+                    "牢",
+                    "牧",
+                    "件",
+                    "物"
+                ],
+                "examples": [
+                    {
+                        "kanji": "牛",
+                        "reading": "うし",
+                        "meaning": {
+                            "en": "Cow",
+                            "my": "နွား"
+                        }
+                    },
+                    {
+                        "kanji": "水牛",
+                        "reading": "すいぎゅう",
+                        "meaning": {
+                            "en": "Water buffalo",
+                            "my": "ကျွဲ"
+                        }
+                    },
+                    {
+                        "kanji": "牛肉",
+                        "reading": "ぎゅうにく",
+                        "meaning": {
+                            "en": "Beef",
+                            "my": "အမဲသား"
+                        }
+                    },
+                    {
+                        "kanji": "牛乳",
+                        "reading": "ぎゅうにゅう",
+                        "meaning": {
+                            "en": "Milk",
+                            "my": "နွားနို့"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "馬",
+                "onyomi": "バ",
+                "kunyomi": "うま, ま",
+                "meaning": {
+                    "en": "Horse",
+                    "my": "မြင်း"
+                },
+                "emoji": "🐎",
+                "confusing_kanji": [
+                    "鳥",
+                    "島",
+                    "篤",
+                    "罵",
+                    "騰",
+                    "驚",
+                    "駅",
+                    "駆"
+                ],
+                "examples": [
+                    {
+                        "kanji": "馬",
+                        "reading": "うま",
+                        "meaning": {
+                            "en": "Horse",
+                            "my": "မြင်း"
+                        }
+                    },
+                    {
+                        "kanji": "馬車",
+                        "reading": "ばしゃ",
+                        "meaning": {
+                            "en": "Horse-drawn carriage",
+                            "my": "မြင်းလှည်း"
+                        }
+                    },
+                    {
+                        "kanji": "トロイの木馬",
+                        "reading": "トロイのもくば",
+                        "meaning": {
+                            "en": "Trojan horse",
+                            "my": "ထရိုဂျင်မြင်းရုပ်"
+                        }
+                    },
+                    {
+                        "kanji": "乗馬",
+                        "reading": "じょうば",
+                        "meaning": {
+                            "en": "Horse riding",
+                            "my": "မြင်းစီးခြင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "魚",
+                "onyomi": "ギョ",
+                "kunyomi": "さかな, うお",
+                "meaning": {
+                    "en": "Fish",
+                    "my": "ငါး"
+                },
+                "emoji": "🐟",
+                "confusing_kanji": [
+                    "漁",
+                    "魯",
+                    "鮮",
+                    "鯨",
+                    "角",
+                    "亀",
+                    "免",
+                    "負"
+                ],
+                "examples": [
+                    {
+                        "kanji": "魚",
+                        "reading": "さかな",
+                        "meaning": {
+                            "en": "Fish",
+                            "my": "ငါး"
+                        }
+                    },
+                    {
+                        "kanji": "金魚",
+                        "reading": "きんぎょ",
+                        "meaning": {
+                            "en": "Goldfish",
+                            "my": "ရွှေငါး"
+                        }
+                    },
+                    {
+                        "kanji": "人魚",
+                        "reading": "にんぎょ",
+                        "meaning": {
+                            "en": "Mermaid",
+                            "my": "ရေသူမ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "貝",
+                "onyomi": "バイ",
+                "kunyomi": "かい",
+                "meaning": {
+                    "en": "Shellfish",
+                    "my": "ခရု / ကမာ"
+                },
+                "emoji": "🐚",
+                "confusing_kanji": [
+                    "目",
+                    "見",
+                    "具",
+                    "負",
+                    "買",
+                    "貞",
+                    "則",
+                    "敗"
+                ],
+                "examples": [
+                    {
+                        "kanji": "貝",
+                        "reading": "かい",
+                        "meaning": {
+                            "en": "Shell",
+                            "my": "ခရုခွံ"
+                        }
+                    },
+                    {
+                        "kanji": "貝がら",
+                        "reading": "かいがら",
+                        "meaning": {
+                            "en": "Seashell",
+                            "my": "ခရုခွံ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "雨",
+                "onyomi": "ウ",
+                "kunyomi": "あめ, あま",
+                "meaning": {
+                    "en": "Rain",
+                    "my": "မိုး"
+                },
+                "emoji": "🌧️",
+                "confusing_kanji": [
+                    "雪",
+                    "雲",
+                    "電",
+                    "雷",
+                    "霜",
+                    "需",
+                    "面",
+                    "両"
+                ],
+                "examples": [
+                    {
+                        "kanji": "雨",
+                        "reading": "あめ",
+                        "meaning": {
+                            "en": "Rain",
+                            "my": "မိုး"
+                        }
+                    },
+                    {
+                        "kanji": "大雨",
+                        "reading": "おおあめ",
+                        "meaning": {
+                            "en": "Heavy rain",
+                            "my": "မိုးသည်းထန်စွာရွာခြင်း"
+                        }
+                    },
+                    {
+                        "kanji": "雨期",
+                        "reading": "うき",
+                        "meaning": {
+                            "en": "Rainy season",
+                            "my": "မိုးရာသီ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "天",
+                "onyomi": "テン",
+                "kunyomi": "あめ, あま",
+                "meaning": {
+                    "en": "Heaven / Sky",
+                    "my": "ကောင်းကင်"
+                },
+                "emoji": "🌤️",
+                "confusing_kanji": [
+                    "夫",
+                    "大",
+                    "矢",
+                    "末",
+                    "未",
+                    "失",
+                    "呑",
+                    "蚕"
+                ],
+                "examples": [
+                    {
+                        "kanji": "天",
+                        "reading": "てん",
+                        "meaning": {
+                            "en": "Heaven / Sky",
+                            "my": "ကောင်းကင်"
+                        }
+                    },
+                    {
+                        "kanji": "天気",
+                        "reading": "てんき",
+                        "meaning": {
+                            "en": "Weather",
+                            "my": "ရာသီဥတု"
+                        }
+                    },
+                    {
+                        "kanji": "天国",
+                        "reading": "てんごく",
+                        "meaning": {
+                            "en": "Paradise / Heaven",
+                            "my": "ကောင်းကင်ဘုံ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "気",
+                "onyomi": "キ, ケ",
+                "kunyomi": "いき",
+                "meaning": {
+                    "en": "Spirit / Air / Energy",
+                    "my": "စိတ် / လေ / စွမ်းအင်"
+                },
+                "emoji": "🔋",
+                "confusing_kanji": [
+                    "汽",
+                    "乞",
+                    "飛",
+                    "風",
+                    "弟",
+                    "危",
+                    "色",
+                    "宛"
+                ],
+                "examples": [
+                    {
+                        "kanji": "人気",
+                        "reading": "にんき",
+                        "meaning": {
+                            "en": "Popularity",
+                            "my": "လူကြိုက်များခြင်း"
+                        }
+                    },
+                    {
+                        "kanji": "気をつける",
+                        "reading": "きをつける",
+                        "meaning": {
+                            "en": "To be careful",
+                            "my": "ဂရုစိုက်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "気持ち",
+                        "reading": "きもち",
+                        "meaning": {
+                            "en": "Feeling / Mood",
+                            "my": "ခံစားချက်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "車",
+                "onyomi": "シャ",
+                "kunyomi": "くるま",
+                "meaning": {
+                    "en": "Car / Vehicle",
+                    "my": "ကား"
+                },
+                "emoji": "🚗",
+                "confusing_kanji": [
+                    "東",
+                    "重",
+                    "軍",
+                    "庫",
+                    "連",
+                    "輸",
+                    "斬",
+                    "轟"
+                ],
+                "examples": [
+                    {
+                        "kanji": "車",
+                        "reading": "くるま",
+                        "meaning": {
+                            "en": "Car",
+                            "my": "ကား"
+                        }
+                    },
+                    {
+                        "kanji": "電車",
+                        "reading": "でんしゃ",
+                        "meaning": {
+                            "en": "Electric train",
+                            "my": "လျှပ်စစ်ရထား"
+                        }
+                    },
+                    {
+                        "kanji": "自動車",
+                        "reading": "じどうしゃ",
+                        "meaning": {
+                            "en": "Automobile",
+                            "my": "မော်တော်ကား"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "門",
+                "onyomi": "モン",
+                "kunyomi": "かど, と",
+                "meaning": {
+                    "en": "Gate",
+                    "my": "တံခါးဝ"
+                },
+                "emoji": "⛩️",
+                "confusing_kanji": [
+                    "開",
+                    "閉",
+                    "問",
+                    "間",
+                    "聞",
+                    "関",
+                    "闇",
+                    "闘"
+                ],
+                "examples": [
+                    {
+                        "kanji": "正門",
+                        "reading": "せいもん",
+                        "meaning": {
+                            "en": "Main gate",
+                            "my": "ပင်မတံခါး"
+                        }
+                    },
+                    {
+                        "kanji": "専門",
+                        "reading": "せんもん",
+                        "meaning": {
+                            "en": "Specialty / Major",
+                            "my": "အထူးပြုဘာသာရပ်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "午",
+                "onyomi": "ゴ",
+                "kunyomi": "うま",
+                "meaning": {
+                    "en": "Noon",
+                    "my": "မွန်းတည့်"
+                },
+                "emoji": "🕛",
+                "confusing_kanji": [
+                    "牛",
+                    "年",
+                    "千",
+                    "干",
+                    "平",
+                    "杵",
+                    "許",
+                    "件"
+                ],
+                "examples": [
+                    {
+                        "kanji": "午前",
+                        "reading": "ごぜん",
+                        "meaning": {
+                            "en": "A.M. / Morning",
+                            "my": "နံနက်ပိုင်း"
+                        }
+                    },
+                    {
+                        "kanji": "午後",
+                        "reading": "ごご",
+                        "meaning": {
+                            "en": "P.M. / Afternoon",
+                            "my": "မွန်းလွဲပိုင်း"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 8,
+            "title": "Adjectives and Size",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "大",
+                "onyomi": "ダイ, タイ",
+                "kunyomi": "おお(きい)",
+                "meaning": {
+                    "en": "Big / Large",
+                    "my": "ကြီးသော"
+                },
+                "emoji": "🐘",
+                "confusing_kanji": [
+                    "太",
+                    "犬",
+                    "天",
+                    "夫",
+                    "木",
+                    "本",
+                    "人",
+                    "丈"
+                ],
+                "examples": [
+                    {
+                        "kanji": "大きい",
+                        "reading": "おおきい",
+                        "meaning": {
+                            "en": "Big",
+                            "my": "ကြီးသော"
+                        }
+                    },
+                    {
+                        "kanji": "大学",
+                        "reading": "だいがく",
+                        "meaning": {
+                            "en": "University",
+                            "my": "တက္ကသိုလ်"
+                        }
+                    },
+                    {
+                        "kanji": "アジア大会",
+                        "reading": "アジアたいかい",
+                        "meaning": {
+                            "en": "Asian Games",
+                            "my": "အာရှအားကစားပြိုင်ပွဲ"
+                        }
+                    },
+                    {
+                        "kanji": "大人",
+                        "reading": "おとな",
+                        "meaning": {
+                            "en": "Adult",
+                            "my": "လူကြီး"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "小",
+                "onyomi": "ショウ",
+                "kunyomi": "ちい(さい), こ, お",
+                "meaning": {
+                    "en": "Small / Little",
+                    "my": "ငယ်သော"
+                },
+                "emoji": "🐜",
+                "confusing_kanji": [
+                    "少",
+                    "心",
+                    "水",
+                    "不",
+                    "示",
+                    "尖",
+                    "光",
+                    "当"
+                ],
+                "examples": [
+                    {
+                        "kanji": "小さい",
+                        "reading": "ちいさい",
+                        "meaning": {
+                            "en": "Small",
+                            "my": "ငယ်သော"
+                        }
+                    },
+                    {
+                        "kanji": "小川",
+                        "reading": "おがわ",
+                        "meaning": {
+                            "en": "Brook / Stream",
+                            "my": "ချောင်းငယ်"
+                        }
+                    },
+                    {
+                        "kanji": "小学校",
+                        "reading": "しょうがっこう",
+                        "meaning": {
+                            "en": "Elementary school",
+                            "my": "မူလတန်းကျောင်း"
+                        }
+                    },
+                    {
+                        "kanji": "小犬",
+                        "reading": "こいぬ",
+                        "meaning": {
+                            "en": "Puppy",
+                            "my": "ခွေးပေါက်လေး"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "高",
+                "onyomi": "コウ",
+                "kunyomi": "たか(い)",
+                "meaning": {
+                    "en": "High / Expensive",
+                    "my": "မြင့်သော / ဈေးကြီးသော"
+                },
+                "emoji": "🏔️",
+                "confusing_kanji": [
+                    "亭",
+                    "京",
+                    "亮",
+                    "商",
+                    "向",
+                    "尚",
+                    "喬",
+                    "毫"
+                ],
+                "examples": [
+                    {
+                        "kanji": "高い",
+                        "reading": "たかい",
+                        "meaning": {
+                            "en": "High / Expensive",
+                            "my": "မြင့်သော / ဈေးကြီးသော"
+                        }
+                    },
+                    {
+                        "kanji": "高校生",
+                        "reading": "こうこうせい",
+                        "meaning": {
+                            "en": "High school student",
+                            "my": "အထက်တန်းကျောင်းသား"
+                        }
+                    },
+                    {
+                        "kanji": "円高",
+                        "reading": "えんだか",
+                        "meaning": {
+                            "en": "Strong yen",
+                            "my": "ယန်းငွေတန်ဖိုးတက်ခြင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "安",
+                "onyomi": "アン",
+                "kunyomi": "やす(い)",
+                "meaning": {
+                    "en": "Cheap / Peaceful",
+                    "my": "ဈေးပေါသော / အေးချမ်းသော"
+                },
+                "emoji": "🪙",
+                "confusing_kanji": [
+                    "女",
+                    "字",
+                    "家",
+                    "案",
+                    "宴",
+                    "妥",
+                    "委",
+                    "要"
+                ],
+                "examples": [
+                    {
+                        "kanji": "安い",
+                        "reading": "やすい",
+                        "meaning": {
+                            "en": "Cheap",
+                            "my": "ဈေးပေါသော"
+                        }
+                    },
+                    {
+                        "kanji": "安心する",
+                        "reading": "あんしんする",
+                        "meaning": {
+                            "en": "To feel relieved",
+                            "my": "စိတ်အေးရသည်"
+                        }
+                    },
+                    {
+                        "kanji": "安全",
+                        "reading": "あんぜん",
+                        "meaning": {
+                            "en": "Safety",
+                            "my": "ဘေးကင်းလုံခြုံမှု"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "新",
+                "onyomi": "シン",
+                "kunyomi": "あたら(しい)",
+                "meaning": {
+                    "en": "New",
+                    "my": "သစ်သော"
+                },
+                "emoji": "✨",
+                "confusing_kanji": [
+                    "親",
+                    "薪",
+                    "新聞",
+                    "辞",
+                    "辛",
+                    "幸",
+                    "辣",
+                    "訴"
+                ],
+                "examples": [
+                    {
+                        "kanji": "新しい",
+                        "reading": "あたらしい",
+                        "meaning": {
+                            "en": "New",
+                            "my": "သစ်သော"
+                        }
+                    },
+                    {
+                        "kanji": "新聞",
+                        "reading": "しんぶん",
+                        "meaning": {
+                            "en": "Newspaper",
+                            "my": "သတင်းစာ"
+                        }
+                    },
+                    {
+                        "kanji": "新人",
+                        "reading": "しんじん",
+                        "meaning": {
+                            "en": "Newcomer / Rookie",
+                            "my": "လူသစ်"
+                        }
+                    },
+                    {
+                        "kanji": "新年",
+                        "reading": "しんねん",
+                        "meaning": {
+                            "en": "New Year",
+                            "my": "နှစ်သစ်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "古",
+                "onyomi": "コ",
+                "kunyomi": "ふる(い)",
+                "meaning": {
+                    "en": "Old",
+                    "my": "ဟောင်းသော"
+                },
+                "emoji": "🏺",
+                "confusing_kanji": [
+                    "右",
+                    "石",
+                    "吉",
+                    "占",
+                    "台",
+                    "苦",
+                    "故",
+                    "克"
+                ],
+                "examples": [
+                    {
+                        "kanji": "古い",
+                        "reading": "ふるい",
+                        "meaning": {
+                            "en": "Old",
+                            "my": "ဟောင်းသော"
+                        }
+                    },
+                    {
+                        "kanji": "中古車",
+                        "reading": "ちゅうこしゃ",
+                        "meaning": {
+                            "en": "Used car",
+                            "my": "တစ်ပတ်ရစ်ကား"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "長",
+                "onyomi": "チョウ",
+                "kunyomi": "なが(い)",
+                "meaning": {
+                    "en": "Long / Leader",
+                    "my": "ရှည်သော / ခေါင်းဆောင်"
+                },
+                "emoji": "📏",
+                "confusing_kanji": [
+                    "張",
+                    "帳",
+                    "髪",
+                    "展",
+                    "良",
+                    "衣",
+                    "依",
+                    "長"
+                ],
+                "examples": [
+                    {
+                        "kanji": "長い",
+                        "reading": "ながい",
+                        "meaning": {
+                            "en": "Long",
+                            "my": "ရှည်သော"
+                        }
+                    },
+                    {
+                        "kanji": "社長",
+                        "reading": "しゃちょう",
+                        "meaning": {
+                            "en": "Company president",
+                            "my": "ကုမ္ပဏီဥက္ကဌ"
+                        }
+                    },
+                    {
+                        "kanji": "学長",
+                        "reading": "がくちょう",
+                        "meaning": {
+                            "en": "University president",
+                            "my": "တက္ကသိုလ်အဓိပတိ"
+                        }
+                    },
+                    {
+                        "kanji": "校長",
+                        "reading": "こうちょう",
+                        "meaning": {
+                            "en": "Principal",
+                            "my": "ကျောင်းအုပ်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "多",
+                "onyomi": "タ",
+                "kunyomi": "おお(い)",
+                "meaning": {
+                    "en": "Many / Much",
+                    "my": "များသော"
+                },
+                "emoji": "👨‍👩‍👧‍👦",
+                "confusing_kanji": [
+                    "名",
+                    "外",
+                    "夕",
+                    "タ",
+                    "銘",
+                    "移",
+                    "夢",
+                    "夥"
+                ],
+                "examples": [
+                    {
+                        "kanji": "多い",
+                        "reading": "おおい",
+                        "meaning": {
+                            "en": "Many / Frequent",
+                            "my": "များသော"
+                        }
+                    },
+                    {
+                        "kanji": "多少",
+                        "reading": "たしょう",
+                        "meaning": {
+                            "en": "More or less / Some",
+                            "my": "အနည်းနှင့်အများ"
+                        }
+                    },
+                    {
+                        "kanji": "多数決",
+                        "reading": "たすうけつ",
+                        "meaning": {
+                            "en": "Majority vote",
+                            "my": "အများစုဆန္ဒ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "少",
+                "onyomi": "ショウ",
+                "kunyomi": "すく(ない), すこ(し)",
+                "meaning": {
+                    "en": "Few / Little",
+                    "my": "နည်းသော"
+                },
+                "emoji": "🤏",
+                "confusing_kanji": [
+                    "小",
+                    "歩",
+                    "劣",
+                    "省",
+                    "抄",
+                    "妙",
+                    "沙",
+                    "砂"
+                ],
+                "examples": [
+                    {
+                        "kanji": "少ない",
+                        "reading": "すくない",
+                        "meaning": {
+                            "en": "Few",
+                            "my": "နည်းသော"
+                        }
+                    },
+                    {
+                        "kanji": "少し",
+                        "reading": "すこし",
+                        "meaning": {
+                            "en": "A little",
+                            "my": "အနည်းငယ်"
+                        }
+                    },
+                    {
+                        "kanji": "少年",
+                        "reading": "しょうねん",
+                        "meaning": {
+                            "en": "Boy / Youth",
+                            "my": "လူငယ်"
+                        }
+                    },
+                    {
+                        "kanji": "少女",
+                        "reading": "しょうじょ",
+                        "meaning": {
+                            "en": "Girl / Maiden",
+                            "my": "မိန်းကလေးငယ်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "早",
+                "onyomi": "ソウ",
+                "kunyomi": "はや(い)",
+                "meaning": {
+                    "en": "Early / Fast",
+                    "my": "စောသော / မြန်သော"
+                },
+                "emoji": "🌅",
+                "confusing_kanji": [
+                    "草",
+                    "卓",
+                    "章",
+                    "旱",
+                    "昇",
+                    "旦",
+                    "旧",
+                    "旬"
+                ],
+                "examples": [
+                    {
+                        "kanji": "早い",
+                        "reading": "はやい",
+                        "meaning": {
+                            "en": "Early",
+                            "my": "စောသော"
+                        }
+                    },
+                    {
+                        "kanji": "早朝",
+                        "reading": "そうちょう",
+                        "meaning": {
+                            "en": "Early morning",
+                            "my": "မနက်စောစော"
+                        }
+                    },
+                    {
+                        "kanji": "早送り",
+                        "reading": "はやおくり",
+                        "meaning": {
+                            "en": "Fast forward",
+                            "my": "အမြန်ရစ်သည်"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 9,
+            "title": "Verbs of Motion and Daily Actions",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "行",
+                "onyomi": "コウ, ギョウ",
+                "kunyomi": "い(く), おこな(う)",
+                "meaning": {
+                    "en": "To go / Line",
+                    "my": "သွားသည် / စာကြောင်း"
+                },
+                "emoji": "🏃",
+                "confusing_kanji": [
+                    "待",
+                    "術",
+                    "街",
+                    "従",
+                    "得",
+                    "復",
+                    "役",
+                    "彼"
+                ],
+                "examples": [
+                    {
+                        "kanji": "行く",
+                        "reading": "いく",
+                        "meaning": {
+                            "en": "To go",
+                            "my": "သွားသည်"
+                        }
+                    },
+                    {
+                        "kanji": "行き方",
+                        "reading": "いきかた",
+                        "meaning": {
+                            "en": "Way of going / Directions",
+                            "my": "သွားပုံသွားနည်း"
+                        }
+                    },
+                    {
+                        "kanji": "銀行",
+                        "reading": "ぎんこう",
+                        "meaning": {
+                            "en": "Bank",
+                            "my": "ဘဏ်"
+                        }
+                    },
+                    {
+                        "kanji": "三行目",
+                        "reading": "さんぎょうめ",
+                        "meaning": {
+                            "en": "The third line",
+                            "my": "တတိယမြောက်စာကြောင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "来",
+                "onyomi": "ライ",
+                "kunyomi": "く(る), きた(る)",
+                "meaning": {
+                    "en": "To come / Next",
+                    "my": "လာသည် / နောက်လာမည့်"
+                },
+                "emoji": "🚶",
+                "confusing_kanji": [
+                    "未",
+                    "末",
+                    "米",
+                    "束",
+                    "本",
+                    "木",
+                    "乗",
+                    "東"
+                ],
+                "examples": [
+                    {
+                        "kanji": "来る",
+                        "reading": "くる",
+                        "meaning": {
+                            "en": "To come",
+                            "my": "လာသည်"
+                        }
+                    },
+                    {
+                        "kanji": "来年",
+                        "reading": "らいねん",
+                        "meaning": {
+                            "en": "Next year",
+                            "my": "နောက်နှစ်"
+                        }
+                    },
+                    {
+                        "kanji": "来週",
+                        "reading": "らいしゅう",
+                        "meaning": {
+                            "en": "Next week",
+                            "my": "နောက်အပတ်"
+                        }
+                    },
+                    {
+                        "kanji": "将来",
+                        "reading": "しょうらい",
+                        "meaning": {
+                            "en": "Future",
+                            "my": "အနာဂတ်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "食",
+                "onyomi": "ショク",
+                "kunyomi": "た(べる), く(う)",
+                "meaning": {
+                    "en": "To eat / Food",
+                    "my": "စားသည် / အစားအစာ"
+                },
+                "emoji": "🍱",
+                "confusing_kanji": [
+                    "飲",
+                    "良",
+                    "飯",
+                    "飽",
+                    "飾",
+                    "養",
+                    "館",
+                    "餅"
+                ],
+                "examples": [
+                    {
+                        "kanji": "食べる",
+                        "reading": "たべる",
+                        "meaning": {
+                            "en": "To eat",
+                            "my": "စားသည်"
+                        }
+                    },
+                    {
+                        "kanji": "外食する",
+                        "reading": "がいしょくする",
+                        "meaning": {
+                            "en": "To eat out",
+                            "my": "အပြင်မှာစားသည်"
+                        }
+                    },
+                    {
+                        "kanji": "食料品",
+                        "reading": "しょくりょうひん",
+                        "meaning": {
+                            "en": "Groceries / Foodstuffs",
+                            "my": "စားသောက်ကုန်"
+                        }
+                    },
+                    {
+                        "kanji": "食堂",
+                        "reading": "しょくどう",
+                        "meaning": {
+                            "en": "Cafeteria / Dining hall",
+                            "my": "ထမင်းစားဆောင်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "見",
+                "onyomi": "ケン",
+                "kunyomi": "み(る), み(せる)",
+                "meaning": {
+                    "en": "To see / To show",
+                    "my": "ကြည့်သည် / ပြသသည်"
+                },
+                "emoji": "👁️",
+                "confusing_kanji": [
+                    "貝",
+                    "目",
+                    "具",
+                    "現",
+                    "視",
+                    "規",
+                    "覚",
+                    "親"
+                ],
+                "examples": [
+                    {
+                        "kanji": "見る",
+                        "reading": "みる",
+                        "meaning": {
+                            "en": "To see / To watch",
+                            "my": "ကြည့်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "見せる",
+                        "reading": "みせる",
+                        "meaning": {
+                            "en": "To show",
+                            "my": "ပြသသည်"
+                        }
+                    },
+                    {
+                        "kanji": "見学する",
+                        "reading": "けんがくする",
+                        "meaning": {
+                            "en": "Study tour / Field trip",
+                            "my": "လေ့လာရေးခရီးသွားသည်"
+                        }
+                    },
+                    {
+                        "kanji": "意見",
+                        "reading": "いけん",
+                        "meaning": {
+                            "en": "Opinion",
+                            "my": "ထင်မြင်ချက်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "入",
+                "onyomi": "ニュウ",
+                "kunyomi": "はい(る), い(れる)",
+                "meaning": {
+                    "en": "To enter / To put in",
+                    "my": "ဝင်သည် / ထည့်သည်"
+                },
+                "emoji": "📥",
+                "confusing_kanji": [
+                    "人",
+                    "八",
+                    "久",
+                    "内",
+                    "全",
+                    "込",
+                    "り",
+                    "ト"
+                ],
+                "examples": [
+                    {
+                        "kanji": "入る",
+                        "reading": "はいる",
+                        "meaning": {
+                            "en": "To enter",
+                            "my": "ဝင်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "入れる",
+                        "reading": "いれる",
+                        "meaning": {
+                            "en": "To put in",
+                            "my": "ထည့်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "入口",
+                        "reading": "いりぐち",
+                        "meaning": {
+                            "en": "Entrance",
+                            "my": "အဝင်ဝ"
+                        }
+                    },
+                    {
+                        "kanji": "入学する",
+                        "reading": "にゅうがくする",
+                        "meaning": {
+                            "en": "To enter school",
+                            "my": "ကျောင်းဝင်သည်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "出",
+                "onyomi": "シュツ",
+                "kunyomi": "で(る), だ(す)",
+                "meaning": {
+                    "en": "To go out / To take out",
+                    "my": "ထွက်သည် / ထုတ်သည်"
+                },
+                "emoji": "📤",
+                "confusing_kanji": [
+                    "山",
+                    "由",
+                    "田",
+                    "缶",
+                    "屈",
+                    "拙",
+                    "岳",
+                    "曲"
+                ],
+                "examples": [
+                    {
+                        "kanji": "出る",
+                        "reading": "でる",
+                        "meaning": {
+                            "en": "To go out / To exit",
+                            "my": "ထွက်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "出す",
+                        "reading": "だす",
+                        "meaning": {
+                            "en": "To take out / To hand in",
+                            "my": "ထုတ်သည် / တင်ပြသည်"
+                        }
+                    },
+                    {
+                        "kanji": "出口",
+                        "reading": "でぐち",
+                        "meaning": {
+                            "en": "Exit",
+                            "my": "ထွက်ပေါက်"
+                        }
+                    },
+                    {
+                        "kanji": "出席する",
+                        "reading": "しゅっせきする",
+                        "meaning": {
+                            "en": "To attend",
+                            "my": "တက်ရောက်သည်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "立",
+                "onyomi": "リツ",
+                "kunyomi": "た(つ)",
+                "meaning": {
+                    "en": "To stand",
+                    "my": "မတ်တပ်ရပ်သည်"
+                },
+                "emoji": "🕴️",
+                "confusing_kanji": [
+                    "音",
+                    "位",
+                    "産",
+                    "泣",
+                    "辛",
+                    "笠",
+                    "拉",
+                    "並"
+                ],
+                "examples": [
+                    {
+                        "kanji": "立つ",
+                        "reading": "たつ",
+                        "meaning": {
+                            "en": "To stand",
+                            "my": "မတ်တပ်ရပ်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "立食パーティー",
+                        "reading": "りっしょくパーティー",
+                        "meaning": {
+                            "en": "Buffet party (standing)",
+                            "my": "မတ်တပ်ရပ်စားသောက်ပွဲ"
+                        }
+                    },
+                    {
+                        "kanji": "国立大学",
+                        "reading": "こくりつだいがく",
+                        "meaning": {
+                            "en": "National university",
+                            "my": "နိုင်ငံပိုင်တက္ကသိုလ်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "書",
+                "onyomi": "ショ",
+                "kunyomi": "か(く)",
+                "meaning": {
+                    "en": "To write / Book",
+                    "my": "ရေးသည် / စာအုပ်"
+                },
+                "emoji": "✍️",
+                "confusing_kanji": [
+                    "昼",
+                    "画",
+                    "君",
+                    "暑",
+                    "者",
+                    "諸",
+                    "署",
+                    "番"
+                ],
+                "examples": [
+                    {
+                        "kanji": "書く",
+                        "reading": "かく",
+                        "meaning": {
+                            "en": "To write",
+                            "my": "ရေးသည်"
+                        }
+                    },
+                    {
+                        "kanji": "読書",
+                        "reading": "どくしょ",
+                        "meaning": {
+                            "en": "Reading books",
+                            "my": "စာဖတ်ခြင်း"
+                        }
+                    },
+                    {
+                        "kanji": "下書き",
+                        "reading": "したがき",
+                        "meaning": {
+                            "en": "Draft",
+                            "my": "မူကြမ်းရေးခြင်း"
+                        }
+                    },
+                    {
+                        "kanji": "辞書",
+                        "reading": "じしょ",
+                        "meaning": {
+                            "en": "Dictionary",
+                            "my": "အဘိဓာန်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "言",
+                "onyomi": "ゲン, ゴン",
+                "kunyomi": "い(う), こと",
+                "meaning": {
+                    "en": "To say / Word",
+                    "my": "ပြောသည် / စကားလုံး"
+                },
+                "emoji": "💬",
+                "confusing_kanji": [
+                    "信",
+                    "計",
+                    "語",
+                    "話",
+                    "記",
+                    "訂",
+                    "訓",
+                    "音"
+                ],
+                "examples": [
+                    {
+                        "kanji": "言う",
+                        "reading": "いう",
+                        "meaning": {
+                            "en": "To say",
+                            "my": "ပြောသည်"
+                        }
+                    },
+                    {
+                        "kanji": "言語",
+                        "reading": "げんご",
+                        "meaning": {
+                            "en": "Language",
+                            "my": "ဘာသာစကား"
+                        }
+                    },
+                    {
+                        "kanji": "伝言",
+                        "reading": "でんごん",
+                        "meaning": {
+                            "en": "Message",
+                            "my": "သတင်းစကား"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "飲",
+                "onyomi": "イン",
+                "kunyomi": "の(む)",
+                "meaning": {
+                    "en": "To drink",
+                    "my": "သောက်သည်"
+                },
+                "emoji": "🍹",
+                "confusing_kanji": [
+                    "食",
+                    "飯",
+                    "飼",
+                    "飴",
+                    "飽",
+                    "次",
+                    "欠",
+                    "吹"
+                ],
+                "examples": [
+                    {
+                        "kanji": "飲む",
+                        "reading": "のむ",
+                        "meaning": {
+                            "en": "To drink",
+                            "my": "သောက်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "飲み物",
+                        "reading": "のみもの",
+                        "meaning": {
+                            "en": "A drink / Beverage",
+                            "my": "သောက်စရာ"
+                        }
+                    },
+                    {
+                        "kanji": "飲食店",
+                        "reading": "いんしょくてん",
+                        "meaning": {
+                            "en": "Restaurant / Eatery",
+                            "my": "စားသောက်ဆိုင်"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 10,
+            "title": "Communication, Time, and Daily Activities",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "話",
+                "onyomi": "ワ",
+                "kunyomi": "はな(す), はなし",
+                "meaning": {
+                    "en": "Talk / Speak / Story",
+                    "my": "စကားပြောသည် / ပုံပြင်"
+                },
+                "emoji": "🗣️",
+                "confusing_kanji": [
+                    "語",
+                    "諸",
+                    "活",
+                    "括",
+                    "舌",
+                    "認",
+                    "読",
+                    "調"
+                ],
+                "examples": [
+                    {
+                        "kanji": "話す",
+                        "reading": "はなす",
+                        "meaning": {
+                            "en": "To speak",
+                            "my": "စကားပြောသည်"
+                        }
+                    },
+                    {
+                        "kanji": "話",
+                        "reading": "はなし",
+                        "meaning": {
+                            "en": "A story / Talk",
+                            "my": "စကား / ပုံပြင်"
+                        }
+                    },
+                    {
+                        "kanji": "電話",
+                        "reading": "でんわ",
+                        "meaning": {
+                            "en": "Telephone",
+                            "my": "ဖုန်း"
+                        }
+                    },
+                    {
+                        "kanji": "会話",
+                        "reading": "かいわ",
+                        "meaning": {
+                            "en": "Conversation",
+                            "my": "စကားပြောဆိုခြင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "読",
+                "onyomi": "ドク, トク",
+                "kunyomi": "よ(む)",
+                "meaning": {
+                    "en": "Read",
+                    "my": "ဖတ်သည်"
+                },
+                "emoji": "📖",
+                "confusing_kanji": [
+                    "言",
+                    "語",
+                    "話",
+                    "売",
+                    "続",
+                    "詩",
+                    "詰",
+                    "諸"
+                ],
+                "examples": [
+                    {
+                        "kanji": "読む",
+                        "reading": "よむ",
+                        "meaning": {
+                            "en": "To read",
+                            "my": "ဖတ်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "読書",
+                        "reading": "どくしょ",
+                        "meaning": {
+                            "en": "Reading books",
+                            "my": "စာဖတ်ခြင်း"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "語",
+                "onyomi": "ゴ",
+                "kunyomi": "かた(る)",
+                "meaning": {
+                    "en": "Language / Word",
+                    "my": "ဘာသာစကား / စကားလုံး"
+                },
+                "emoji": "🌐",
+                "confusing_kanji": [
+                    "話",
+                    "読",
+                    "記",
+                    "訳",
+                    "誤",
+                    "吾",
+                    "悟",
+                    "五"
+                ],
+                "examples": [
+                    {
+                        "kanji": "日本語",
+                        "reading": "にほんご",
+                        "meaning": {
+                            "en": "Japanese language",
+                            "my": "ဂျပန်ဘာသာစကား"
+                        }
+                    },
+                    {
+                        "kanji": "中国語",
+                        "reading": "ちゅうごくご",
+                        "meaning": {
+                            "en": "Chinese language",
+                            "my": "တရုတ်ဘာသာစကား"
+                        }
+                    },
+                    {
+                        "kanji": "外国語",
+                        "reading": "がいこくご",
+                        "meaning": {
+                            "en": "Foreign language",
+                            "my": "နိုင်ငံခြားဘာသာစကား"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "間",
+                "onyomi": "カン, ケン",
+                "kunyomi": "あいだ, ま",
+                "meaning": {
+                    "en": "Interval / Between",
+                    "my": "ကြား / အချိန်ကာလ"
+                },
+                "emoji": "↔️",
+                "confusing_kanji": [
+                    "問",
+                    "聞",
+                    "開",
+                    "閉",
+                    "関",
+                    "簡",
+                    "欄",
+                    "悶"
+                ],
+                "examples": [
+                    {
+                        "kanji": "間",
+                        "reading": "あいだ",
+                        "meaning": {
+                            "en": "Between / Interval",
+                            "my": "ကြား"
+                        }
+                    },
+                    {
+                        "kanji": "時間",
+                        "reading": "じかん",
+                        "meaning": {
+                            "en": "Time / Hours",
+                            "my": "အချိန် / နာရီ"
+                        }
+                    },
+                    {
+                        "kanji": "一年間",
+                        "reading": "いちねんかん",
+                        "meaning": {
+                            "en": "For one year",
+                            "my": "တစ်နှစ်တာကာလ"
+                        }
+                    },
+                    {
+                        "kanji": "間に合う",
+                        "reading": "まにあう",
+                        "meaning": {
+                            "en": "To be in time",
+                            "my": "အချိန်မီသည်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "聞",
+                "onyomi": "ブン, モン",
+                "kunyomi": "き(く), き(こえる)",
+                "meaning": {
+                    "en": "Hear / Listen / Ask",
+                    "my": "ကြားသည် / နားထောင်သည် / မေးသည်"
+                },
+                "emoji": "👂",
+                "confusing_kanji": [
+                    "間",
+                    "問",
+                    "開",
+                    "閉",
+                    "門",
+                    "耳",
+                    "悶",
+                    "閑"
+                ],
+                "examples": [
+                    {
+                        "kanji": "聞く",
+                        "reading": "きく",
+                        "meaning": {
+                            "en": "To listen / To ask",
+                            "my": "နားထောင်သည် / မေးသည်"
+                        }
+                    },
+                    {
+                        "kanji": "聞こえる",
+                        "reading": "きこえる",
+                        "meaning": {
+                            "en": "To be audible",
+                            "my": "ကြားရသည်"
+                        }
+                    },
+                    {
+                        "kanji": "新聞",
+                        "reading": "しんぶん",
+                        "meaning": {
+                            "en": "Newspaper",
+                            "my": "သတင်းစာ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "買",
+                "onyomi": "バイ",
+                "kunyomi": "か(う)",
+                "meaning": {
+                    "en": "Buy",
+                    "my": "ဝယ်သည်"
+                },
+                "emoji": "🛒",
+                "confusing_kanji": [
+                    "売",
+                    "貝",
+                    "見",
+                    "員",
+                    "賞",
+                    "質",
+                    "賃",
+                    "貸"
+                ],
+                "examples": [
+                    {
+                        "kanji": "買う",
+                        "reading": "ကော",
+                        "meaning": {
+                            "en": "To buy",
+                            "my": "ဝယ်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "買い物する",
+                        "reading": "かいものする",
+                        "meaning": {
+                            "en": "To go shopping",
+                            "my": "ဈေးဝယ်သည်"
+                        }
+                    },
+                    {
+                        "kanji": "売買する",
+                        "reading": "ばいばいする",
+                        "meaning": {
+                            "en": "Trading / Buying and selling",
+                            "my": "အရောင်းအဝယ်လုပ်သည်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "休",
+                "onyomi": "キュウ",
+                "kunyomi": "やす(む), やす(み)",
+                "meaning": {
+                    "en": "Rest / Holiday",
+                    "my": "အနားယူသည် / အားလပ်ရက်"
+                },
+                "emoji": "🛌",
+                "confusing_kanji": [
+                    "体",
+                    "イ",
+                    "付",
+                    "件",
+                    "任",
+                    "保",
+                    "信",
+                    "修"
+                ],
+                "examples": [
+                    {
+                        "kanji": "休む",
+                        "reading": "やすむ",
+                        "meaning": {
+                            "en": "To rest / To be absent",
+                            "my": "အနားယူသည် / ခွင့်ယူသည်"
+                        }
+                    },
+                    {
+                        "kanji": "休み",
+                        "reading": "やすみ",
+                        "meaning": {
+                            "en": "Rest / Vacation",
+                            "my": "အနားယူခြင်း / အားလပ်ရက်"
+                        }
+                    },
+                    {
+                        "kanji": "休日",
+                        "reading": "きゅうじつ",
+                        "meaning": {
+                            "en": "Holiday",
+                            "my": "ပိတ်ရက်"
+                        }
+                    },
+                    {
+                        "kanji": "夏休み",
+                        "reading": "なつやすみ",
+                        "meaning": {
+                            "en": "Summer vacation",
+                            "my": "နွေရာသီကျောင်းပိတ်ရက်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "時",
+                "onyomi": "ジ",
+                "kunyomi": "とき",
+                "meaning": {
+                    "en": "Time / Hour",
+                    "my": "အချိန် / နာရီ"
+                },
+                "emoji": "⌚",
+                "confusing_kanji": [
+                    "持",
+                    "待",
+                    "侍",
+                    "特",
+                    "詩",
+                    "寺",
+                    "付",
+                    "対"
+                ],
+                "examples": [
+                    {
+                        "kanji": "4時",
+                        "reading": "よじ",
+                        "meaning": {
+                            "en": "4 o'clock",
+                            "my": "၄ နာရီ"
+                        }
+                    },
+                    {
+                        "kanji": "1時間",
+                        "reading": "いちじかん",
+                        "meaning": {
+                            "en": "One hour",
+                            "my": "တစ်နာရီ"
+                        }
+                    },
+                    {
+                        "kanji": "時計",
+                        "reading": "とけい",
+                        "meaning": {
+                            "en": "Watch / Clock",
+                            "my": "နာရီ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "週",
+                "onyomi": "シュウ",
+                "kunyomi": "N/A",
+                "meaning": {
+                    "en": "Week",
+                    "my": "အပတ်"
+                },
+                "emoji": "📅",
+                "confusing_kanji": [
+                    "週",
+                    "調",
+                    "週",
+                    "運",
+                    "道",
+                    "週",
+                    "過",
+                    "進"
+                ],
+                "examples": [
+                    {
+                        "kanji": "1週間",
+                        "reading": "いっしゅうかん",
+                        "meaning": {
+                            "en": "One week",
+                            "my": "တစ်ပတ်"
+                        }
+                    },
+                    {
+                        "kanji": "来週",
+                        "reading": "らいしゅう",
+                        "meaning": {
+                            "en": "Next week",
+                            "my": "နောက်အပတ်"
+                        }
+                    },
+                    {
+                        "kanji": "先週",
+                        "reading": "せんしゅう",
+                        "meaning": {
+                            "en": "Last week",
+                            "my": "ပြီးခဲ့သည့်အပတ်"
+                        }
+                    },
+                    {
+                        "kanji": "今週",
+                        "reading": "こんしゅう",
+                        "meaning": {
+                            "en": "This week",
+                            "my": "ယခုအပတ်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "道",
+                "onyomi": "ドウ, トウ",
+                "kunyomi": "みち",
+                "meaning": {
+                    "en": "Road / Path / Way",
+                    "my": "လမ်း"
+                },
+                "emoji": "🛣️",
+                "confusing_kanji": [
+                    "首",
+                    "通",
+                    "進",
+                    "近",
+                    "造",
+                    "週",
+                    "導",
+                    "適"
+                ],
+                "examples": [
+                    {
+                        "kanji": "道",
+                        "reading": "みち",
+                        "meaning": {
+                            "en": "Road / Path",
+                            "my": "လမ်း"
+                        }
+                    },
+                    {
+                        "kanji": "車道",
+                        "reading": "しゃどう",
+                        "meaning": {
+                            "en": "Roadway / Car lane",
+                            "my": "ကားလမ်း"
+                        }
+                    },
+                    {
+                        "kanji": "水道",
+                        "reading": "すいどう",
+                        "meaning": {
+                            "en": "Waterworks / Tap water",
+                            "my": "ရေပေးဝေရေး / ရေပိုက်ခေါင်း"
+                        }
+                    },
+                    {
+                        "kanji": "書道",
+                        "reading": "しょどう",
+                        "meaning": {
+                            "en": "Calligraphy",
+                            "my": "စုတ်တံအရေးအသားပညာ"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lesson_metadata": {
+            "jlpt_level": "N5",
+            "lesson_id": 11,
+            "title": "Kanji Combinations and Common Places",
+            "total_kanji": 10
+        },
+        "vocabulary": [
+            {
+                "kanji": "今",
+                "onyomi": "コン, キン",
+                "kunyomi": "いま",
+                "meaning": {
+                    "en": "Now",
+                    "my": "ယခု"
+                },
+                "emoji": "⏰",
+                "confusing_kanji": [
+                    "令",
+                    "合",
+                    "冷",
+                    "念",
+                    "含",
+                    "吟"
+                ],
+                "examples": [
+                    {
+                        "kanji": "今",
+                        "reading": "いま",
+                        "meaning": {
+                            "en": "Now",
+                            "my": "ယခု"
+                        }
+                    },
+                    {
+                        "kanji": "今日",
+                        "reading": "きょう",
+                        "meaning": {
+                            "en": "Today",
+                            "my": "ယနေ့"
+                        }
+                    },
+                    {
+                        "kanji": "今月",
+                        "reading": "こんげつ",
+                        "meaning": {
+                            "en": "This month",
+                            "my": "ဒီလ"
+                        }
+                    },
+                    {
+                        "kanji": "今年",
+                        "reading": "ことし",
+                        "meaning": {
+                            "en": "This year",
+                            "my": "ဒီနှစ်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "会",
+                "onyomi": "カイ, エ",
+                "kunyomi": "あ(う)",
+                "meaning": {
+                    "en": "Meet / Society",
+                    "my": "တွေ့ဆုံသည် / အသင်းအဖွဲ့"
+                },
+                "emoji": "🤝",
+                "confusing_kanji": [
+                    "合",
+                    "全",
+                    "今",
+                    "谷",
+                    "台"
+                ],
+                "examples": [
+                    {
+                        "kanji": "会う",
+                        "reading": "あう",
+                        "meaning": {
+                            "en": "To meet",
+                            "my": "တွေ့ဆုံသည်"
+                        }
+                    },
+                    {
+                        "kanji": "会社",
+                        "reading": "かいしゃ",
+                        "meaning": {
+                            "en": "Company",
+                            "my": "ကုမ္ပဏီ"
+                        }
+                    },
+                    {
+                        "kanji": "会話",
+                        "reading": "かいわ",
+                        "meaning": {
+                            "en": "Conversation",
+                            "my": "စကားပြောဆိုခြင်း"
+                        }
+                    },
+                    {
+                        "kanji": "会議",
+                        "reading": "かいぎ",
+                        "meaning": {
+                            "en": "Meeting / Conference",
+                            "my": "အစည်းအဝေး"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "社",
+                "onyomi": "シャ",
+                "kunyomi": "やしろ",
+                "meaning": {
+                    "en": "Company / Shrine",
+                    "my": "ကုမ္ပဏီ / နတ်စင်"
+                },
+                "emoji": "🏢",
+                "confusing_kanji": [
+                    "土",
+                    "杜",
+                    "祉",
+                    "祈",
+                    "神"
+                ],
+                "examples": [
+                    {
+                        "kanji": "会社",
+                        "reading": "かいしゃ",
+                        "meaning": {
+                            "en": "Company",
+                            "my": "ကုမ္ပဏီ"
+                        }
+                    },
+                    {
+                        "kanji": "社会",
+                        "reading": "しゃかい",
+                        "meaning": {
+                            "en": "Society",
+                            "my": "လူ့အဖွဲ့အစည်း"
+                        }
+                    },
+                    {
+                        "kanji": "神社",
+                        "reading": "じんじゃ",
+                        "meaning": {
+                            "en": "Shinto shrine",
+                            "my": "ရှင်တိုနတ်စင်"
+                        }
+                    },
+                    {
+                        "kanji": "社長",
+                        "reading": "しゃちょう",
+                        "meaning": {
+                            "en": "Company president",
+                            "my": "ကုမ္ပဏီဥက္ကဋ္ဌ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "店",
+                "onyomi": "テン",
+                "kunyomi": "みせ",
+                "meaning": {
+                    "en": "Shop / Store",
+                    "my": "ဆိုင်"
+                },
+                "emoji": "🏪",
+                "confusing_kanji": [
+                    "点",
+                    "広",
+                    "応",
+                    "底",
+                    "府",
+                    "庫"
+                ],
+                "examples": [
+                    {
+                        "kanji": "店",
+                        "reading": "みせ",
+                        "meaning": {
+                            "en": "Shop",
+                            "my": "ဆိုင်"
+                        }
+                    },
+                    {
+                        "kanji": "店員",
+                        "reading": "てんいん",
+                        "meaning": {
+                            "en": "Shop assistant / Clerk",
+                            "my": "ဆိုင်ဝန်ထမ်း"
+                        }
+                    },
+                    {
+                        "kanji": "売店",
+                        "reading": "ばいてん",
+                        "meaning": {
+                            "en": "Kiosk / Stand",
+                            "my": "အရောင်းဆိုင်ငယ်"
+                        }
+                    },
+                    {
+                        "kanji": "喫茶店",
+                        "reading": "きっさてん",
+                        "meaning": {
+                            "en": "Coffee shop / Cafe",
+                            "my": "ကော်ဖီဆိုင်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "駅",
+                "onyomi": "エキ",
+                "kunyomi": "N/A",
+                "meaning": {
+                    "en": "Station",
+                    "my": "ဘူတာ"
+                },
+                "emoji": "🚉",
+                "confusing_kanji": [
+                    "尺",
+                    "馬",
+                    "駐",
+                    "駆",
+                    "験"
+                ],
+                "examples": [
+                    {
+                        "kanji": "駅",
+                        "reading": "えき",
+                        "meaning": {
+                            "en": "Station",
+                            "my": "ဘူတာ"
+                        }
+                    },
+                    {
+                        "kanji": "駅長",
+                        "reading": "えきちょう",
+                        "meaning": {
+                            "en": "Station master",
+                            "my": "ဘူတာရုံပိုင်"
+                        }
+                    },
+                    {
+                        "kanji": "駅前",
+                        "reading": "えきまえ",
+                        "meaning": {
+                            "en": "In front of the station",
+                            "my": "ဘူတာရှေ့"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "花",
+                "onyomi": "カ",
+                "kunyomi": "はな",
+                "meaning": {
+                    "en": "Flower",
+                    "my": "ပန်း"
+                },
+                "emoji": "🌸",
+                "confusing_kanji": [
+                    "華",
+                    "若",
+                    "苦",
+                    "草",
+                    "荷"
+                ],
+                "examples": [
+                    {
+                        "kanji": "花",
+                        "reading": "はな",
+                        "meaning": {
+                            "en": "Flower",
+                            "my": "ပန်း"
+                        }
+                    },
+                    {
+                        "kanji": "花見",
+                        "reading": "はなみ",
+                        "meaning": {
+                            "en": "Flower viewing",
+                            "my": "ပန်းကြည့်ပွဲ"
+                        }
+                    },
+                    {
+                        "kanji": "花火",
+                        "reading": "はなび",
+                        "meaning": {
+                            "en": "Fireworks",
+                            "my": "မီးရှူးမီးပန်း"
+                        }
+                    },
+                    {
+                        "kanji": "花屋",
+                        "reading": "はなや",
+                        "meaning": {
+                            "en": "Flower shop",
+                            "my": "ပန်းဆိုင်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "国",
+                "onyomi": "コク",
+                "kunyomi": "くに",
+                "meaning": {
+                    "en": "Country",
+                    "my": "နိုင်ငံ"
+                },
+                "emoji": "🗺️",
+                "confusing_kanji": [
+                    "固",
+                    "囲",
+                    "団",
+                    "図",
+                    "回"
+                ],
+                "examples": [
+                    {
+                        "kanji": "国",
+                        "reading": "くに",
+                        "meaning": {
+                            "en": "Country",
+                            "my": "နိုင်ငံ"
+                        }
+                    },
+                    {
+                        "kanji": "外国",
+                        "reading": "がいこく",
+                        "meaning": {
+                            "en": "Foreign country",
+                            "my": "နိုင်ငံခြား"
+                        }
+                    },
+                    {
+                        "kanji": "中国",
+                        "reading": "ちゅうごく",
+                        "meaning": {
+                            "en": "China",
+                            "my": "တရုတ်နိုင်ငံ"
+                        }
+                    },
+                    {
+                        "kanji": "韓国",
+                        "reading": "かんこく",
+                        "meaning": {
+                            "en": "South Korea",
+                            "my": "တောင်ကိုရီးယားနိုင်ငံ"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "白",
+                "onyomi": "ハク, ビャク",
+                "kunyomi": "しろ, しろ(い)",
+                "meaning": {
+                    "en": "White",
+                    "my": "အဖြူရောင်"
+                },
+                "emoji": "⚪",
+                "confusing_kanji": [
+                    "日",
+                    "自",
+                    "目",
+                    "百",
+                    "旧"
+                ],
+                "examples": [
+                    {
+                        "kanji": "白い",
+                        "reading": "しろい",
+                        "meaning": {
+                            "en": "White",
+                            "my": "အဖြူရောင်"
+                        }
+                    },
+                    {
+                        "kanji": "真っ白",
+                        "reading": "まっしろ",
+                        "meaning": {
+                            "en": "Pure white",
+                            "my": "ဖွေးဖွေးလှုပ်ဖြူသော"
+                        }
+                    },
+                    {
+                        "kanji": "面白い",
+                        "reading": "おもしろい",
+                        "meaning": {
+                            "en": "Interesting",
+                            "my": "စိတ်ဝင်စားစရာကောင်းသော"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "空",
+                "onyomi": "クウ",
+                "kunyomi": "そら, あ(く), あ(ける), から",
+                "meaning": {
+                    "en": "Sky / Empty",
+                    "my": "ကောင်းကင် / အလွတ်"
+                },
+                "emoji": "☁️",
+                "confusing_kanji": [
+                    "穴",
+                    "究",
+                    "突",
+                    "窓",
+                    "容"
+                ],
+                "examples": [
+                    {
+                        "kanji": "空",
+                        "reading": "そら",
+                        "meaning": {
+                            "en": "Sky",
+                            "my": "ကောင်းကင်"
+                        }
+                    },
+                    {
+                        "kanji": "空気",
+                        "reading": "くうき",
+                        "meaning": {
+                            "en": "Air",
+                            "my": "လေထု"
+                        }
+                    },
+                    {
+                        "kanji": "空港",
+                        "reading": "くうこう",
+                        "meaning": {
+                            "en": "Airport",
+                            "my": "လေဆိပ်"
+                        }
+                    },
+                    {
+                        "kanji": "空く",
+                        "reading": "あく",
+                        "meaning": {
+                            "en": "To be empty / To be vacant",
+                            "my": "အားသည် / လွတ်သည်"
+                        }
+                    }
+                ]
+            },
+            {
+                "kanji": "電",
+                "onyomi": "デン",
+                "kunyomi": "N/A",
+                "meaning": {
+                    "en": "Electricity",
+                    "my": "လျှပ်စစ်"
+                },
+                "emoji": "⚡",
+                "confusing_kanji": [
+                    "雷",
+                    "雪",
+                    "雲",
+                    "霜",
+                    "電話"
+                ],
+                "examples": [
+                    {
+                        "kanji": "電気",
+                        "reading": "でんき",
+                        "meaning": {
+                            "en": "Electricity / Light",
+                            "my": "လျှပ်စစ် / မီး"
+                        }
+                    },
+                    {
+                        "kanji": "電車",
+                        "reading": "でんしゃ",
+                        "meaning": {
+                            "en": "Electric train",
+                            "my": "ရထား"
+                        }
+                    },
+                    {
+                        "kanji": "電話",
+                        "reading": "でんわ",
+                        "meaning": {
+                            "en": "Telephone",
+                            "my": "ဖုန်း"
+                        }
+                    },
+                    {
+                        "kanji": "電池",
+                        "reading": "でんち",
+                        "meaning": {
+                            "en": "Battery",
+                            "my": "ဓာတ်ခဲ"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

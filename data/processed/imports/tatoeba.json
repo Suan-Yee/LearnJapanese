@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "source": "tatoeba.jpn-eng.tsv",
+    "importedAt": "2026-05-06T17:40:49.565Z",
+    "count": 2,
+    "skipped": false
+  },
+  "items": [
+    {
+      "id": "tat_43a12739bce4",
+      "jp": "????????????",
+      "en": "I am studying Japanese.",
+      "my": "Japanese language ko learn nay tal."
+    },
+    {
+      "id": "tat_f57389f41870",
+      "jp": "???????????",
+      "en": "I will go to school today.",
+      "my": "D nai school thwar mal."
+    }
+  ]
+}
