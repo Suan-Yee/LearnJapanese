@@ -21,6 +21,7 @@ import { Pagination } from "@/components/ui-custom/Pagination";
 import { PronunciationButton } from "@/components/ui-custom/PronunciationButton";
 import { SearchInput } from "@/components/ui-custom/SearchInput";
 import { VocabDetailModal } from "@/components/ui-custom/VocabDetailModal";
+import { getPublicAssetUrl } from "@/lib/public-asset";
 import type { JlptLevel, VocabWord } from "@/lib/vocabulary";
 
 interface VocabTableProps {
@@ -227,7 +228,7 @@ export function VocabTable({ level, lessonNumber, lessons, words }: VocabTablePr
                       aria-label={`View details for ${getJapaneseDisplay(vocab)}`}
                     >
                       <Image
-                        src="/sprite/paper.png"
+                        src={getPublicAssetUrl("/sprite/paper.png")}
                         alt=""
                         aria-hidden
                         width={20}
@@ -349,7 +350,7 @@ export function VocabTable({ level, lessonNumber, lessons, words }: VocabTablePr
                         title="View vocabulary details"
                       >
                         <Image
-                          src="/sprite/paper.png"
+                          src={getPublicAssetUrl("/sprite/paper.png")}
                           alt=""
                           aria-hidden
                           width={20}

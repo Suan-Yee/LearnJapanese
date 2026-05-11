@@ -1,16 +1,19 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronRight, ArrowRight } from "lucide-react";
+import { ChevronRight, ArrowLeft, ArrowRight } from "lucide-react";
 import { GrammarContentGate } from "@/app/grammar/GrammarContentGate";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { BreadcrumbLink } from "@/components/ui-custom/navigation/BreadcrumbLink";
 import { RoutePathNav } from "@/components/ui-custom/navigation/RoutePathNav";
 import {
   getGrammarLesson,
+  getGrammarLessonsByLevel,
   getGrammarStaticLessonParams,
   isGrammarLevel,
   type GrammarLevel,
 } from "@/lib/grammar";
+import { cn } from "@/lib/utils";
 
 export const dynamicParams = false;
 
@@ -32,6 +35,14 @@ export default async function GrammarLessonPage({ params }: LessonPageProps) {
 
   const lesson = getGrammarLesson(level as GrammarLevel, lessonNumber);
   if (!lesson) notFound();
+  const lessons = getGrammarLessonsByLevel(level as GrammarLevel);
+  const currentLessonIndex = lessons.findIndex(
+    (entry) => entry.lessonNumber === lessonNumber,
+  );
+  const previousLesson = currentLessonIndex > 0 ? lessons[currentLessonIndex - 1] : null;
+  const nextLesson = currentLessonIndex < lessons.length - 1 ? lessons[currentLessonIndex + 1] : null;
+
+  if (currentLessonIndex === -1) notFound();
 
   return (
     <main className="flex-1 w-full p-4 sm:p-6 lg:p-8">
@@ -125,6 +136,44 @@ export default async function GrammarLessonPage({ params }: LessonPageProps) {
             ))}
           </div>
         </GrammarContentGate>
+
+        <div className="mt-8 flex flex-col items-stretch gap-3 rounded-2xl border border-border/60 bg-card/50 p-4 shadow-sm backdrop-blur-md min-[460px]:flex-row min-[460px]:items-center min-[460px]:justify-between">
+          {previousLesson ? (
+            <Link
+              href={`/grammar/${level}/lesson/${previousLesson.lessonNumber}`}
+              className={cn(
+                buttonVariants({ variant: "outline" }),
+                "h-10 min-w-[148px] rounded-xl border-primary/20 px-5 text-primary hover:bg-primary/5",
+              )}
+            >
+              <ArrowLeft className="mr-2 h-4 w-4" /> Previous
+            </Link>
+          ) : (
+            <Button variant="outline" disabled className="h-10 min-w-[148px] rounded-xl border-primary/20 px-5 text-primary hover:bg-primary/5 disabled:opacity-50">
+              <ArrowLeft className="mr-2 h-4 w-4" /> Previous
+            </Button>
+          )}
+
+          <span className="text-center font-heading font-bold text-foreground/80">
+            Lesson {lessonNumber} of {lessons[0].lessonNumber}-{lessons[lessons.length - 1].lessonNumber}
+          </span>
+
+          {nextLesson ? (
+            <Link
+              href={`/grammar/${level}/lesson/${nextLesson.lessonNumber}`}
+              className={cn(
+                buttonVariants({ variant: "default" }),
+                "h-10 min-w-[148px] rounded-xl px-5 shadow-md shadow-primary/20 transition-all hover:shadow-lg",
+              )}
+            >
+              Next <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          ) : (
+            <Button disabled className="h-10 min-w-[148px] rounded-xl px-5 shadow-md shadow-primary/20 transition-all hover:shadow-lg disabled:opacity-50">
+              Next <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          )}
+        </div>
       </div>
     </main>
   );

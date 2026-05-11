@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { getPublicAssetUrl } from "@/lib/public-asset";
 import { cn } from "@/lib/utils";
 
 interface RoutePathNavProps {
@@ -13,7 +14,7 @@ export function RoutePathNav({ children, className }: RoutePathNavProps) {
   return (
     <div className={cn("relative inline-block", className)}>
       <Image
-        src="/sprite/gif/rabbit.gif"
+        src={getPublicAssetUrl("/sprite/gif/rabbit.gif")}
         alt=""
         aria-hidden
         unoptimized

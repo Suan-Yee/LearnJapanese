@@ -1,3 +1,4 @@
+
 [
     {
         "course": "Minna no Nihongo",
@@ -55,7 +56,7 @@
                         "japanese": "ミラーさんは会社員ですか。",
                         "furigana": "ミラーさん は かいしゃいん(会社員) ですか。",
                         "romaji": "Miraa-san wa kaishain desu ka.",
-                        "translation_burmese": "မေလာက ကုမ္ပဏီဝန်ထမ်းလားခင်ဗျာ။",
+                        "translation_burmese": "မေလာက ကုမ္ပဏီဝန်ထမ်းလား။",
                         "english": "Is Mr. Miller an office worker?"
                     }
                 ],
@@ -161,7 +162,7 @@
                         "japanese": "それはテレホンカードですか。はい、そうです。",
                         "furigana": "それ は テレホンカード ですか。 はい、 そう です。",
                         "romaji": "Sore wa terehonkaado desu ka. Hai, sou desu.",
-                        "translation_burmese": "အဲဒါ တယ်လီဖုန်းကတ်လားဟင်? ဟုတ်ကဲ့၊ ဟုတ်ပါတယ်။",
+                        "translation_burmese": "အဲဒါ တယ်လီဖုန်းကတ်လား? ဟုတ်ကဲ့၊ ဟုတ်ပါတယ်။",
                         "english": "Is that a telephone card? Yes, it is."
                     }
                 ],
@@ -175,8 +176,8 @@
                 "translation_burmese": "S1 လား၊ S2 လား?",
                 "examples": [
                     {
-                        "japanese": "これは「၉」ですか、「၇」ですか。",
-                        "furigana": "これ は 「၉」 ですか、 「၇」 ですか。",
+                        "japanese": "これは「９」ですか、「７」ですか。",
+                        "furigana": "これ は 「９」 ですか、 「７」 ですか。",
                         "romaji": "Kore wa '9' desu ka, '7' desu ka.",
                         "translation_burmese": "ဒါက '၉' လား၊ '၇' လား?",
                         "english": "Is this a '9' or a '7'?"
@@ -267,14 +268,14 @@
                         "japanese": "電話はどちらですか。",
                         "furigana": "でんわ(電話) は どちら ですか。",
                         "romaji": "Denwa wa dochira desu ka.",
-                        "translation_burmese": "ဖုန်းက ဘယ်ဘက်မှာပါလဲခင်ဗျာ။",
+                        "translation_burmese": "ဖုန်းက ဘယ်မှာပါလဲ။",
                         "english": "Where (which direction) is the telephone?"
                     },
                     {
                         "japanese": "受付はこちらです。",
                         "furigana": "うけつけ(受付) は こちら です。",
                         "romaji": "Uketsuke wa kochira desu.",
-                        "translation_burmese": "ဧည့်ကြိုကောင်တာက ဒီဘက်မှာပါခင်ဗျာ။",
+                        "translation_burmese": "ဧည့်ကြိုကောင်တာက ဒီဘက်မှာပါ။",
                         "english": "The reception is this way."
                     }
                 ],
@@ -497,7 +498,7 @@
                         "japanese": "スーパーで卵を買いました。",
                         "furigana": "スーパー で たまご(卵) を か(買) いました。",
                         "romaji": "Suupaa de tamago o kaimashita.",
-                        "translation_burmese": " supermarket မှာ ကြက်ဥဝယ်ခဲ့ပါတယ်။",
+                        "translation_burmese": "စူပါမားကတ်မှာ ကြက်ဥဝယ်ခဲ့ပါတယ်။",
                         "english": "I bought eggs at the supermarket."
                     }
                 ],
@@ -576,7 +577,7 @@
                         "japanese": "日本語でレポートを書きます。",
                         "furigana": "にほんご(日本語) で レポート を か(書) きます。",
                         "romaji": "Nihongo de repooto o kakimasu.",
-                        "translation_burmese": "ဂျပန်ဘာသာနဲ့ ရီပို့ရေးပါတယ်။",
+                        "translation_burmese": "ဂျပန်ဘာသာနဲ့ အစီရင်ခံစာ ရေးပါတယ်။",
                         "english": "I write a report in Japanese."
                     }
                 ],
@@ -721,7 +722,7 @@
                 "id": "9.1",
                 "pattern": "N は N が 好きです / 嫌いです",
                 "explanation": "The particle 'ga' is used to mark the object of preference (likes/dislikes).",
-                "translation_burmese": "N သည် N ကို ကြိုက်နှစ်သက်သည် / မုန်းတီးသည်။",
+                "translation_burmese": "N သည် N ကို ကြိုက်နှစ်သက်သည် / မနှစ်သက်ပါ။",
                 "examples": [
                     {
                         "japanese": "わたしは映画が好きです。",
@@ -779,8 +780,8 @@
                         "english": "I understand English."
                     },
                     {
-                        "japanese": "漢字がわかりますか。いいえ、全然わかりません。",
-                        "furigana": "かんじ(漢字) が わかりますか。 いいえ、 ぜんぜん(全然) わかりません。",
+                        "japanese": "漢字がわかりますか. いいえ、全然わかりません。",
+                        "furigana": "かんじ(漢字) が わかりますか. いいえ、 ぜんぜん(全然) わかりません。",
                         "romaji": "Kanji ga wakarimasu ka. Iie, zenzen wakarimasen.",
                         "translation_burmese": "ခန်ဂျီကို နားလည်ပါသလား? ဟင့်အင်း၊ လုံးဝနားမလည်ပါဘူး။",
                         "english": "Do you understand Kanji? No, not at all."
@@ -866,9 +867,9 @@
                     },
                     {
                         "japanese": "事務所に誰がいますか。誰もいません。",
-                        "furigana": "じむしょ(事務所) に だれ が いますか。 だれ も いません。",
+                        "furigana": "じむしょ(事務所) に だれ が いますか. だれ も いません。",
                         "romaji": "Jimusho ni dare ga imasu ka. Dare mo imasen.",
-                        "translation_burmese": "ရုံးခန်းထဲမှာ ဘယ်သူရှိလဲ? ဘယ်သူမှမရှိပါဘူး။",
+                        "translation_burmese": "ရုံးခန်းထဲမှာ ဘယ်သူရှိပါသလဲ? ဘယ်သူမှမရှိပါဘူး။",
                         "english": "Who is in the office? No one is there."
                     }
                 ],
@@ -916,7 +917,7 @@
                         "japanese": "箱の中に何がありますか。",
                         "furigana": "はこ(箱) の なか(中) に なに が ありますか。",
                         "romaji": "Hako no naka ni nani ga arimasu ka.",
-                        "translation_burmese": "သေတ္တာထဲမှာ ဘာရှိလဲဟင်?",
+                        "translation_burmese": "သေတ္တာထဲမှာ ဘာရှိပါသလဲ?",
                         "english": "What is inside the box?"
                     }
                 ],
