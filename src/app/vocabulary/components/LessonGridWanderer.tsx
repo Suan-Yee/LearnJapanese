@@ -10,7 +10,7 @@ import {
   type ReactNode,
 } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { getPublicAssetUrl } from "@/lib/public-asset";
+import { getPublicAssetUrl, usePublicAssetBasePath } from "@/lib/public-asset";
 
 type LessonGridWandererProps = {
   children: ReactNode;
@@ -39,7 +39,6 @@ const REACTION_FRAME_MS = 120;
 const JUMP_DURATION_MS = 720;
 const JUMP_ARC_HEIGHT = 28;
 const REACTION_DURATION_MS = 1500;
-const sprite = (path: string) => getPublicAssetUrl(`/sprite/${path}`);
 
 const REACTION_TEXT = "\u4f55\u304b\u8d77\u304d\u3066\u3044\u308b\uff1f";
 const FALLBACK_TEXT = "\u306d\u3080\u3044\u2026";
@@ -59,63 +58,6 @@ const FILLER = [
   "\u3082\u3050\u3082\u3050",
   "\u3046\u3068\u3046\u3068",
   "\u3074\u304b\u3074\u304b",
-];
-
-const RUN_FRAMES: Record<Direction, string[]> = {
-  1: [
-    sprite("animations/animation-dc2f00f5/east/frame_000.png"),
-    sprite("animations/animation-dc2f00f5/east/frame_001.png"),
-    sprite("animations/animation-dc2f00f5/east/frame_002.png"),
-    sprite("animations/animation-dc2f00f5/east/frame_003.png"),
-    sprite("animations/animation-dc2f00f5/east/frame_004.png"),
-    sprite("animations/animation-dc2f00f5/east/frame_005.png"),
-  ],
-  "-1": [
-    sprite("animations/animation-dc2f00f5/west/frame_000.png"),
-    sprite("animations/animation-dc2f00f5/west/frame_001.png"),
-    sprite("animations/animation-dc2f00f5/west/frame_002.png"),
-    sprite("animations/animation-dc2f00f5/west/frame_003.png"),
-    sprite("animations/animation-dc2f00f5/west/frame_004.png"),
-    sprite("animations/animation-dc2f00f5/west/frame_005.png"),
-  ],
-};
-
-const JUMP_FRAMES: Record<Direction, string[]> = {
-  1: [
-    sprite("animations/animation-cd2933cb/east/frame_000.png"),
-    sprite("animations/animation-cd2933cb/east/frame_001.png"),
-    sprite("animations/animation-cd2933cb/east/frame_002.png"),
-    sprite("animations/animation-cd2933cb/east/frame_003.png"),
-    sprite("animations/animation-cd2933cb/east/frame_004.png"),
-    sprite("animations/animation-cd2933cb/east/frame_005.png"),
-    sprite("animations/animation-cd2933cb/east/frame_006.png"),
-    sprite("animations/animation-cd2933cb/east/frame_007.png"),
-  ],
-  "-1": [
-    sprite("animations/animation-cd2933cb/west/frame_000.png"),
-    sprite("animations/animation-cd2933cb/west/frame_001.png"),
-    sprite("animations/animation-cd2933cb/west/frame_002.png"),
-    sprite("animations/animation-cd2933cb/west/frame_003.png"),
-    sprite("animations/animation-cd2933cb/west/frame_004.png"),
-    sprite("animations/animation-cd2933cb/west/frame_005.png"),
-    sprite("animations/animation-cd2933cb/west/frame_006.png"),
-    sprite("animations/animation-cd2933cb/west/frame_007.png"),
-  ],
-};
-
-const ROTATION_FRAME: Record<Direction, string> = {
-  1: sprite("rotations/east.png"),
-  "-1": sprite("rotations/west.png"),
-};
-
-const REACTION_FRAMES = [
-  sprite("reaction/frame_000.png"),
-  sprite("reaction/frame_001.png"),
-  sprite("reaction/frame_002.png"),
-  sprite("reaction/frame_003.png"),
-  sprite("reaction/frame_004.png"),
-  sprite("reaction/frame_005.png"),
-  sprite("reaction/frame_006.png"),
 ];
 
 function cleanWord(word: string) {
@@ -181,12 +123,20 @@ const CatCharacter = memo(function CatCharacter({
   direction,
   isReacting,
   isJumping,
+  runFrames,
+  jumpFrames,
+  rotationFrame,
+  reactionFrames,
   onClick,
 }: {
   state: CharState;
   direction: Direction;
   isReacting: boolean;
   isJumping: boolean;
+  runFrames: Record<Direction, string[]>;
+  jumpFrames: Record<Direction, string[]>;
+  rotationFrame: Record<Direction, string>;
+  reactionFrames: string[];
   onClick: () => void;
 }) {
   const [runFrameIdx, setRunFrameIdx] = useState(0);
@@ -195,42 +145,42 @@ const CatCharacter = memo(function CatCharacter({
   const walking = state === "walking" && !isJumping;
 
   const source = isReacting
-    ? REACTION_FRAMES[reactionFrameIdx]
+    ? reactionFrames[reactionFrameIdx]
     : isJumping
-      ? JUMP_FRAMES[direction][jumpFrameIdx]
+      ? jumpFrames[direction][jumpFrameIdx]
       : walking
-        ? RUN_FRAMES[direction][runFrameIdx]
-        : ROTATION_FRAME[direction];
+        ? runFrames[direction][runFrameIdx]
+        : rotationFrame[direction];
 
   useEffect(() => {
     if (!walking || isReacting) return;
-    const frameCount = RUN_FRAMES[direction].length;
+    const frameCount = runFrames[direction].length;
     const id = window.setInterval(
       () => setRunFrameIdx((prev) => (prev + 1) % frameCount),
       RUN_FRAME_MS,
     );
     return () => window.clearInterval(id);
-  }, [walking, direction, isReacting]);
+  }, [walking, direction, isReacting, runFrames]);
 
   useEffect(() => {
     if (!isJumping || isReacting) return;
-    const frameCount = JUMP_FRAMES[direction].length;
+    const frameCount = jumpFrames[direction].length;
     const id = window.setInterval(
       () => setJumpFrameIdx((prev) => (prev + 1) % frameCount),
       JUMP_FRAME_MS,
     );
     return () => window.clearInterval(id);
-  }, [direction, isJumping, isReacting]);
+  }, [direction, isJumping, isReacting, jumpFrames]);
 
   useEffect(() => {
     if (!isReacting) return;
-    const frameCount = REACTION_FRAMES.length;
+    const frameCount = reactionFrames.length;
     const id = window.setInterval(
       () => setReactionFrameIdx((prev) => (prev + 1) % frameCount),
       REACTION_FRAME_MS,
     );
     return () => window.clearInterval(id);
-  }, [isReacting]);
+  }, [isReacting, reactionFrames]);
 
   return (
     <motion.div
@@ -304,6 +254,7 @@ function SpeechBubble({ text }: { text: string }) {
 }
 
 export function LessonGridWanderer({ children, words }: LessonGridWandererProps) {
+  const assetBasePath = usePublicAssetBasePath();
   const hostRef = useRef<HTMLDivElement>(null);
   const charRef = useRef<HTMLDivElement>(null);
   const posRef = useRef(24);
@@ -324,6 +275,75 @@ export function LessonGridWanderer({ children, words }: LessonGridWandererProps)
   const cleanedWords = useMemo(
     () => words.map(cleanWord).filter(Boolean).slice(0, 40),
     [words],
+  );
+  const sprite = useCallback(
+    (path: string) => getPublicAssetUrl(`/sprite/${path}`, assetBasePath),
+    [assetBasePath],
+  );
+  const runFrames = useMemo<Record<Direction, string[]>>(
+    () => ({
+      1: [
+        sprite("animations/animation-dc2f00f5/east/frame_000.png"),
+        sprite("animations/animation-dc2f00f5/east/frame_001.png"),
+        sprite("animations/animation-dc2f00f5/east/frame_002.png"),
+        sprite("animations/animation-dc2f00f5/east/frame_003.png"),
+        sprite("animations/animation-dc2f00f5/east/frame_004.png"),
+        sprite("animations/animation-dc2f00f5/east/frame_005.png"),
+      ],
+      "-1": [
+        sprite("animations/animation-dc2f00f5/west/frame_000.png"),
+        sprite("animations/animation-dc2f00f5/west/frame_001.png"),
+        sprite("animations/animation-dc2f00f5/west/frame_002.png"),
+        sprite("animations/animation-dc2f00f5/west/frame_003.png"),
+        sprite("animations/animation-dc2f00f5/west/frame_004.png"),
+        sprite("animations/animation-dc2f00f5/west/frame_005.png"),
+      ],
+    }),
+    [sprite],
+  );
+  const jumpFrames = useMemo<Record<Direction, string[]>>(
+    () => ({
+      1: [
+        sprite("animations/animation-cd2933cb/east/frame_000.png"),
+        sprite("animations/animation-cd2933cb/east/frame_001.png"),
+        sprite("animations/animation-cd2933cb/east/frame_002.png"),
+        sprite("animations/animation-cd2933cb/east/frame_003.png"),
+        sprite("animations/animation-cd2933cb/east/frame_004.png"),
+        sprite("animations/animation-cd2933cb/east/frame_005.png"),
+        sprite("animations/animation-cd2933cb/east/frame_006.png"),
+        sprite("animations/animation-cd2933cb/east/frame_007.png"),
+      ],
+      "-1": [
+        sprite("animations/animation-cd2933cb/west/frame_000.png"),
+        sprite("animations/animation-cd2933cb/west/frame_001.png"),
+        sprite("animations/animation-cd2933cb/west/frame_002.png"),
+        sprite("animations/animation-cd2933cb/west/frame_003.png"),
+        sprite("animations/animation-cd2933cb/west/frame_004.png"),
+        sprite("animations/animation-cd2933cb/west/frame_005.png"),
+        sprite("animations/animation-cd2933cb/west/frame_006.png"),
+        sprite("animations/animation-cd2933cb/west/frame_007.png"),
+      ],
+    }),
+    [sprite],
+  );
+  const rotationFrame = useMemo<Record<Direction, string>>(
+    () => ({
+      1: sprite("rotations/east.png"),
+      "-1": sprite("rotations/west.png"),
+    }),
+    [sprite],
+  );
+  const reactionFrames = useMemo(
+    () => [
+      sprite("reaction/frame_000.png"),
+      sprite("reaction/frame_001.png"),
+      sprite("reaction/frame_002.png"),
+      sprite("reaction/frame_003.png"),
+      sprite("reaction/frame_004.png"),
+      sprite("reaction/frame_005.png"),
+      sprite("reaction/frame_006.png"),
+    ],
+    [sprite],
   );
 
   useEffect(() => {
@@ -531,6 +551,10 @@ export function LessonGridWanderer({ children, words }: LessonGridWandererProps)
               direction={direction}
               isReacting={isReacting}
               isJumping={isJumping}
+              runFrames={runFrames}
+              jumpFrames={jumpFrames}
+              rotationFrame={rotationFrame}
+              reactionFrames={reactionFrames}
               onClick={handleCatClick}
             />
           </div>

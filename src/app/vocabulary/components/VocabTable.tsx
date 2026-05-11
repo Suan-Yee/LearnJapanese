@@ -21,7 +21,7 @@ import { Pagination } from "@/components/ui-custom/Pagination";
 import { PronunciationButton } from "@/components/ui-custom/PronunciationButton";
 import { SearchInput } from "@/components/ui-custom/SearchInput";
 import { VocabDetailModal } from "@/components/ui-custom/VocabDetailModal";
-import { getPublicAssetUrl } from "@/lib/public-asset";
+import { getPublicAssetUrl, usePublicAssetBasePath } from "@/lib/public-asset";
 import type { JlptLevel, VocabWord } from "@/lib/vocabulary";
 
 interface VocabTableProps {
@@ -61,6 +61,7 @@ function getJapaneseDisplay(word: VocabWord) {
 
 export function VocabTable({ level, lessonNumber, lessons, words }: VocabTableProps) {
   const router = useRouter();
+  const assetBasePath = usePublicAssetBasePath();
   const [showFurigana, setShowFurigana] = useState(true);
   const [bookmarkedIds, setBookmarkedIds] = useState<Set<string>>(new Set());
   const [languagePref, setLanguagePref] = useState<LanguagePref>("both");
@@ -228,7 +229,7 @@ export function VocabTable({ level, lessonNumber, lessons, words }: VocabTablePr
                       aria-label={`View details for ${getJapaneseDisplay(vocab)}`}
                     >
                       <Image
-                        src={getPublicAssetUrl("/sprite/paper.png")}
+                        src={getPublicAssetUrl("/sprite/paper.png", assetBasePath)}
                         alt=""
                         aria-hidden
                         width={20}
@@ -350,7 +351,7 @@ export function VocabTable({ level, lessonNumber, lessons, words }: VocabTablePr
                         title="View vocabulary details"
                       >
                         <Image
-                          src={getPublicAssetUrl("/sprite/paper.png")}
+                          src={getPublicAssetUrl("/sprite/paper.png", assetBasePath)}
                           alt=""
                           aria-hidden
                           width={20}
